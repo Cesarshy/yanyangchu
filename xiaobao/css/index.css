@@ -1036,6 +1036,7 @@ html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-
   text-align: center;
   background-color: #fff;
   border-radius: 10px;
+  cursor: pointer;
   margin: 0 14px;
   padding: 13px 0;
   box-shadow: 0 0 5px 5px #f0f0f0;
@@ -1231,6 +1232,7 @@ html body > .main-box > .main .consultation_record-main .c-m-con .list-box {
   padding: 0 20px;
 }
 html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list {
+  position: relative;
   border-bottom: 1px solid #d3d5d6;
 }
 html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list .list-tittle {
@@ -1240,10 +1242,21 @@ html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list
 }
 html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list > ul {
   overflow: hidden;
+  margin-right: 130px;
 }
 html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list > ul li {
   float: left;
   padding: 6px 10px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list .open_mul {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list .button-box {
+  position: absolute;
+  top: 6px;
+  right: 0;
 }
 html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list:last-child {
   border: none;

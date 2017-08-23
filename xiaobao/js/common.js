@@ -45,7 +45,8 @@ $(function () {
         flag = !flag;
     })
     /*按钮组点击事件*/
-    $('body').on('click','.list-box .btn-default', function () {
+    $('body').on('click','.list-box .list >ul .btn-default', function () {
         $(this).toggleClass('orange')
     })
+
 });

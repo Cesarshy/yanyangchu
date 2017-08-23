@@ -79,4 +79,78 @@ var option = {
     ]
 };
 
-myChart.setOption(option)
+myChart.setOption(option);
+
+$(function () {
+    // 日期
+    var mydate = new Date(),
+        D = mydate.getDay();
+
+    var currentFirstDate,
+        times = 1,
+        lis = $('.data-show >ul >li'),
+        length = lis.length;
+    /*li标签渲染*/
+    var formatDate = function(date){
+        var year = date.getFullYear()+'年';
+        var month = (date.getMonth()+1)+'月';
+        var day = date.getDate();
+        var week = ['周日','周一','周二','周三','周四','周五','周六'][date.getDay()];
+        var tem = '<span>'+ week +'</span><div>'+ day +'</div>';
+        return tem;
+    };
+    /*head渲染*/
+    var formatDay = function(date){
+        var year = date.getFullYear()+'年';
+        var month = (date.getMonth()+1)+'月';
+        var day = date.getDate();
+        var week = ['周日','周一','周二','周三','周四','周五','周六'][date.getDay()];
+        var tem = year+month+day+'日';
+        return tem;
+    };
+    var addDate= function(date,n){
+        date.setDate(date.getDate()+n);
+        return date;
+    };
+    var setDate = function(date){
+        var week = date.getDay()-1;
+        date = addDate(date,week*-1);
+        currentFirstDate = new Date(date);
+        for(var i = 0;i<length;i++){
+            if( i === D - 1){
+                $(lis[i]).addClass('current');
+                lis[i].innerHTML = formatDate(i==0 ? date : addDate(date,1));
+                $('.c-m-b-l-header >span').html(formatDay(i==0 ? date : addDate(date,0)))
+            }else{
+                lis[i].innerHTML = formatDate(i==0 ? date : addDate(date,1));
+            }
+        }
+    };
+
+    document.getElementById('last-week').onclick = function(){
+        lis.removeClass('current');
+        setDate(addDate(currentFirstDate,-7));
+        /*$('.c-m-b-l-header span').html(get7DaysBefore(new Date(), -times));*/
+    };
+    document.getElementById('next-week').onclick = function(){
+        lis.removeClass('current');
+        setDate(addDate(currentFirstDate,7));
+    };
+    setDate(new Date());
+
+    /*li标签点击事件*/
+    $('.data-show >ul').on('click', 'li', function () {
+        lis.removeClass('current');
+        $(this).addClass('current')
+    })
+
+    /*点击自定义时间*/
+    $('#bootstrap-date').on('change', function () {
+        var a = $('#dtp_input5').val();
+        $('.c-m-b-l-header >span').html(a.replace(/-/,'年').replace(/-/,'月')+'日')
+        console.log(a.replace(/-/g,'/'));
+        a = a.replace(/-/g,'/');
+        setDate(new Date(a))
+    })
+
+});
