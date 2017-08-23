@@ -1,0 +1,84 @@
+<div class="consult_notes-main addConsult-main add_newCourse add_newSet">
+    <div class="c-m-top a-m-top">
+        <h4 class="blue">新增配置</h4>
+        <p>当前位置：<a href="#/wage">工资</a>&nbsp;>&nbsp;<a href="#/performance_settings">绩效设置</a>&nbsp;>&nbsp;<a href="#">新增配置</a></p>
+    </div>
+    <form action="" class="">
+        <h6>选择提成方式：</h6>
+        <div class="content">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="options_1" id="options_1_1" value="option1">
+                    按教师课时：根据教师上课课时计算课时费，公式：教师课时数*每课时金额
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="options_1" id="options_1_2" value="option2">
+                    按学员课时：根据学员消耗课时数计算课时费，公式：学员课时数*每课时金额
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="options_1" id="options_1_3" value="option3">
+                    按学费消耗：根据教师上课产生的学费消耗计算课时费，公式：学费消耗*提成比例
+                </label>
+            </div>
+        </div>
+        <h6>确定每课时金额：</h6>
+        <div class="content">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="options_2" id="options_2_1" value="option1">
+                    固定金额
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="options_2" id="options_2_2" value="option2">
+                    梯度金额
+                </label>
+            </div>
+        </div>
+        <h6>选择应用范围：</h6>
+        <div class="content">
+            <p class="yellow"><span class="circle"></span>每个班级/一对一只能应用一个范围</p>
+            <a href="javascript:;" class="btn btn-primary">选择班级/一对一</a>
+        </div>
+        <h6>信息输入：</h6>
+        <div class="content container-fluid form-inline">
+            <div class="row">
+                <div class="col-sm-1">
+                    <div class="row">
+                        规则名称
+                    </div>
+                </div>
+                <div class="col-sm-11">
+                    <div class="row">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1">
+                    <div class="row">
+                        备注
+                    </div>
+                </div>
+                <div class="col-sm-11">
+                    <div class="row">
+                        <textarea class="form-control" name="info" id="info" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button type="button" class="btn btn-default">
+                取消
+            </button>
+            <button type="submit" class="btn btn-success">
+                保存
+            </button>
+        </div>
+    </form>
+</div>

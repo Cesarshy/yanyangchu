@@ -1,0 +1,144 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-indent-right" aria-hidden="true"></span> 教材
+            </h3>
+        </li>
+        <li>
+            <a class="current" href="#/textbook">库存</a>
+        </li>
+        <li>
+            <a href="#/textbook_settings">教材设置</a>
+        </li>
+        <li>
+            <a href="#/spending_settings">杂费设置</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main listen_manage-main channel_manage-main">
+        <header>
+            <a href="#/channel_manage" class="btn btn-default">库存查询</a>
+            <a href="#/channel_category" class="btn btn-default">库存变动记录</a>
+        </header>
+        <div class="c-m-top clearfix" style="box-shadow: 0 -3px 3px 3px #e7e7e7">
+            <a href="javascript:;" type="button" class="btn btn-primary addNewChannel">导出</a>
+            <form class="right form-inline fr">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search"  aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入教材名称">
+            </form>
+        </div>
+        <div class="c-m-con">
+            <form class="list-box form-inline" style="box-shadow: 0 3px 3px 3px #e7e7e7">
+                <table class="table">
+                    <tr>
+                        <td>课程类别:</td>
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="category1" id="category1" value="category1"> 通用教材/杂费
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            库存不足：
+                        </td>
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="category2" id="category2" value="category1"> 是
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="category2" id="category3" value="category2"> 否
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-primary" >
+                                查询
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="c-m-c-main add-shadow">
+                <div class="main">
+                    <div class="table-box" style="padding-top: 20px">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td>教材名称</td>
+                                <td>仓库</td>
+                                <td>轮滑校区</td>
+                                <td>马鞍山南路分校</td>
+                                <td>总计</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="consultation_record-box-shadow channel_manage-box-shadow">
+        <form class="main form-inline add-box">
+            <header>新建渠道</header>
+            <table class="table">
+                <tr>
+                    <td>名称：</td>
+                    <td>
+                        <input class="form-control" name="channelName" id="channelName" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>分类：</td>
+                    <td>
+                        <select class="form-control" name="category" id="channelCat">
+                            <option value="1">校宝秀活动</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td>
+                        <textarea name="instruction" id="instruction" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="btn btn-primary cancel">
+                            取消
+                        </button>
+                        <button type="submit" class="btn btn-success">
+                            确定
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script src="js/channel_manage.js"></script>

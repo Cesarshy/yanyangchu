@@ -1,0 +1,26 @@
+body .sidebar-menu > li > ul {
+  display: none;
+}
+body .sidebar-menu > li > ul li {
+  color: white;
+}
+body .sidebar-menu > li > ul li a {
+  padding-left: 44px;
+  color: #a0a0a0;
+  background-color: #404040;
+}
+body .sidebar-menu > li > ul li a:hover {
+  background-color: #505050;
+}
+body .sidebar-menu > li > ul li .current {
+  background-color: #505050;
+}
+body .personal-center .line-chart {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+body .personal-center .par-set form table .pwdBox {
+  display: none;
+}

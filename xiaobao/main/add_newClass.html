@@ -1,0 +1,215 @@
+<div class="consult_notes-main addConsult-main add_newCourse">
+    <div class="c-m-top a-m-top">
+        <h4 class="blue">新增班级</h4>
+        <p>当前位置：<a href="#/class">班级管理</a>&nbsp;>&nbsp;<a href="#add_newClass">新增班级</a></p>
+    </div>
+    <form action="" class="form-inline">
+        <table class="table table-bordered add-shadow">
+            <tr>
+                <th colspan="4">班级信息</th>
+            </tr>
+            <tr>
+                <td><span style="color: red">*</span>校区：</td>
+                <td>
+                    <select class="form-control" name="campus" id="campus">
+                        <option value="0">请选择校区</option>
+                        <option value="1">轮滑校区</option>
+                        <option value="2">马鞍山南路分校</option>
+                    </select>
+                </td>
+                <td>
+                    <span style="color: red">*</span>
+                    课程：
+                </td>
+                <td>
+                    <a href="javascript:;" class="btn btn-primary">选择课程</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 110px;">
+                    <span style="color: red">*</span>
+                    班级名称：
+                </td>
+                <td>
+                    <input type="text" class="form-control">
+                </td>
+                <td style="width: 110px;">
+                    <span style="color: red">*</span>
+                    预招人数：
+                </td>
+                <td>
+                    <input type="text" class="form-control">
+                    人
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    开班日期：
+                </td>
+                <td colspan="3">
+                    <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="" />&nbsp;
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="determinedDate" id="determinedDate" value="option1" style="top: 0"> 日期待定
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="color: red">*</span>
+                    每次上课：
+                </td>
+                <td>
+                    学员：
+                    <input type="text" class="form-control">
+                    课时 <br>
+                    教师：
+                    <input type="text" class="form-control" style="margin-top: 5px">
+                    课时 <br>
+                    <span style="display:inline-block;color: red; padding-top: 5px">（记上课时，教师和学员消耗课时数的默认值）</span>
+                </td>
+                <td>
+                    招生状态：
+                </td>
+                <td>
+                    <label class="radio-inline">
+                        <input style="top: -3px" type="radio" name="state" id="state1" value="option1"> 开放招生
+                    </label>
+                    <label class="radio-inline">
+                        <input style="top: -3px" type="radio" name="state" id="state2" value="option2"> 停止招生
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>教室：</td>
+                <td>
+                    <select class="form-control" name="classroom" id="classroom">
+                        <option value="0">请选择教室</option>
+                    </select>
+                </td>
+                <td>
+                    教师：
+                </td>
+                <td>
+                    <select name="teacher" id="teacher" class="form-control">
+                        <option value="0">请选择教师</option>
+                    </select>
+                    <select name="assistant" id="assistant" class="form-control">
+                        <option value="0">请选择助教</option>
+                    </select> <br>
+                    <span style="display:inline-block;color: red; padding-top: 5px">（以上教师和助教可对班级学员记上课和布置作业（需拥有相关权限））</span>
+                </td>
+            </tr>
+            <tr>
+                <td>备注：</td>
+                <td colspan="3">
+                    <input type="text" class="form-control" style="width: 100%;">
+                </td>
+            </tr>
+        </table>
+        <table id="editTime" class="table table-bordered add-shadow">
+            <tr>
+                <th colspan="4">上课时间：</th>
+            </tr>
+            <tr>
+                <td><a href="javascript:;" class="btn btn-primary" id="addTime">新增上课时间</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="color: red">*</span>
+                    上课日期：
+                </td>
+                <td colspan="3" style="position: relative">
+                    <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input style="background-color:#fff;" name="staDate1" class="form-control" size="16" type="text" value="" readonly>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                    <input type="hidden" id="dtp_input2" value="" />
+                    至
+                    <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input3" data-link-format="yyyy-mm-dd">
+                        <input style="background-color:#fff;" name="stoDate2" class="form-control" size="16" type="text" value="" readonly>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                    <input type="hidden" id="dtp_input3" value="" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    最多排 <input type="text" class="form-control" name="times1">次
+                    <span style="color: red">
+                        不排则按日期排课
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="color: red">*</span>
+                    重复设置：
+                </td>
+                <td>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="repeat1" id="repeat1" value="option1"> 全选
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="repeat1" id="repeat2" value="option2"> 周一
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="repeat1" id="repeat3" value="option3"> 周二
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="repeat1" id="repeat4" value="option4"> 周三
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="repeat1" id="repeat5" value="option5"> 周四
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="repeat1" id="repeat6" value="option6"> 周五
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="repeat1" id="repeat7" value="option7"> 周六
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="repeat1" id="repeat8" value="option8"> 周日
+                    </label>
+                </td>
+                <td>
+                    <span style="color: red">*</span>
+                    上课时段：
+                </td>
+                <td>
+                    <select name="timeFrame1" class="form-control" id="timeFrame1">
+                        <option value="1">08:00-12:00</option>
+                    </select>
+                    <a href="javascript:;">自定义时间</a>
+                </td>
+            </tr>
+            <tr>
+                <td>上课主题：</td>
+                <td colspan="3">
+                    <input type="text" class="form-control" name="theme1" style="width: 100%;">
+                </td>
+            </tr>
+        </table>
+        <div class="footer">
+            <button type="button" class="btn btn-default">
+                取消
+            </button>
+            <button type="submit" class="btn btn-success">
+                保存
+            </button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script src="js/add_newClass.js"></script>

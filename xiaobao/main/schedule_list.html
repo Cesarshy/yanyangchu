@@ -1,0 +1,359 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 排课
+            </h3>
+        </li>
+        <li>
+            <a href="#/course_list">排课</a>
+        </li>
+        <li>
+            <a class="current" href="#/schedule_list">日程列表</a>
+        </li>
+        <li>
+            <a href="#/conflict_agenda">冲突日程</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main course one_to_one">
+        <div class="c-m-top clearfix" style="box-shadow: 0 -4px 3px 2px #f0f0f0;">
+            <a href="javascript:;" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>新建日程</a>
+            <a href="javascript:;">排课设置</a>
+            <form class="right form-inline fr">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search"  aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入关键字搜索">
+                <select name="category" id="category" class="form-control fr">
+                    <option value="1">班级/一对一</option>
+                </select>
+            </form>
+        </div>
+        <div class="c-m-con">
+            <div class="list-box" style="box-shadow: 0 4px 3px 2px #f0f0f0;">
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        校区选择：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                全部
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                轮滑校区
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                马鞍山南路分校
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        课程类别：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                围棋类
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                模特
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        班级：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                杨兰校区少儿英语1班
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                礼仪全年班1班
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        教师：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                艳阳初
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-m-c-main communication_manage-main add-shadow">
+                <div class="c-m-c-main-top clearfix">
+                    <a href="javascript:;" class="btn btn-default">
+                        批量编辑
+                    </a>
+                    <a href="javascript:;" class="btn btn-default">
+                        批量删除
+                    </a>
+                </div>
+                <div class="main">
+                    <div class="tittle">
+                        当前结果：共计22个排课
+                    </div>
+                    <div class="table-box">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a href="javascript:;">上课时间<i class="glyphicon glyphicon-chevron-down"  aria-hidden="true"></i></a>
+                                </td>
+                                <td>班级/一对一</td>
+                                <td>课程</td>
+                                <td>教师</td>
+                                <td>助教</td>
+                                <td>教室</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2017-07-27 08:10-10:10</td>
+                                <td>
+                                    轮滑少儿绘画1班
+                                </td>
+                                <td>少儿绘画</td>
+                                <td>可可</td>
+                                <td>一一</td>
+                                <td>2区</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">编辑单次</a></li>
+                                        <li><a href="javascript:;">编辑重复</a></li>
+                                        <li><a href="javascript:;">删除单次</a></li>
+                                        <li><a href="javascript:;">删除重复</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/schedule_list.js"></script>

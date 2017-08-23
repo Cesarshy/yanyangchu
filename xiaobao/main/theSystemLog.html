@@ -1,0 +1,273 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <i class="iconfont icon-jigou"></i> 机构中心
+            </h3>
+        </li>
+        <li>
+            <a href="#/organization_center">机构信息</a>
+        </li>
+        <li>
+            <a href="#/parameter_settings" onclick="say()">参数设置</a>
+        </li>
+        <li>
+            <a class="current"  href="#/theSystemLog">系统日志</a>
+        </li>
+    </ul>
+    <div class="theSysLog">
+        <div class="t-top form-inline">
+            <form class="t-t-header clearfix">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search"  aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入用户名称">
+            </form>
+            <form action="" class="form-inline add-shadow">
+                <button id="spread" type="button" class="btn btn-default"><i class="glyphicon glyphicon-triangle-bottom aria-hidden="true""></i>展开</button>
+                <button id="tucked" type="button" class="btn btn-default"><i class="glyphicon glyphicon-triangle-top aria-hidden="true""></i>收起</button>
+                <table class="table">
+                    <tr>
+                        <td>
+                            日期：
+                        </td>
+                        <td>
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input1" value="" />
+                            至
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            全部操作：
+                        </td>
+                        <td>
+                            <label class="checkbox-inline">
+                                <input name="editTheClass" type="checkbox" id="editTheClass" value="true"> 编辑班级
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="editOtherAccounts" type="checkbox" id="editOtherAccounts" value="true"> 编辑其它收入账
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="editClassRecord" type="checkbox" id="editClassRecord" value="true"> 编辑上课记录
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="editOutAccount" type="checkbox" id="editOutAccount" value="true"> 编辑支出账
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="printPaper" type="checkbox" id="printPaper" value="true"> 打印票据
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="printClass" type="checkbox" id="printClass" value="true"> 打印听课证
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="exportStudents" type="checkbox" id="exportStudents" value="true"> 导出学员
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="sucLogin" type="checkbox" id="sucLogin" value="true"> 登录成功
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="failLogin" type="checkbox" id="failLogin" value="true"> 登录失败
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="sentMsg" type="checkbox" id="sentMsg" value="true"> 发送短信
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="merge" type="checkbox" id="merge" value="true"> 合并渠道
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="batchDel" type="checkbox" id="batchDel" value="true"> 批量删除
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="delClass" type="checkbox" id="delClass" value="true"> 删除班级
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="delFile" type="checkbox" id="delFile" value="true"> 删除档案
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="delTra" type="checkbox" id="delTra" value="true"> 删除交易
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="delClassRec" type="checkbox" id="delClassRec" value="true"> 删除上课记录
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="delCampus" type="checkbox" id="delCampus" value="true"> 删除校区
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="delStu" type="checkbox" id="delStu" value="true"> 删除学员
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="delOutAco" type="checkbox" id="delOutAco" value="true"> 删除支出账
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="delConRec" type="checkbox" id="delConRec" value="true"> 删除咨询记录
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="addAco" type="checkbox" id="addAco" value="true"> 添加账号
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="addOthAco" type="checkbox" id="addOthAco" value="true"> 新增其它收入账
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="addClaRec" type="checkbox" id="addClaRec" value="true"> 新增上课记录
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="addStaff" type="checkbox" id="addStaff" value="true"> 新建员工
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="addOutAco" type="checkbox" id="addOutAco" value="true"> 新增支出账
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="editTra" type="checkbox" id="editTra" value="true"> 修改交易
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="mobLoginSuc" type="checkbox" id="mobLoginSuc" value="true"> 移动端登录成功
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="mobImpSuc" type="checkbox" id="mobImpSuc" value="true"> 移动端授权成功
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-primary">查询</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="t-bottom">
+            <div class="table-box">
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <th>
+                            序号
+                        </th>
+                        <th>
+                            时间
+                        </th>
+                        <th>
+                            用户
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                        <th>
+                            操作内容
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            2017-07-27 22:12:48
+                        </td>
+                        <td>
+                            三部
+                        </td>
+                        <td>
+                            登录成功
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            2017-07-27 22:12:27
+                        </td>
+                        <td>
+                            管理员
+                        </td>
+                        <td>
+                            登录成功
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>2017-07-27 22:06:10</td>
+                        <td>
+                            管理员
+                        </td>
+                        <td>
+                            删除班级
+                        </td>
+                        <td>
+                            班级名称[石景山校区2017年秋季三年级语文课程3班]，校区[石景山校区]，课程[2017年秋季三年级语文课程]，教室[]，教师[]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>2017-07-27 22:06:10</td>
+                        <td>
+                            管理员
+                        </td>
+                        <td>
+                            删除班级
+                        </td>
+                        <td>
+                            班级名称[石景山校区2017年秋季三年级语文课程3班]，校区[石景山校区]，课程[2017年秋季三年级语文课程]，教室[]，教师[]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            2017-07-27 22:05:42
+                        </td>
+                        <td>
+                            管理员
+                        </td>
+                        <td>登录成功</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2017-07-27 22:00:29</td>
+                        <td>管理员</td>
+                        <td>新增上课记录</td>
+                        <td>创建日期：2017-07-27班级：石景山校区2017年秋季拉丁舞课程1班课程：2017年秋季拉丁舞课程；教师：；助教：；上课日期：2017-07-27；1个学员上课，0个学员请假，0个学员旷课，0个学员补课，学员总课时1.00，教师课时1.0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer row">
+                <div class="col-sm-5">
+                    单页显示条目
+                    <button type="button" class="btn btn-primary">50</button>
+                    <button type="button" class="btn btn-default">100</button>
+                    <button type="button" class="btn btn-default">200</button>
+                </div>
+                <div class="col-sm-7">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">上一页</button>
+                        <button type="button" class="btn btn-default">下一页</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>

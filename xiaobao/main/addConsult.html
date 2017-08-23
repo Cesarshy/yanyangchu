@@ -1,0 +1,233 @@
+<div class="consult_notes-main addConsult-main">
+    <div class="c-m-top a-m-top add-shadow">
+        <h4>新增咨询</h4>
+        <p>当前位置：<a href="#/consult_notes">咨询本</a>><a href="#/addConsult">新增咨询</a></p>
+    </div>
+    <form action="" class="a-m-project form-inline add-shadow">
+        <div class="clearfix">
+            <div style="background-color:#fff;">
+                <table style="margin-top: 0">
+                    <tr>
+                        <th colspan="2">基本信息</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            性别：
+                        </td>
+                        <td>
+                            <label class="radio-inline">
+                                <input style="width: auto" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 男
+                            </label>
+                            <label class="radio-inline">
+                                <input style="width: auto" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 女
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            姓名：
+                        </td>
+                        <td>
+                            <input name="name" class="form-control" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            手机号码：
+                        </td>
+                        <td>
+                            <input class="form-control" name="momPhone" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            亲属电话：
+                        </td>
+                        <td>
+                            <input class="form-control" name="dadPhone" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            微信号码：
+                        </td>
+                        <td>
+                            <input class="form-control" name="weNum" type="text">
+                        </td>
+                    </tr>
+                    <tr class="img-box">
+                        <td>上传头像：</td>
+                        <td style="padding-top: 10px">
+                            <img src="img/moren.jpg" alt="">
+                            <a href="javascript:;" onclick="$('input[id=addImg]').click();" class="btn btn-primary">头像上传</a>
+                            <input id="addImg" type="file" style="display:none">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <tr>
+                    <th colspan="3">跟进信息</th>
+                </tr>
+                <tr>
+                    <td>
+                        咨询方式：
+                    </td>
+                    <td>
+                        <label class="radio-inline">
+                            <input type="radio" name="method" id="method1" value="man"> 来电
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="method" id="method2" value="woman"> 采访
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="method" id="method3" value="unknown"> 网络
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="method" id="method4" value="unknown"> 其他
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top">
+                        咨询课程：
+                    </td>
+                    <td>
+                        <select name="wannaA" id="wannaA" class="form-control">
+                            <option value="0">请选择意向课程</option>
+                        </select>
+                        <select name="wannaB" id="wannaB" class="form-control">
+                            <option value="0">请选择意向课程</option>
+                        </select>
+                        <select name="wannaC" id="wannaC" class="form-control">
+                            <option value="0">请选择意向课程</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>意向度：</td>
+                    <td>
+
+                        <select name="degree" id="degree" class="form-control">
+                            <option value="1">低</option>
+                            <option value="2">中</option>
+                            <option value="3">高</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>跟进状态：</td>
+                    <td>
+                        <select class="form-control" name="followUpStatus" id="followUpStatus" class="form-control">
+                            <option value="1" selected>待跟进</option>
+                            <option value="2">跟进中</option>
+                            <option value="1">已邀约</option>
+                            <option value="1">已到访</option>
+                            <option value="1">已试听</option>
+                            <option value="1">已成交</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        关键词：
+                    </td>
+                    <td>
+                        <input class="form-control" name="keyWords" id="keyWords" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top">
+                        沟通内容：
+                    </td>
+                    <td style="padding-top: 10px">
+                        <textarea style="line-height: 20px; resize: none" name="consultCon" id="consultCon" cols="40" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        回访提醒：
+                    </td>
+                    <td>
+                        <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                            <input placeholder="选择回访提醒时间" style="background-color:#fff;" name="revisitDay" class="form-control" size="16" type="text" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                        </div>
+                        <input type="hidden" id="dtp_input1" value="" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table class="last">
+            <tr>
+                <th colspan="4">经办信息</th>
+            </tr>
+            <tr>
+                <td>咨询校区：</td>
+                <td>
+                    <select name="consultCampus" id="consultCampus" class="form-control">
+                        <option value="1">轮滑校区</option>
+                    </select>
+                </td>
+                <td>
+                    录入时间：
+                </td>
+                <td>
+                    <div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy MM dd- HH:ii p" data-link-field="dtp_input1">
+                        <input class="form-control" style="background-color:#fff;" size="16" type="text" value="" readonly>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-th iconfont icon-data"></span></span>
+                    </div>
+                    <input type="hidden" id="dtp_input2" value="" /><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    渠道：
+                </td>
+                <td>
+                    <select class="form-control" name="channel" id="channel">
+                        <option value="0" selected>请选择渠道</option>
+                    </select>
+                </td>
+                <td>
+                    销售员：
+                </td>
+                <td>
+                    <select class="form-control" name="salesperson" id="salesperson">
+                        <option value="1">艳阳初</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="button-box">
+            <button type="button" class="btn btn-default">
+                取消
+            </button>
+            <button type="submit" class="btn btn-success">
+                保存
+            </button>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+    $('.form_datetime').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+</script>

@@ -1,0 +1,187 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-yen" aria-hidden="true"></span> 教材
+            </h3>
+        </li>
+        <li>
+            <a href="#/wage">库存</a>
+        </li>
+        <li>
+            <a class="current" href="#/performance_manage">教材设置</a>
+        </li>
+        <li>
+            <a href="#/performance_settings">杂费设置</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main course one_to_one performance_manage">
+        <div class="c-m-top clearfix" style="box-shadow: 0 -4px 3px 2px #f0f0f0;">
+            <a href="javascript:;" id="tem_set" class="btn btn-primary">
+                <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>新建教材
+            </a>
+            <a href="javascript:;" class="btn btn-default">批量导入</a>
+            <form class="right form-inline fr ng-pristine ng-valid">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入教材名称">
+            </form>
+        </div>
+        <div class="c-m-con">
+            <form class="list-box form-inline" style="box-shadow: 0 4px 3px 2px #f0f0f0;">
+                <table class="table">
+                    <tr>
+                        <td>
+                            适用课程类别：
+                        </td>
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="from1" id="from1" value="campus1"> 通用教材/杂费
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="from1" id="from2" value="campus2"> 围棋类
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>状态:</td>
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="from2" id="from3" value="campus1"> 正常
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="from2" id="from4" value="campus2"> 下架
+                            </label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-primary" >
+                                查询
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="c-m-c-main communication_manage-main add-shadow">
+                <div class="main">
+                    <!--<div class="tittle">
+                        当前结果：共0条记录
+                    </div>-->
+                    <div class="table-box" style="padding-top: 20px">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td>教材名称</td>
+                                <td>进价(元)</td>
+                                <td>售价(元)</td>
+                                <td>积分兑换</td>
+                                <td>课程类别</td>
+                                <td>状态</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    铅笔
+                                </td>
+                                <td>
+                                    1.00
+                                </td>
+                                <td>
+                                    2.00
+                                </td>
+                                <td></td>
+                                <td>
+                                    美术
+                                </td>
+                                <td>
+                                    正常
+                                </td>
+                                <td>
+                                    <a href="javascript:;">编辑</a>&nbsp;&nbsp;
+                                    <a href="javascript:;">删除</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-2 col-sm-offset-5">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="box-shadow wage-box-shadow textbook_settings-box-shadow">
+        <div class="change-box">
+            <header>新建教材</header>
+            <div class="c-b-con">
+                <form class="form-horizontal">
+                    <table class="table">
+                        <tr>
+                            <th>教材名称</th>
+                            <th>
+                                <textarea class="form-control" name="" id=""></textarea>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>课程类别</td>
+                            <td>
+                                <select name="classType" id="classType" class="form-control">
+                                    <option value="1">美术</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>进价</td>
+                            <td>
+                                <input type="text" name="purchase_price" id="purchase_price" class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>售价</td>
+                            <td>
+                                <input type="text" name="price" id="price" class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">状态</td>
+                            <td style="text-align: left">
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 正常
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 下架
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-inline" style="text-align: left">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 积分兑换
+                                </label>
+                                <input type="text" class="form-control" disabled name="quantity" id="quantity" style="width: 90px;">
+                            </td>
+                        </tr>
+                    </table>
+                    <p>【专业版】支持教材库存的变动、查询、统计</p>
+                </form>
+                <div class="button-box">
+                    <a id="close" href="javascript:;" class="btn btn-default">取消</a>
+                    <a href="javascript:;" class="btn btn-primary">保存</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/wage.js"></script>

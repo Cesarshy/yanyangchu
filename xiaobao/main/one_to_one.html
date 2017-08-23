@@ -1,0 +1,476 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 一对一
+            </h3>
+        </li>
+        <li>
+            <a class="current" href="#/one_to_one">一对一</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main course one_to_one">
+        <div class="c-m-top clearfix" style="box-shadow: 0 -4px 3px 2px #f0f0f0;">
+            <form class="right form-inline fr">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search"  aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入用户名称">
+                <select name="category" id="category" class="form-control fr">
+                    <option value="1">学员姓名</option>
+                </select>
+            </form>
+        </div>
+        <div class="c-m-con">
+            <div class="list-box" style="box-shadow: 0 4px 3px 2px #f0f0f0;">
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        校区：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                轮滑校区
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                马鞍山南路分校
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        课程类别：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                围棋类
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                模特
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        收费模式：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                按课时
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                按时间
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                按期
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        开课状态：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                未开课
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                开课中
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix form-inline">
+                    <div class="list-tittle">
+                        开班日期：
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input1" value="" />
+                            至
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix form-inline">
+                    <div class="list-tittle">
+                        更多选项：
+                    </div>
+                    <ul>
+                        <li>
+                            <select class="form-control" name="weeks" id="weeks">
+                                <option value="0">上课星期</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-control" name="starLogo" id="starLogl">
+                                <option value="0">星标</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-m-c-main communication_manage-main add-shadow">
+                <div class="c-m-c-main-top clearfix">
+                    <a href="javascript:;" class="btn btn-default">
+                        发送通知
+                    </a>
+
+                    <a href="javascript:;" class="btn btn-default fr" style="margin: 13px 10px">
+                        <i class="glyphicon glyphicon-plus"  aria-hidden="true"></i>
+                        自定义显示项
+                    </a>
+                    <label class="checkbox-inline" style="margin-left: 20px">
+                        <input type="checkbox" id="inlineCheckbox2" value="option1"> 显示转、停、退、结学员
+                    </label>
+                    <label class="checkbox-inline" style="margin-left: 10px">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 显示已用学费/剩余学费
+                    </label>
+                </div>
+                <div class="main">
+                    <div class="tittle">
+                        当前结果：共计<span class="oraNum">10</span>条记录，<span class="oraNum">10</span>名在课学员
+                    </div>
+                    <div class="table-box">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>星标</td>
+                                <td>学员姓名</td>
+                                <td>联系方式</td>
+                                <td>教师</td>
+                                <td>课程</td>
+                                <td>开课日期</td>
+                                <td>上课时间</td>
+                                <td>已用课时/天</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>
+                                    123****0000
+                                </td>
+                                <td>
+                                    艳阳初
+                                </td>
+                                <td>
+                                    全年班
+                                </td>
+                                <td>
+                                    2017-07-20
+                                </td>
+                                <td>每周周五 14:00-16:00</td>
+                                <td>0.00</td>
+                                <td>
+                                    <a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">排课</a></li>
+                                        <li><a href="javascript:;">结课</a></li>
+                                        <li><a href="javascript:;">记上课</a></li>
+                                        <li><a href="javascript:;">课程表</a></li>
+                                        <li><a href="javascript:;">上课记录</a></li>
+                                        <li><a href="javascript:;">编辑</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>
+                                    123****0000
+                                </td>
+                                <td>
+                                    艳阳初
+                                </td>
+                                <td>
+                                    全年班
+                                </td>
+                                <td>
+                                    2017-07-20
+                                </td>
+                                <td>每周周五 14:00-16:00</td>
+                                <td>0.00</td>
+                                <td>
+                                    <a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">排课</a></li>
+                                        <li><a href="javascript:;">结课</a></li>
+                                        <li><a href="javascript:;">记上课</a></li>
+                                        <li><a href="javascript:;">课程表</a></li>
+                                        <li><a href="javascript:;">上课记录</a></li>
+                                        <li><a href="javascript:;">编辑</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>
+                                    123****0000
+                                </td>
+                                <td>
+                                    艳阳初
+                                </td>
+                                <td>
+                                    全年班
+                                </td>
+                                <td>
+                                    2017-07-20
+                                </td>
+                                <td>每周周五 14:00-16:00</td>
+                                <td>0.00</td>
+                                <td>
+                                    <a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">排课</a></li>
+                                        <li><a href="javascript:;">结课</a></li>
+                                        <li><a href="javascript:;">记上课</a></li>
+                                        <li><a href="javascript:;">课程表</a></li>
+                                        <li><a href="javascript:;">上课记录</a></li>
+                                        <li><a href="javascript:;">编辑</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>
+                                    123****0000
+                                </td>
+                                <td>
+                                    艳阳初
+                                </td>
+                                <td>
+                                    全年班
+                                </td>
+                                <td>
+                                    2017-07-20
+                                </td>
+                                <td>每周周五 14:00-16:00</td>
+                                <td>0.00</td>
+                                <td>
+                                    <a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">排课</a></li>
+                                        <li><a href="javascript:;">结课</a></li>
+                                        <li><a href="javascript:;">记上课</a></li>
+                                        <li><a href="javascript:;">课程表</a></li>
+                                        <li><a href="javascript:;">上课记录</a></li>
+                                        <li><a href="javascript:;">编辑</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>
+                                    123****0000
+                                </td>
+                                <td>
+                                    艳阳初
+                                </td>
+                                <td>
+                                    全年班
+                                </td>
+                                <td>
+                                    2017-07-20
+                                </td>
+                                <td>每周周五 14:00-16:00</td>
+                                <td>0.00</td>
+                                <td>
+                                    <a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">排课</a></li>
+                                        <li><a href="javascript:;">结课</a></li>
+                                        <li><a href="javascript:;">记上课</a></li>
+                                        <li><a href="javascript:;">课程表</a></li>
+                                        <li><a href="javascript:;">上课记录</a></li>
+                                        <li><a href="javascript:;">编辑</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>
+                                    123****0000
+                                </td>
+                                <td>
+                                    艳阳初
+                                </td>
+                                <td>
+                                    全年班
+                                </td>
+                                <td>
+                                    2017-07-20
+                                </td>
+                                <td>每周周五 14:00-16:00</td>
+                                <td>0.00</td>
+                                <td>
+                                    <a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">排课</a></li>
+                                        <li><a href="javascript:;">结课</a></li>
+                                        <li><a href="javascript:;">记上课</a></li>
+                                        <li><a href="javascript:;">课程表</a></li>
+                                        <li><a href="javascript:;">上课记录</a></li>
+                                        <li><a href="javascript:;">编辑</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>
+                                    123****0000
+                                </td>
+                                <td>
+                                    艳阳初
+                                </td>
+                                <td>
+                                    全年班
+                                </td>
+                                <td>
+                                    2017-07-20
+                                </td>
+                                <td>每周周五 14:00-16:00</td>
+                                <td>0.00</td>
+                                <td>
+                                    <a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">排课</a></li>
+                                        <li><a href="javascript:;">结课</a></li>
+                                        <li><a href="javascript:;">记上课</a></li>
+                                        <li><a href="javascript:;">课程表</a></li>
+                                        <li><a href="javascript:;">上课记录</a></li>
+                                        <li><a href="javascript:;">编辑</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>
+                                    123****0000
+                                </td>
+                                <td>
+                                    艳阳初
+                                </td>
+                                <td>
+                                    全年班
+                                </td>
+                                <td>
+                                    2017-07-20
+                                </td>
+                                <td>每周周五 14:00-16:00</td>
+                                <td>0.00</td>
+                                <td>
+                                    <a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">排课</a></li>
+                                        <li><a href="javascript:;">结课</a></li>
+                                        <li><a href="javascript:;">记上课</a></li>
+                                        <li><a href="javascript:;">课程表</a></li>
+                                        <li><a href="javascript:;">上课记录</a></li>
+                                        <li><a href="javascript:;">编辑</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script src="js/one_to_one.js"></script>

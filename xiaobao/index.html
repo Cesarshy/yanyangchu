@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="lib/font/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+   <div class="sidebar">
+       <h1>
+           <div><img src="img/logo.jpg" alt=""></div>新东方英语（专业版）
+       </h1>
+       <ul class="sidebar-menu">
+           <li>
+               <a href="index.html">
+                   <i class="glyphicon glyphicon-home"  aria-hidden="true"></i>
+                   首页
+               </a>
+           </li>
+           <li>
+               <a href="#/consult_notes">
+                   <i class="glyphicon glyphicon-bookmark"  aria-hidden="true"></i>
+                   咨询本
+               </a>
+           </li>
+           <li>
+               <a href="#/office_center">
+                   <i class="glyphicon glyphicon-briefcase"  aria-hidden="true" ></i>
+                   办理中心
+               </a>
+           </li>
+           <li>
+               <a href="#/course">
+                   <i class="glyphicon glyphicon-education"  aria-hidden="true" ></i>
+                   课程
+               </a>
+           </li>
+           <li>
+               <a href="#/class">
+                   <i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i>
+                   班级
+               </a>
+           </li>
+           <li>
+               <a href="#/one_to_one">
+                   <i class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></i>
+                   一对一
+               </a>
+           </li>
+           <li>
+               <a href="#/students">
+                   <i class="glyphicon glyphicon-leaf" aria-hidden="true"></i>
+                   学员
+               </a>
+           </li>
+           <li>
+               <a href="#/course_list">
+                   <i class="glyphicon glyphicon-tasks" aria-hidden="true"></i>
+                   排课
+               </a>
+           </li>
+           <li>
+               <a href="#/class_schedule">
+                   <i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i>
+                   课程表
+               </a>
+           </li>
+           <li>
+               <a href="#/register_class">
+                   <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+                   记上课
+               </a>
+           </li>
+           <li>
+               <a href="#/card_attendance">
+                   <i class="glyphicon glyphicon-credit-card" aria-hidden="true"></i>
+                   磁卡考勤
+               </a>
+           </li>
+           <li>
+               <a href="#/wage">
+                   <i class="glyphicon glyphicon-yen" aria-hidden="true"></i>
+                   工资
+               </a>
+           </li>
+           <li>
+               <a href="#/financial">
+                   <i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>
+                   财务
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <i class="glyphicon glyphicon-duplicate" aria-hidden="true"></i>
+                   报表
+               </a>
+           </li>
+           <li>
+               <a href="#/staff">
+                   <i class="glyphicon glyphicon-heart-empty" aria-hidden="true"></i>
+                   员工
+               </a>
+           </li>
+           <li>
+               <a href="#/textbook">
+                   <i class="glyphicon glyphicon-indent-right" aria-hidden="true"></i>
+                   教材
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <i class="glyphicon glyphicon-flag" aria-hidden="true"></i>
+                   校区
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <i class="glyphicon glyphicon-comment"  aria-hidden="true"></i>
+                   校内通知
+               </a>
+           </li>
+       </ul>
+   </div>
+   <header>
+       <a href="javascript:;" type="button" id="switch" class="switch-box fl">
+           <span class="glyphicon glyphicon-menu-hamburger"  aria-hidden="true"></span>
+       </a>
+       <ul class="h-right fr clearfix">
+           <li>
+               <a href="#/personal_center">
+                   <span class="glyphicon glyphicon-user" aria-hidden="true" style="top: -1px"></span>
+                   艳阳初
+               </a>
+           </li>
+           <li>
+               <a href="#/organization_center">机构中心</a>
+           </li>
+           <li>
+               <a href="javascript:;">帮助中心</a>
+           </li>
+           <li>
+               <a href="javascript:;">联系我们</a>
+           </li>
+           <li>
+               <a href="javascript:;">退出</a>
+           </li>
+       </ul>
+   </header>
+   <div class="main-box">
+       <div class="main" ng-view>
+       </div>
+   </div>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.nicescroll.js"></script>
+   <script src="js/echarts.js"></script>
+   <script src="js/angular.js"></script>
+   <script src="js/angular-route.js"></script>
+   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+   <script src="lib/bootstrap-switch-master/dist/js/bootstrap-switch.min.js"></script>
+   <script src="lib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+   <script src="lib/bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script>
+   <script src="js/route.js"></script>
+   <script src="js/common.js"></script>
+   <script>
+       app.controller('myCtrl', function ($scope) {
+           $scope.a = 1;
+       })
+   </script>
+</body>
+</html>

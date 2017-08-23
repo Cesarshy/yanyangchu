@@ -1,0 +1,90 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> 学员
+            </h3>
+        </li>
+        <li>
+            <a href="#/students">学员列表</a>
+        </li>
+        <li>
+            <a href="#/mature_students">到期学员</a>
+        </li>
+        <li>
+            <a class="current" href="#/students_grade">学员成绩</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main listen_manage-main channel_manage-main">
+        <header>
+            <a href="#/students_grade" class="btn btn-default">成绩管理</a>
+            <a href="#/subjects_settings" class="btn btn-default">科目设置</a>
+            <a href="#/test_settings" class="btn btn-default">考试设置</a>
+        </header>
+        <div class="c-m-top clearfix">
+            <a href="#/signUp" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>新建科目</a>
+            <form class="right form-inline fr">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search"  aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入科目名称">
+            </form>
+        </div>
+        <div class="c-m-con">
+            <div class="c-m-c-main">
+                <div class="main">
+                    <div class="tittle">
+                        当前结果：共1条记录
+                    </div>
+                    <table id="consult-table" class="table table-bordered table-hover">
+                        <tr>
+                            <td>科目</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>街舞</td>
+                            <td>
+                                <a href="javascript:;">编辑</a>
+                                <a href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-2 col-sm-offset-5">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="consultation_record-box-shadow channel_manage-box-shadow channel_category-box-shadow">
+        <form class="main form-inline add-box">
+            <header>新建渠道分类</header>
+            <table class="table">
+                <tr>
+                    <td>名称：</td>
+                    <td>
+                        <input class="form-control" name="channelName" id="channelName" type="text">
+                    </td>
+                </tr>
+                <td colspan="2">
+                    <button type="button" class="btn btn-primary cancel">
+                        取消
+                    </button>
+                    <button type="submit" class="btn btn-success">
+                        确定
+                    </button>
+                </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

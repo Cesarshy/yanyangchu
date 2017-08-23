@@ -1,0 +1,392 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-education" aria-hidden="true"></span> 课程
+            </h3>
+        </li>
+        <li>
+            <a class="current" href="#/course">课程设置</a>
+        </li>
+        <li>
+            <a href="#/course_type_settings">课程类别设置</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main course">
+        <div class="c-m-top" style="box-shadow: 0 -4px 3px 2px #f0f0f0;">
+            <a href="#/add_newCourse" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>新建课程</a>
+            <button type="button" class="btn btn-default">批量导入</button>
+            <form class="right form-inline fr">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search"  aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入用户名称">
+                <select name="category" id="category" class="form-control fr">
+                    <option value="1">学员姓名</option>
+                </select>
+            </form>
+        </div>
+        <div class="c-m-con">
+            <div class="list-box" style=" box-shadow: 0 4px 3px 2px #f0f0f0;">
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        经办校区：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                轮滑校区
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                马鞍山南路分校
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        类型：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                班课
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                一对一
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        状态：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                正常
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                下架
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        课程类别：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                围棋类
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                模特
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                数学
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                美术
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix form-inline">
+                    <div class="list-tittle">
+                        学年：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                2017年
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                2018年
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-m-c-main communication_manage-main add-shadow">
+                <div class="c-m-c-main-top clearfix">
+                    <a href="javascript:;" class="btn btn-default">
+                        批量下架
+                    </a>
+                    <a href="javascript:;" class="btn btn-default">
+                        批量删除
+                    </a>
+                    <a href="javascript:;" class="btn btn-default fr" style="margin: 13px 10px">
+                        <i class="glyphicon glyphicon-plus"  aria-hidden="true"></i>
+                        自定义显示项
+                    </a>
+                </div>
+                <div class="main">
+                    <div class="tittle">
+                        当前结果：共计<span class="oraNum">10</span>个课程|<span class="oraNum">0</span>个课程正在开班/课
+                    </div>
+                    <div class="table-box">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>课程名称</td>
+                                <td>类型</td>
+                                <td>状态</td>
+                                <td>课程类别</td>
+                                <td>开班/课数</td>
+                                <td>开课/校区数</td>
+                                <td>学费标准</td>
+                                <td>教材（元）</td>
+                                <td>杂费（元）</td>
+                                <td>备注</td>
+                                <td>
+                                    <a href="javascript:;">创建日期<i class="glyphicon glyphicon-chevron-down"  aria-hidden="true"></i></a>
+                                </td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>机器人一</td>
+                                <td>班课</td>
+                                <td>正常</td>
+                                <td>围棋类</td>
+                                <td>1</td>
+                                <td>全部</td>
+                                <td>10元/天</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2017-07-20</td>
+                                <td><a href="javascript:;"><i class="glyphicon glyphicon-list"></i>操作</a>
+                                    <ul class="operation-box">
+                                        <li><a href="javascript:;">查看详情</a></li>
+                                        <li><a href="javascript:;">办理试听</a></li>
+                                        <li><a href="javascript:;">办报名</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/course.js"></script>

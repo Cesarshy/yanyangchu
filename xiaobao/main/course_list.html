@@ -1,0 +1,250 @@
+<link rel="stylesheet" href="lib/fullcalendar/fullcalendar.css">
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 排课
+            </h3>
+        </li>
+        <li>
+            <a class="current" href="#/course_list">排课</a>
+        </li>
+        <li>
+            <a href="#/schedule_list">日程列表</a>
+        </li>
+        <li>
+            <a href="#/conflict_agenda">冲突日程</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main course one_to_one">
+        <div class="c-m-top clearfix" style="box-shadow: 0 -4px 3px 2px #f0f0f0;">
+            <a href="javascript:;" class="btn btn-primary">排课日程</a>
+        </div>
+        <div class="c-m-con">
+            <div class="list-box" style="box-shadow: 0 4px 3px 2px #f0f0f0;">
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        校区选择：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                全部
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                轮滑校区
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                马鞍山南路分校
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list clearfix">
+                    <div class="list-tittle">
+                        查看范围：
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="btn btn-default">
+                                全部
+                            </a>
+                        </li>
+                        <li>
+                            <select class="form-control" name="class" id="class">
+                                <option value="0">按班级</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-control" name="teacher" id="teacher">
+                                <option value="0">按教师</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-control" name="classroom" id="classroom">
+                                <option value="0">按教室</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-m-c-main communication_manage-main add-shadow">
+                <div class="main">
+                    <!--<div class="table-box">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>星标</td>
+                                <td>学员姓名</td>
+                                <td>联系方式</td>
+                                <td>余额</td>
+                                <td>学号</td>
+                                <td>报读课程</td>
+                                <td>剩余课时/天</td>
+                                <td>报名时间</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><i class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e3e32d;"></i></td>
+                                <td>
+                                    <a href="javascript:;">
+                                        <i class="iconfont icon-nv1"></i>李梅
+                                    </a>
+                                </td>
+                                <td>123****0000</td>
+                                <td>0.00</td>
+                                <td>11111111</td>
+                                <td>全年班</td>
+                                <td>365.00</td>
+                                <td>2017-07-21</td>
+                            </tr>
+                        </table>
+                    </div>-->
+                    <div id='calendar' style="padding: 20px 20px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/fullcalendar/jquery-ui.custom.min.js"></script>
+<script src="lib/fullcalendar/fullcalendar.min.js"></script>
+<script src="js/course_list.js"></script>

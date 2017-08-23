@@ -1,0 +1,93 @@
+<div class="consult_notes-main addConsult-main add_newCourse">
+    <div class="c-m-top a-m-top">
+        <h4 class="blue">新增记账</h4>
+        <p>当前位置：<a href="#/financial">财务</a>&nbsp;>&nbsp;<a href="#add_newAccount">新增记账</a></p>
+    </div>
+    <form action="" class="form-inline">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">收入</a></li>
+            <li role="presentation"><a href="#">支出</a></li>
+        </ul>
+        <table class="table">
+            <tr>
+                <td>
+                    <span style="color: red">*</span>
+                    经办校区
+                </td>
+                <td>
+                    <select class="form-control" name="campus" id="campus">
+                        <option value="0">请选择校区</option>
+                    </select>
+                </td>
+                <td>
+                    <span style="color: red">*</span>
+                    经办日期
+                </td>
+                <td>
+                    <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="color: red">*</span>
+                    收入大类
+                </td>
+                <td>
+                    <select class="form-control" name="bigType" id="bigType">
+                        <option value="0">请选择收入大类</option>
+                    </select>
+                </td>
+                <td>
+                    <span style="color: red">*</span>
+                    收入小类
+                </td>
+                <td>
+                    <select class="form-control" name="smallType" id="smallType">
+                        <option value="0">请选择收入小类</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="color: red">*</span>
+                    收入账户
+                </td>
+                <td>
+                    <select class="form-control" name="incomeAcc" id="incomeAcc">
+                        <option value="0">请选择收入账户</option>
+                    </select>
+                </td>
+                <td>
+                    <span style="color: red">*</span>
+                    收入金额
+                </td>
+                <td>
+                    <input type="text" class="form-control">
+                    元
+                </td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td colspan="3">
+                    <input type="text" class="form-control" style="width: 100%;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>

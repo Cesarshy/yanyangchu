@@ -1,0 +1,107 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                机构申请
+            </h3>
+        </li>
+        <li>
+            <a href="javascript:;" class="current">机构列表</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main course">
+        <div class="c-m-top">
+            <form class="right form-inline clearfix">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search"  aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入机构名称">
+            </form>
+        </div>
+        <div class="c-m-con">
+            <div class="c-m-c-main communication_manage-main">
+                <!--<div class="c-m-c-main-top clearfix">
+                    <a href="javascript:;" class="btn btn-default">
+                        批量下架
+                    </a>
+                    <a href="javascript:;" class="btn btn-default">
+                        批量删除
+                    </a>
+                    <a href="javascript:;" class="btn btn-default fr" style="margin: 13px 10px">
+                        <i class="glyphicon glyphicon-plus"  aria-hidden="true"></i>
+                        自定义显示项
+                    </a>
+                </div>-->
+                <div class="main">
+                    <div class="tittle">
+                        当前结果：共计10个课程|0个课程正在开班/课
+                    </div>
+                    <table id="consult-table" class="table table-bordered table-hover">
+                        <tr>
+                            <td>序号</td>
+                            <td>机构名称</td>
+                            <td>机构LOGO</td>
+                            <td>机构类型</td>
+                            <td>机构后缀</td>
+                            <td>机构联系人</td>
+                            <td>联系方式</td>
+                            <td>使用版本</td>
+                            <td>版本到期时间</td>
+                            <td>当月可使用短信总条数</td>
+                            <td>剩余短信条数</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>新东方英语</td>
+                            <td><img src="../img/logo.jpg" alt="" style="width: 30px; height: 30px;"></td>
+                            <td>语言类</td>
+                            <td>demo</td>
+                            <td>张三</td>
+                            <td>13111110000</td>
+                            <td>试用版</td>
+                            <td>2018-1-1</td>
+                            <td>200</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#/edit">编辑</a>&nbsp;&nbsp;
+                                <a class="del" href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-2 col-sm-offset-5">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-shadow">
+        <div class="change-box">
+            <header>删除机构信息</header>
+            <div class="c-b-con">
+                <p style="line-height: 125px; font-size: 20px; text-align: center">
+                    您确定删除此项机构信息吗？
+                </p>
+                <div class="form-group" style="padding-bottom: 20px">
+                    <div class="col-sm-offset-2 col-sm-4">
+                        <button id="cancel" class="btn btn-default">取消</button>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-4">
+                        <button type="submit" class="btn btn-danger">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/list.js"></script>

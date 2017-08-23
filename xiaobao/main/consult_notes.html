@@ -1,0 +1,131 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 咨询本
+            </h3>
+        </li>
+        <li>
+            <a class="current" href="#/consult_notes">我的咨询本</a>
+        </li>
+        <li>
+            <a href="#/consultation_record">咨询记录</a>
+        </li>
+        <li>
+            <a href="#/communication_manage">沟通管理</a>
+        </li>
+        <li>
+            <a href="#/listen_manage">试听管理</a>
+        </li>
+        <li>
+            <a href="#/channel_manage">渠道管理</a>
+        </li>
+        <li>
+            <a href="#/market_analysis">市场分析</a>
+        </li>
+        <li>
+            <a href="#/consult_settings">设置</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main">
+        <div class="c-m-top add-shadow">
+            <a href="#/addConsult" type="button" class="btn btn-primary">
+                <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+                新增咨询</a>
+        </div>
+        <div class="c-m-bottom clearfix">
+            <div class="c-m-b-left fl add-shadow">
+                <h4>我的任务</h4>
+                <div class="c-m-b-l-header">
+                    <button type="button" class="btn btn-default">自定义时间</button>
+                    2017年7月28日
+                </div>
+                <div class="data-show" style="background-color: #eef0f2;">
+                    <ul class="clearfix" style="width: 913px;margin: 0 auto;">
+                        <li>周一<div>24</div></li>
+                        <li>周二<div>25</div></li>
+                        <li>周三<div>26</div></li>
+                        <li>周四<div>27</div></li>
+                        <li class="current">周五<div>28</div></li>
+                        <li>周六<div>29</div></li>
+                        <li>周日<div>30</div></li>
+                    </ul>
+                    <button type="button" class="btn btn-default left"><i class="glyphicon glyphicon-chevron-left"  aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default right"><i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></button>
+                </div>
+                <div class="c-m-b-l-main none">
+                </div>
+            </div>
+            <div class="c-m-b-right fr add-shadow">
+                <div class="c-m-b-r-top">
+                    <h4>我的业绩</h4>
+                    <div class="c-m-b-r-t-main">
+                        <div class="c-m-b-r-t-m-header">
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input1" value="" />
+                            至
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" />
+                        </div>
+                    </div>
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <div><i class="iconfont icon-nan"></i>成交人数（人）</div>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <div><i class="glyphicon glyphicon-yen" aria-hidden="true"></i>应收成交额（元）</div>
+                        ￥<span>0.00</span>
+                    </li>
+                    <li>
+                        <div><i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>成交订单数（笔）</div>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <div><i class="glyphicon glyphicon-yen" aria-hidden="true"></i>实收成交额（元）</div>
+                        ￥<span>0.00</span>
+                    </li>
+                </ul>
+                <div class="c-m-b-r-bottom">
+                    <h4>我的漏斗</h4>
+                        <div class="c-m-b-r-b-header">
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input3" value="" />
+                            至
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input4" value="" />
+                        </div>
+                        <div id="chart" style="width: 100%; height: 400px;">
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script src="js/consult_notes.js"></script>

@@ -1,0 +1,196 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> 办理中心
+            </h3>
+        </li>
+        <li>
+            <a href="#/office_center">办理中心</a>
+        </li>
+        <li>
+            <a href="#/signUp">报名/续费</a>
+        </li>
+        <li>
+            <a href="#/student_account">学员账户</a>
+        </li>
+        <li>
+            <a href="#/turn_class">转班</a>
+        </li>
+        <li>
+            <a class="current" href="#/closed_class">停课</a>
+        </li>
+        <li>
+            <a href="#/reopen">复课</a>
+        </li>
+        <li>
+            <a href="#/refund">退费</a>
+        </li>
+        <li>
+            <a href="#/petty_expenses">教材杂费</a>
+        </li>
+        <li>
+            <a href="#/integral">积分</a>
+        </li>
+    </ul>
+    <div class="student_account">
+        <form action="" class="form-inline">
+            <div class="table-box add-shadow">
+                <table class="table">
+                    <tr>
+                        <td colspan="2">
+                            <a href="javascript:;" id="choose" class="btn btn-primary">选择学员</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            选择课程：
+                        </td>
+                        <td>
+                            <select class="form-control" name="chooseClass" id="chooseClass">
+                                <option value="1">模特</option>
+                                <option value="2">围棋</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>学费剩余：</td>
+                        <td>
+                            0.00元（剩余0.00课时）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>实际剩余：</td>
+                        <td>
+                            <input type="text" class="form-control" value="0.00" disabled>
+                            元（转到学员账户）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>对内备注：</td>
+                        <td><input type="text" class="form-control internal-note" placeholder="该备注只对内部操作人员可见" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>对外备注：</td>
+                        <td>
+                            <input type="text" class="form-control foreign-note" placeholder="该备注将会被打印" disabled>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+           <div class="tag add-shadow">
+                订单标签：<span>还未添加任何标签</span><a id="addTag" href="javascript:;" class="btn btn-blue"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>添加标签</a>
+            </div>
+            <table class="table add-shadow">
+                <tr>
+                    <th colspan="2">
+                        经办信息
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        经办校区：
+                        <select class="form-control" name="campus" id="campus">
+                            <option value="1">轮滑校区</option>
+                            <option value="2">马鞍山南路分校</option>
+                        </select>
+                    </td>
+                    <td>
+                        经办人：&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select class="form-control" name="agent" id="agent" disabled>
+                            <option value="1" selected>艳阳初</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        销售员：&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select class="form-control" name="salesman" id="salesman">
+                            <option value="1">请选择销售员</option>
+                        </select>
+                    </td>
+                    <td>
+                        经办时间：
+                        <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                            <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                        </div>
+                        <input type="hidden" id="dtp_input3" value="" />
+                    </td>
+                </tr>
+            </table>
+            <div class="footer">
+                <button type="button" class="btn btn-default">取消</button>
+                <button type="submit" class="btn btn-primary">确定</button>
+            </div>
+        </form>
+    </div>
+    <div class="signUp-shadow">
+        <form class="main form-inline add-box">
+            <header>订单标签设置</header>
+            <table class="table">
+                <tr>
+                    <td><a href="javascript:;"><i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>设置订单标签</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="tag" id="tag1" value="option1"> 未使用
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="tag" id="tag2" value="option2"> 续费
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="tag" id="tag3" value="option3"> 优惠
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="tag" id="tag4" value="option3"> 赠送
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="cancel" type="button" class="btn btn-primary cancel">
+                            取消
+                        </button>
+                        <button type="submit" class="btn btn-success">
+                            确定
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div  class="box-shadow wage-box-shadow">
+        <div class="change-box">
+            <header>选择学员</header>
+            <div class="c-b-con">
+                <form class="form-horizontal">
+                    <table class="table table-striped">
+                        <tr ng-repeat="item in students" repeat-finish>
+                            <td><input type="radio" name="inlineRadio" id="inlineRadio{{item.id}}" value={{item.id}}></td>
+                            <td>{{item.name}}</td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="button-box">
+                    <a id="close" href="javascript:;" class="btn btn-default">关闭</a>
+                    <a href="javascript:;" class="btn btn-primary">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script src="js/signUp.js"></script>

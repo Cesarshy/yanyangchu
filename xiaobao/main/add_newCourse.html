@@ -1,0 +1,179 @@
+<div class="consult_notes-main addConsult-main add_newCourse">
+    <div class="c-m-top a-m-top">
+        <h4 class="blue">新增课程</h4>
+        <p>当前位置：<a href="#/course">课程设置</a>&nbsp;>&nbsp;<a href="#add_newCourse">新增课程</a></p>
+    </div>
+    <form action="" class="form-inline">
+        <table class="table table-bordered">
+            <tr>
+                <th colspan="5">基本信息</th>
+            </tr>
+            <tr>
+                <td>课程类别：</td>
+                <td>
+                    <select class="form-control" name="classType" id="classType">
+                        <option value="0">请选择课程类别</option>
+                        <option value="1">围棋类</option>
+                        <option value="2">模特</option>
+                    </select>
+                    <a id="addCourseType" class="btn btn-blue" href="javascript:;"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>新建课程类别</a>
+                </td>
+            </tr>
+            <tr>
+                <td>学年：</td>
+                <td>
+                    <select class="form-control" name="year" id="year">
+                        <option value="1">2017年</option>
+                        <option value="2">2018年</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>课程名称：</td>
+                <td>
+                    <input type="text" class="block form-control" placeholder="请输入课程名称">
+                </td>
+            </tr>
+            <tr>
+               <td>类型：</td>
+                <td>
+                    <label class="radio-inline">
+                        <input type="radio" name="type" id="type1" value="option1" style="top: -3px"> 班课
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="type" id="type2" value="option2" style="top: -3px"> 一对一
+                    </label>
+                    <span style="color: red">
+                        （保存后不能修改）
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>状态：</td>
+                <td>
+                    <label class="radio-inline">
+                        <input type="radio" name="state" id="state1" value="option1"  style="top: -3px"> 正常
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="state" id="state2" value="option2" style="top: -3px"> 下架
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>备注：</td>
+                <td><input type="text" class="form-control block"></td>
+            </tr>
+        </table>
+        <table class="table table-bordered">
+            <tr>
+                <th colspan="2">收费标准</th>
+            </tr>
+            <tr>
+                <td>收费模式：</td>
+                <td>
+                    <select class="form-control" name="collectState" id="collectState">
+                        <option value="1" selected>按课时</option>
+                        <option value="2">按时间</option>
+                        <option value="3">按期</option>
+                    </select>
+                    <span style="color: red">(常年开班，学员购买课时数，随到随学，支持课时共用)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>学费标准：</td>
+                <td>
+                    <input type="text" class="form-control" value="0.00">
+                    <select class="form-control" name="priceUnit" id="priceUnit">
+                        <option value="1">元/课时</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>开课校区：</td>
+                <td>
+                    <label class="radio-inline">
+                        <input type="radio" name="campus" id="campus1" value="option1" style="top: -3px"> 全部校区
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="campus" id="campus2" value="option2" style="top: -3px"> 指定校区
+                    </label>
+                    <span style="color: red">
+                        （保存后不能修改）
+                    </span>
+                </td>
+            </tr>
+        </table>
+        <table class="table table-bordered">
+            <tr>
+                <th colspan="5">
+                    教材杂费
+                </th>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <p class="bg-warning">
+                        教材杂费共计0.00元
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>教材杂费名称</td>
+                <td>数量</td>
+                <td>单价</td>
+                <td>合计</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td class="default-box" colspan="5">
+                    <div class="default clearfix">
+                        <div class="left fl">
+                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="right fl">
+                            <div class="top">
+                                还未添加任何教材
+                            </div>
+                            <a id="chooseCla" href="javascript:;" class="btn btn-primary">选择教材</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="footer">
+            <button type="button" class="btn btn-default">
+                取消
+            </button>
+            <button type="submit" class="btn btn-success">
+                保存
+            </button>
+        </div>
+    </form>
+</div>
+<div class="add_newCourse-box-shadow">
+    <form class="main form-inline add-box">
+        <header>新增课程类别</header>
+        <table class="table">
+            <tr>
+                <td>序号：</td>
+                <td><input type="text" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>类别名称：</td>
+                <td>
+                    <input type="text" class="form-control" placeholder="请输入类别名称">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" class="btn btn-primary cancel">
+                        取消
+                    </button>
+                    <button type="submit" class="btn btn-success">
+                        确定
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script src="js/add_newCourse.js"></script>

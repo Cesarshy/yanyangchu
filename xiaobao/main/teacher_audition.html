@@ -1,0 +1,131 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 记上课
+            </h3>
+        </li>
+        <li>
+            <a href="#/register_class">记上课</a>
+        </li>
+        <li>
+            <a href="#/class_record">上课记录</a>
+        </li>
+        <li>
+            <a href="#/teacher_class_hour">教师课时</a>
+        </li>
+        <li>
+            <a class="current" href="#/teacher_audition">教师试听</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main listen_manage-main">
+        <div class="c-m-con">
+            <form class="list-box form-inline add-shadow">
+                <table class="table">
+                    <tr>
+                        <td>上课日期:</td>
+                        <td>
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input1" value="" />
+                            至
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            上课校区：
+                        </td>
+                        <td>
+                            <select class="form-control" name="campus" id="campus">
+                                <option value="0">请选择校区</option>
+                                <option value="1">轮滑校区</option>
+                                <option value="2">马鞍山南路分校</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>课程：</td>
+                        <td>
+                            <select class="form-control" name="course" id="course">
+                                <option value="0">请选择课程</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>教师：</td>
+                        <td>
+                            <select class="form-control" name="teacher" id="teacher">
+                                <option value="0">请选择教师</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-primary" >
+                                查询
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="c-m-c-main add-shadow">
+                <div class="main">
+                    <div class="tittle">
+                        当前结果：试听共计5条，咨询线索总计5条
+                    </div>
+                    <div class="table-box">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td>教师</td>
+                                <td>试听人数（人）</td>
+                                <td>试听时长（小时）</td>
+                                <td>试听成功人数（人）</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    冯军|所属校区：未指定
+                                </td>
+                                <td>1</td>
+                                <td>1.00</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>

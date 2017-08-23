@@ -1,0 +1,149 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-yen" aria-hidden="true"></span> 工资
+            </h3>
+        </li>
+        <li>
+            <a href="#/wage">工资条</a>
+        </li>
+        <li>
+            <a class="current" href="#/performance_manage">绩效管理</a>
+        </li>
+        <li>
+            <a href="#/performance_settings">绩效设置</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main course one_to_one performance_manage">
+        <div class="c-m-top clearfix" style="box-shadow: 0 -4px 3px 2px #f0f0f0;">
+            <a href="#/signUp" class="btn btn-primary">上传工资条</a>
+            <a id="tem_set" href="javascript:;" class="btn btn-default">工资条模板设置</a>
+            <form class="right form-inline fr ng-pristine ng-valid">
+                <button type="submit" class="btn btn-default fr"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> 搜索</button>
+                <input class="form-control form-inline fr" type="search" placeholder="请输入员工姓名">
+            </form>
+        </div>
+        <div class="c-m-con">
+            <form class="list-box form-inline" style="box-shadow: 0 4px 3px 2px #f0f0f0;">
+                <table class="table">
+                    <tr>
+                        <td style="width: 115px">
+                            所属校区：
+                        </td>
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="from" id="from1" value="campus1"> 轮滑校区
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="from" id="from2" value="campus2"> 马鞍山南路分校
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: middle">上课日期:</td>
+                        <td>
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input1" value="" />
+                            至
+                            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-primary" >
+                                查询
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="c-m-c-main communication_manage-main add-shadow">
+                <div class="c-m-c-main-top clearfix">
+                    <a href="javascript:;" class="btn btn-default">
+                        导出
+                    </a>
+                </div>
+                <div class="main">
+                    <div class="tittle">
+                        当前结果：共0条记录
+                    </div>
+                    <div class="table-box">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td>员工姓名</td>
+                                <td>手机号</td>
+                                <td>扣课时人次</td>
+                                <td>学员课时</td>
+                                <td>教师课时</td>
+                                <td>学费消耗</td>
+                                <td>
+                                    <a href="javascript:;">教师课时费<i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i></a>
+                                </td>
+                                <td>操作</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-2 col-sm-offset-5">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="box-shadow wage-box-shadow">
+        <div class="change-box">
+            <header>工资条模板设置</header>
+            <div class="c-b-con">
+                <form class="form-horizontal">
+                    <table class="table table-striped">
+                        <tr>
+                            <th>工资条表头</th>
+                            <th>是否开启</th>
+                        </tr>
+                        <tr ng-repeat="item in tem_set" repeat-finish>
+                            <td>{{item.name}}</td>
+                            <td><input class="my-checkbox" type="checkbox" name="my-checkbox4"></td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="button-box">
+                    <a id="close" href="javascript:;" class="btn btn-default">关闭</a>
+                    <a href="javascript:;" class="btn btn-primary">下载工资表模板</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script src="js/wage.js"></script>

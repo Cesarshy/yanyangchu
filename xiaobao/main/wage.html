@@ -1,0 +1,84 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-yen" aria-hidden="true"></span> 工资
+            </h3>
+        </li>
+        <li>
+            <a class="current" href="#/wage">工资条</a>
+        </li>
+        <li>
+            <a href="#/performance_manage">绩效管理</a>
+        </li>
+        <li>
+            <a href="#/performance_settings">绩效设置</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main course one_to_one wage">
+        <div class="c-m-top clearfix add-shadow">
+            <a href="#/signUp" class="btn btn-primary">上传工资条</a>
+            <a id="tem_set" href="javascript:;" class="btn btn-default">工资条模板设置</a>
+        </div>
+        <div class="c-m-con">
+            <div class="c-m-c-main communication_manage-main add-shadow">
+                <div class="main">
+                    <div class="tittle">
+                        当前结果：共0条记录
+                    </div>
+                    <div class="table-box">
+                        <table id="consult-table" class="table table-bordered table-hover">
+                            <tr>
+                                <td>发薪标题</td>
+                                <td>发薪月份</td>
+                                <td>已发送员工</td>
+                                <td>已确认员工</td>
+                                <td>上传日期</td>
+                                <td>操作</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="footer row">
+                        <div class="col-sm-5">
+                            单页显示条目
+                            <button type="button" class="btn btn-primary">50</button>
+                            <button type="button" class="btn btn-default">100</button>
+                            <button type="button" class="btn btn-default">200</button>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">上一页</button>
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="box-shadow wage-box-shadow">
+        <div class="change-box">
+            <header>工资条模板设置</header>
+            <div class="c-b-con">
+                <form class="form-horizontal">
+                    <table class="table table-striped">
+                        <tr>
+                            <th>工资条表头</th>
+                            <th>是否开启</th>
+                        </tr>
+                        <tr ng-repeat="item in tem_set" repeat-finish>
+                            <td>{{item.name}}</td>
+                            <td><input class="my-checkbox" type="checkbox" name="my-checkbox4"></td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="button-box">
+                    <a id="close" href="javascript:;" class="btn btn-default">关闭</a>
+                    <a href="javascript:;" class="btn btn-primary">下载工资表模板</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/wage.js"></script>

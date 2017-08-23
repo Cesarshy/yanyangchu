@@ -1,0 +1,2133 @@
+html {
+  height: 100%;
+  font-size: 14px;
+}
+html .btn {
+  /*padding: 3px 15px;*/
+  padding: 4.5px 15px;
+}
+html a,
+html a:active {
+  color: #333;
+}
+html a:focus {
+  outline: none;
+}
+html .orange {
+  color: #fff !important;
+  background-color: #f5873e !important;
+  border-color: #ffbe93 !important;
+}
+html .oraNum {
+  color: #f5873e;
+  font-size: 25px;
+}
+html .warning {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #e44a4a;
+}
+html .glyphicon {
+  font-size: 12px;
+}
+html .box-shadow {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 20;
+}
+html .box-shadow > div {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 30px #666;
+}
+html .box-shadow > div header {
+  background-color: #01b591;
+  font-size: 15px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+}
+html body {
+  height: 100%;
+  font-family: "Arial";
+  /*>header{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      font-size: 20px;
+      line-height: 60px;
+      color: white;
+      background-color: #4a8bc2;
+      z-index: 10;
+      .switch-box{
+        display: inline-block;
+        line-height: 68px;
+        height: 100%;
+        padding: 0 30px;
+        color: white;
+        background-color: #427dae;
+      }
+      .brand{
+        display: inline-block;
+        height: 100%;
+        padding: 10px 20px;
+        img{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+      }
+      >ul{
+        height: 100%;
+        li{
+          float: left;
+          height: 100%;
+          a,a:link,a:visited{
+            color: #fff;
+            padding: 10px;
+            span{
+              vertical-align: middle;
+            }
+          }
+          a:hover{
+            color: #fff;
+            background-color: #3d719d;
+          }
+        }
+      }
+      >ul:nth-child(3){
+        margin-left: 10px;
+      }
+      .h-right{
+        a{
+          height: 50px;
+          font-size: 13px;
+        }
+        span{
+          font-size: 20px;
+          vertical-align: middle;
+        }
+      }
+    }*/
+  /*头部*/
+  /*.sidebar-menu{
+      position: fixed;
+      width: 231px;
+      height: 100%;
+      background-color: #404040;
+      padding-top: 60px;
+      overflow: auto;
+      li{
+        margin-bottom: 1px;
+        .current{
+          background-color: #4a8bc2;
+        }
+        a{
+          display: block;
+          color: white;
+          background-color: #505050;
+          line-height: 30px;
+          padding: 5px 15px;
+          i{
+            width: 25px;
+            font-size: 16px;
+          }
+          .arrow.open{
+            float: right;
+            margin-top: 12px;
+            margin-right: 0px;
+            width: 0;
+            height: 0;
+            border-left: 4px solid #fff;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+          }
+        }
+        a:hover{
+          background-color: #4a8bc2;
+        }
+      }
+    }*/
+  /* 侧边栏菜单*/
+  /*头部*/
+  /*主体部分*/
+}
+html body > .sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  color: #e5e5e5;
+  height: 100%;
+  width: 230px;
+  background-color: #243643;
+  overflow: hidden;
+  z-index: 4;
+}
+html body > .sidebar h1 {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 60px;
+  padding-left: 30px;
+  background-color: #243643;
+  white-space: nowrap;
+  z-index: 5;
+}
+html body > .sidebar h1 div {
+  float: left;
+  height: 100%;
+  margin-right: 5px;
+}
+html body > .sidebar h1 img {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 50%;
+}
+html body > .sidebar ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+  overflow: auto;
+}
+html body > .sidebar ul li a {
+  display: block;
+  color: #fff;
+  /*height: 60px;
+            line-height: 60px;*/
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  padding-left: 35px;
+  border-left: 4px solid #243643;
+  font-size: 14px;
+}
+html body > .sidebar ul li a:hover {
+  background-color: #172936;
+  border-left: 4px solid #172936;
+}
+html body > .sidebar ul li .current {
+  background-color: #172936;
+  border-left: 4px solid #01b591;
+}
+html body > .sidebar ul li .current:hover {
+  background-color: #172936;
+  border-left: 4px solid #01b591;
+}
+html body > header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  padding-left: 230px;
+  background-color: #fff;
+  z-index: 3;
+  box-shadow: 0px 0px 3px 3px #f3f3f3;
+}
+html body > header .switch-box {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  background-color: #01b591;
+  margin-top: 12.5px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+html body > header > ul li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+}
+html body > header > ul li a,
+html body > header > ul li a:link,
+html body > header > ul li a:visited {
+  color: #333;
+  vertical-align: middle;
+  padding: 10px;
+}
+html body > header > ul li a span,
+html body > header > ul li a:link span,
+html body > header > ul li a:visited span {
+  vertical-align: middle;
+}
+html body > .main-box {
+  min-height: 100%;
+  background-color: #f3f3f3;
+  padding-top: 60px;
+  padding-left: 230px;
+}
+html body > .main-box > .main {
+  /*min-height: 100%;
+        background-color: #f3f3f3;
+        padding-top: 80px;
+        padding-left: 230px;*/
+  /*个人中心*/
+  /*首页*/
+  /* 参数设置*/
+  /*系统日志*/
+  /*我的咨询本*/
+  /*新增咨询本*/
+  /*咨询记录*/
+  /*沟通管理*/
+  /*试听管理*/
+  /*渠道管理*/
+  /*渠道分类*/
+  /*咨询设置*/
+  /*办理中心*/
+  /*订单日志*/
+  /*报名*/
+  /*学员账户*/
+  /*学员列表弹出框*/
+  /*转班*/
+  /* 教材杂费*/
+  /*课程设置*/
+  /*新增课程*/
+  /*学员刷卡*/
+  /*工资*/
+  /*绩效管理*/
+  /*绩效设置*/
+  /*添加配置*/
+  /*教材设置弹出层*/
+}
+html body > .main-box > .main .btn-blue {
+  color: #26a7eb;
+  border: 1px solid #26a7eb;
+}
+html body > .main-box > .main .bg-warning {
+  line-height: 30px;
+  color: red;
+  text-indent: 10px;
+}
+html body > .main-box > .main .btn-primary {
+  background-color: #01b591;
+  /*border: none;*/
+  border-color: #4cae4c;
+}
+html body > .main-box > .main .btn-primary:hover {
+  background-color: #06a787;
+}
+html body > .main-box > .main .btn-primary:active {
+  background-color: #10846d;
+}
+html body > .main-box > .main .add-shadow {
+  box-shadow: 0 0 3px 2px #f0f0f0;
+}
+html body > .main-box > .main .personal-center {
+  position: relative;
+  min-height: 695px;
+}
+html body > .main-box > .main .personal-center > .header {
+  width: 100%;
+  background-color: #fff;
+}
+html body > .main-box > .main .personal-center > .header li {
+  float: left;
+  /*height: 40px;*/
+  line-height: 40px;
+  font-size: 14px;
+}
+html body > .main-box > .main .personal-center > .header li a {
+  display: block;
+  color: black;
+  padding: 0 20px;
+}
+html body > .main-box > .main .personal-center > .header li a span {
+  font-size: 23px;
+  vertical-align: middle;
+}
+html body > .main-box > .main .personal-center > .header li > .current {
+  color: #01b591;
+  border-bottom: 3px solid #01b591;
+}
+html body > .main-box > .main .personal-center > .header li:nth-child(1) {
+  position: relative;
+  padding: 0 20px;
+}
+html body > .main-box > .main .personal-center > .header li:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  top: 7px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background-color: gray;
+}
+html body > .main-box > .main .personal-center > .header li:nth-child(2) {
+  padding-left: 15px;
+}
+html body > .main-box > .main .personal-center .m-p-main {
+  padding: 10px 20px;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box {
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 0 20px;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table {
+  margin: 0;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table tr td {
+  border: none;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table tr:first-child td {
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  padding: 8px 0;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table .time-limit {
+  color: red;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table thead {
+  font-size: 15px;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table thead tr td {
+  position: relative;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table thead tr td .line {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 3px;
+  height: 16px;
+  background-color: #4a8bc2;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table tbody tr th {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table tbody tr th .btn {
+  padding: 0 6px !important;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table tbody tr td {
+  font-size: 16px;
+  text-align: center;
+}
+html body > .main-box > .main .personal-center .m-p-main .table-box .table tbody tr .logoBox > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+html body > .main-box > .main .personal-center .box-shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+html body > .main-box > .main .personal-center .change-box {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  width: 500px;
+  background-color: #fff;
+  margin-left: -430px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 30px #666;
+}
+html body > .main-box > .main .personal-center .change-box > header {
+  background-color: #01b591;
+  font-size: 15px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+}
+html body > .main-box > .main .personal-center .change-box .c-b-con {
+  padding: 15px;
+}
+html body > .main-box > .main .personal-center .change-logo-box {
+  text-align: center;
+}
+html body > .main-box > .main .personal-center .change-logo-box .c-b-con form .cancel {
+  float: left;
+  margin-bottom: 10px;
+}
+html body > .main-box > .main .personal-center .change-logo-box .c-b-con form .ensure {
+  float: right;
+}
+html body > .main-box > .main .personal-center .change-logo-box .c-b-con form .form-group input {
+  display: inline-block;
+  position: relative;
+  right: 42px;
+  top: -3px;
+  width: 85px;
+  height: 34px;
+  opacity: 0;
+  /*margin: 0 auto !important;*/
+}
+html body > .main-box > .main .personal-center .change-logo-box .c-b-con form .form-group a {
+  position: relative;
+  top: 0;
+  left: 45px;
+}
+html body > .main-box > .main .personal-center .change-logo-box .showBox {
+  height: 200px;
+}
+html body > .main-box > .main .personal-center .change-logo-box .showBox img {
+  height: 100%;
+  border-radius: 50%;
+}
+html body > .main-box > .main .con h4 {
+  font-size: 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+html body > .main-box > .main .con .c-top .c-t-box {
+  float: left;
+  height: 260px;
+  padding: 0 10px;
+}
+html body > .main-box > .main .con .c-top .c-t-box > div {
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 5px 5px #f3f3f3;
+  border-radius: 4px;
+}
+html body > .main-box > .main .con .c-top .c-t-box > div > h4 {
+  color: #fff;
+  font-weight: normal;
+  padding: 10px 20px;
+}
+html body > .main-box > .main .con .c-top .c-t-box > div > h4 > i:nth-child(1) {
+  position: relative;
+  top: 2px;
+  left: 0;
+  font-size: 18px;
+  margin-right: 5px;
+}
+html body > .main-box > .main .con .c-top .c-t-box > div > h4 > i:nth-child(2) {
+  float: right;
+}
+html body > .main-box > .main .con .c-top .c-t-box > div > ul {
+  height: 224px;
+  overflow: auto;
+}
+html body > .main-box > .main .con .c-top .c-t-box > div > ul li {
+  height: 20%;
+  font-size: 14px;
+  padding: 0 20px;
+}
+html body > .main-box > .main .con .c-top .c-t-box > div > ul li a {
+  color: black;
+}
+html body > .main-box > .main .con .c-top .c-t-box > div > ul li:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(1) {
+  width: 65%;
+  border-radius: 4px;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(1) .c-t-b-left h4 {
+  background-color: #e66c6c;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(1) .c-t-b-left ul li {
+  line-height: 45px;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(1) .c-t-b-left ul li a .sample {
+  color: #64cab8;
+  padding-right: 10px;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(1) .c-t-b-left ul li a .important {
+  color: #e76b6b;
+  padding-right: 10px;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(1) .c-t-b-left ul li .date {
+  float: right;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(2) {
+  width: 35%;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(2) .c-t-b-middle h4 {
+  background-color: #e7992b;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(2) .c-t-b-middle ul li {
+  line-height: 45px;
+}
+html body > .main-box > .main .con .c-top > div:nth-child(2) .none {
+  background: #fff url("../img/no-msg .png") no-repeat center;
+}
+html body > .main-box > .main .con .c-t-box:nth-child(1) {
+  padding-left: 15px;
+}
+html body > .main-box > .main .con .c-bottom-box {
+  height: 375px;
+  padding: 10px 10px 10px 5px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom {
+  height: 100%;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left {
+  height: 100%;
+  width: 40%;
+  padding: 10px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div {
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 5px 5px #f3f3f3;
+  border-radius: 4px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div h4 {
+  color: #666;
+  font-weight: normal;
+  padding: 10px 20px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main {
+  width: 75%;
+  height: 260px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div {
+  display: inline-block;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div a i {
+  display: inline-block;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div a i:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(1) a {
+  padding-top: 15px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(1) a i {
+  font-size: 100px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(1) a i:hover {
+  font-size: 116px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(1) a div {
+  font-size: 18px;
+  text-align: left;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(2) a {
+  padding-top: 10px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(2) a i {
+  font-size: 35px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(2) a i:hover {
+  font-size: 40px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(2) a div {
+  font-size: 14px;
+  text-align: left;
+  padding: 2px 5px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(3) a {
+  padding-top: 20px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(3) a i {
+  font-size: 35px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(3) a i:hover {
+  font-size: 40px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(3) a div {
+  font-size: 14px;
+  text-align: left;
+  padding: 2px 5px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(4) a {
+  padding-top: 15px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(4) a i {
+  font-size: 35px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(4) a i:hover {
+  font-size: 40px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(4) a div {
+  font-size: 14px;
+  text-align: left;
+  padding: 2px 5px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(5) a {
+  padding-top: 15px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(5) a i {
+  font-size: 35px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(5) a i:hover {
+  font-size: 40px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main > div:nth-child(5) a div {
+  font-size: 14px;
+  text-align: left;
+  padding: 2px 5px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main a {
+  display: block;
+  position: relative;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main a div {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .person {
+  height: 70%;
+  width: 60%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .person > a {
+  background-color: #74b749;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .order {
+  height: 30%;
+  width: 40%;
+  padding-bottom: 10px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .order > a {
+  background-color: #de577b;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .sign-up {
+  height: 40%;
+  width: 40%;
+  padding-bottom: 10px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .sign-up > a {
+  background-color: #f37b53;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .card {
+  width: 40%;
+  height: 30%;
+  padding-right: 10px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .card > a {
+  background-color: #847cc5;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .consult {
+  width: 60%;
+  height: 30%;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-left > div .main .consult > a {
+  background-color: #0bc0cb;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-right {
+  width: 60%;
+  height: 100%;
+  padding: 10px 0 10px 10px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-right > div {
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 5px 5px #f3f3f3;
+  border-radius: 4px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-right h4 {
+  color: #666;
+  font-weight: normal;
+  padding: 10px 20px;
+}
+html body > .main-box > .main .con .c-bottom-box > .c-bottom .c-b-right h4 > i:nth-child(1) {
+  position: relative;
+  top: 0;
+  font-size: 14px;
+  left: 0;
+  margin-right: 5px;
+}
+html body > .main-box > .main .par-set {
+  padding: 20px;
+}
+html body > .main-box > .main .par-set > form > table {
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: 0 0 3px 2px #f0f0f0;
+}
+html body > .main-box > .main .par-set > form > table .checkbox {
+  padding-left: 0 !important;
+}
+html body > .main-box > .main .par-set > form > table .tittle tr td {
+  font-size: 20px;
+  padding-left: 20px;
+  color: #333;
+  border: none;
+  border-bottom: 1px dashed #f0f0f0;
+}
+html body > .main-box > .main .par-set > form > table tbody tr {
+  padding: 10px 0 ;
+}
+html body > .main-box > .main .par-set > form > table tbody tr .text {
+  line-height: 35px;
+}
+html body > .main-box > .main .par-set > form > table tbody tr td {
+  /*vertical-align: middle;*/
+  border: none;
+}
+html body > .main-box > .main .par-set > form > table tbody tr td .checkbox {
+  padding: 6px 12px;
+}
+html body > .main-box > .main .par-set > form > table tbody tr td .checkbox label {
+  font-weight: bold;
+}
+html body > .main-box > .main .par-set > form > table tbody tr td .checkbox label input {
+  position: relative;
+  top: 2px;
+}
+html body > .main-box > .main .par-set > form > table tbody tr td:first-child {
+  padding-left: 20px;
+  line-height: 35px;
+}
+html body > .main-box > .main .par-set > form > table tbody tr > td.weird {
+  background-color: #fff;
+  text-align: left;
+}
+html body > .main-box > .main .par-set > form > table tbody tr .level img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+html body > .main-box > .main .par-set > form > table tbody .upLogo td img {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+html body > .main-box > .main .par-set > form > table tbody .upLogo td input {
+  position: relative;
+  right: 87px;
+  top: -2px;
+  width: 85px;
+  height: 35px;
+  opacity: 0;
+}
+html body > .main-box > .main .par-set > form > table tbody .up-qr td img {
+  vertical-align: middle;
+}
+html body > .main-box > .main .par-set > form > table tbody .up-qr td #upQr {
+  position: relative;
+  right: 87px;
+  top: 2px;
+  width: 85px;
+  height: 35px;
+  opacity: 0;
+}
+html body > .main-box > .main .par-set > form > table tbody .block td input {
+  display: block;
+  width: 100%;
+}
+html body > .main-box > .main .par-set > form > table tbody #stuCardTimeInterval {
+  width: 50px;
+}
+html body > .main-box > .main .par-set > form > table tbody #workTimeStart,
+html body > .main-box > .main .par-set > form > table tbody #workTimeEnd {
+  width: 90px;
+}
+html body > .main-box > .main .par-set > form > table tbody #toSubmit {
+  padding: 6px 30px;
+}
+html body > .main-box > .main .par-set > form .table:first-child tbody tr td:first-child {
+  width: 9%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(2) tbody tr:first-child td:first-child {
+  width: 11%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(3) tbody tr:first-child td:first-child {
+  width: 10%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(3) tbody tr:first-child td:nth-child(2) {
+  width: 10%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(4) tbody tr:first-child td:first-child {
+  width: 10%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(5) tbody tr:first-child td:first-child {
+  width: 10%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(5) tbody td label {
+  top: -2px;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(6) tr:first-child td:first-child {
+  width: 10%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(7) tr:first-child td:first-child {
+  width: 13%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(7) tr:first-child td:nth-child(2) {
+  width: 7%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(8) tr:first-child td:first-child,
+html body > .main-box > .main .par-set > form .table:nth-child(8) tr:first-child td:nth-child(2) {
+  width: 10%;
+}
+html body > .main-box > .main .par-set > form .table:nth-child(9) tr:first-child td:first-child,
+html body > .main-box > .main .par-set > form .table:nth-child(9) tr:first-child td:nth-child(2) {
+  width: 10%;
+}
+html body > .main-box > .main .theSysLog {
+  padding: 20px;
+}
+html body > .main-box > .main .theSysLog .t-top {
+  background-color: #fff;
+}
+html body > .main-box > .main .theSysLog .t-top form:first-child {
+  padding: 10px;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) {
+  position: relative;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) > button {
+  position: absolute;
+  right: 13px;
+  top: 9px;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) #tucked {
+  display: none;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) table tr:first-child td:nth-child(1) {
+  line-height: 35px;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) table tr:nth-child(2) td:first-child {
+  line-height: 35px;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) table tr td:first-child {
+  width: 100px;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) table tr td label {
+  margin: 5px 10px;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) table tr:nth-child(3) {
+  text-align: center;
+}
+html body > .main-box > .main .theSysLog .t-top form:nth-child(2) table tr:nth-child(3) button {
+  padding: 6px 20px;
+}
+html body > .main-box > .main .theSysLog .t-top .input-group-addon {
+  background-color: #fff;
+}
+html body > .main-box > .main .theSysLog .t-bottom {
+  background-color: #fff;
+}
+html body > .main-box > .main .theSysLog .t-bottom .table-box {
+  padding: 20px;
+  padding-bottom: 0;
+}
+html body > .main-box > .main .theSysLog .t-bottom .table-box table {
+  font-size: 12px;
+  margin: 0;
+}
+html body > .main-box > .main .theSysLog .t-bottom tr th,
+html body > .main-box > .main .theSysLog .t-bottom tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+html body > .main-box > .main .theSysLog .t-bottom tr td:nth-child(1) {
+  width: 56px;
+}
+html body > .main-box > .main .theSysLog .t-bottom tr td:nth-child(2) {
+  width: 160px;
+}
+html body > .main-box > .main .theSysLog .t-bottom tr td:nth-child(3) {
+  width: 75px;
+}
+html body > .main-box > .main .theSysLog .t-bottom tr td:nth-child(4) {
+  width: 120px;
+}
+html body > .main-box > .main .theSysLog .t-bottom tr td:nth-child(5) {
+  text-align: left;
+}
+html body > .main-box > .main .theSysLog .t-bottom .col-sm-3 {
+  padding-left: 50px;
+}
+html body > .main-box > .main .theSysLog .t-bottom > .footer {
+  padding: 10px 0;
+}
+html body > .main-box > .main .theSysLog .t-bottom > .footer .col-sm-5 {
+  padding-left: 35px;
+}
+html body > .main-box > .main .theSysLog .t-bottom > .footer .col-sm-7 {
+  text-align: right;
+  padding-right: 35px;
+}
+html body > .main-box > .main .consult_notes-main {
+  padding: 20px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-top {
+  background-color: #fff;
+  padding: 15px 20px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-top > button,
+html body > .main-box > .main .consult_notes-main .c-m-top a {
+  margin-top: 5px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-top .right button {
+  height: 34px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom {
+  margin-top: 10px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom h4 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #e78d4a;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left {
+  width: 72%;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .c-m-b-l-header {
+  position: relative;
+  line-height: 50px;
+  text-align: center;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .c-m-b-l-header > button {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-show {
+  position: relative;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-show > button {
+  position: absolute;
+  top: 25px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-show .left {
+  left: 10px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-show .right {
+  right: 10px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-show > ul {
+  /*width: 930px;*/
+  background-color: #eef0f2;
+  padding: 10px  61px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-show > ul li {
+  float: left;
+  width: 68px;
+  height: 65px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 14px;
+  padding: 13px 0;
+  box-shadow: 0 0 5px 5px #f0f0f0;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-show > ul li div {
+  font-size: 24px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .data-show > ul .current {
+  color: #fff;
+  background-color: #e95656;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .c-m-b-l-main {
+  min-height: 631px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-left .none {
+  background: #fff url("../img/console.png") no-repeat center;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right {
+  width: 26%;
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-top {
+  background-color: #fff;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-top h4 {
+  background-color: #00b591;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-top .c-m-b-r-t-main .c-m-b-r-t-m-header {
+  padding: 10px 0;
+  text-align: center;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-top .c-m-b-r-t-main .c-m-b-r-t-m-header .input-group {
+  display: inline-table;
+  width: 45%;
+  vertical-align: middle;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-top .c-m-b-r-t-main .c-m-b-r-t-m-header .input-group input {
+  font-size: 11px !important;
+  height: 30px !important;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right > ul {
+  background-color: #fff;
+  padding: 10px 12px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right > ul li {
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  height: 95px;
+  text-align: center;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right > ul li i {
+  font-size: 20px;
+  vertical-align: baseline;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right > ul li span {
+  font-size: 34px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-bottom {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-bottom h4 {
+  background-color: #00b591;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-bottom .c-m-b-r-b-header {
+  padding: 10px 0;
+  text-align: center;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-bottom .c-m-b-r-b-header .input-group {
+  display: inline-table;
+  width: 45%;
+  vertical-align: middle;
+}
+html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-b-r-bottom .c-m-b-r-b-header .input-group input {
+  font-size: 11px !important;
+  height: 30px !important;
+}
+html body > .main-box > .main .addConsult-main .a-m-top {
+  padding: 10px 25px;
+}
+html body > .main-box > .main .addConsult-main .a-m-top > h4 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #333;
+}
+html body > .main-box > .main .addConsult-main .a-m-top > p {
+  line-height: 30px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project > .button-box {
+  text-align: center;
+}
+html body > .main-box > .main .addConsult-main .a-m-project > .button-box button {
+  padding: 6px 30px;
+  margin: 0 20px;
+  margin-top: 20px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table {
+  background-color: #fff;
+  margin-top: 15px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table tr th {
+  position: relative;
+  line-height: 30px;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 25px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table tr th::after {
+  position: absolute;
+  width: 95%;
+  bottom: 0;
+  left: 2.5%;
+  content: "";
+  border-top: 1px dashed #bec0c2;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table tr td {
+  line-height: 50px;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table tr td .radio-inline input {
+  position: relative;
+  top: 2px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table tr td:first-child {
+  padding-left: 25px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table .img-box {
+  height: 175px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table .img-box td {
+  vertical-align: top;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table .img-box td img {
+  width: 120px;
+  height: 120px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table .img-box td a {
+  position: relative;
+  top: 27px;
+  left: -124px;
+  width: 120px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project div > div {
+  height: 530px;
+  float: left;
+  width: 50%;
+  margin-top: 15px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project div table:first-child {
+  float: left;
+  width: 100%;
+  /*
+                height: 530px;*/
+}
+html body > .main-box > .main .addConsult-main .a-m-project div table:first-child tr td:first-child {
+  width: 7em;
+}
+html body > .main-box > .main .addConsult-main .a-m-project div table:first-child tr td input {
+  width: 50%;
+}
+html body > .main-box > .main .addConsult-main .a-m-project div table:nth-child(2) {
+  float: right;
+  width: 48%;
+  height: 530px;
+}
+html body > .main-box > .main .addConsult-main .a-m-project div table:nth-child(2) tr td:first-child {
+  width: 7em;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table.last {
+  width: 100%;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table.last tr td:first-child,
+html body > .main-box > .main .addConsult-main .a-m-project table.last tr td:nth-child(3) {
+  width: 10%;
+}
+html body > .main-box > .main .addConsult-main .a-m-project table.last tr td:nth-child(2),
+html body > .main-box > .main .addConsult-main .a-m-project table.last tr td:nth-child(4) {
+  width: 42%;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con {
+  /* padding: 15px 0;*/
+  border-top: 1px solid #eef0f2 ;
+  padding-bottom: 15px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .list-box {
+  background-color: #fff;
+  padding: 0 20px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list {
+  border-bottom: 1px solid #d3d5d6;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list .list-tittle {
+  float: left;
+  width: 115px;
+  line-height: 40px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list > ul {
+  overflow: hidden;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list > ul li {
+  float: left;
+  padding: 6px 10px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .list-box .list:last-child {
+  border: none;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main {
+  background-color: #fff;
+  margin-top: 20px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .c-m-c-main-top {
+  line-height: 60px;
+  padding: 0 10px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .c-m-c-main-top > a {
+  margin-left: 20px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .c-m-c-main-top label {
+  float: right;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .c-m-c-main-top label input {
+  position: relative;
+  top: 2px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .tittle {
+  line-height: 65px;
+  border-top: 1px dashed #bec0c2;
+  padding: 0 20px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box {
+  padding: 0 20px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .icon-nan1 {
+  color: #4dd0e1;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .icon-nv1 {
+  color: #f6aadb;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .green {
+  color: white;
+  background-color: #45df45;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .yellow {
+  color: white;
+  background-color: #e3e32d;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .blue {
+  color: white;
+  background-color: skyblue;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .pink {
+  color: white;
+  background-color: pink;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .red {
+  color: white;
+  background-color: #ed7878;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .violet {
+  color: white;
+  background-color: #9D4A9C;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .gray {
+  color: white;
+  background-color: gray;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td {
+  vertical-align: middle;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(10) {
+  position: relative;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(10) .choose-box {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 6;
+  box-shadow: 0 3px 20px gray;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(10) .choose-box li {
+  line-height: 35px;
+  width: 100%;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(10) .choose-box li:hover {
+  background-color: #eef0f2;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(15) {
+  position: relative;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(15) .operation-box {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 20px gray;
+  z-index: 6;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(15) .operation-box li {
+  line-height: 30px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(15) .operation-box li:hover {
+  background-color: #eef0f2;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr:hover {
+  background-color: #f5f5f5 !important;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .footer {
+  padding: 10px 0;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .footer .col-sm-5 {
+  padding-left: 35px;
+}
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .footer .col-sm-7 {
+  text-align: right;
+  padding-right: 35px;
+}
+html body > .main-box > .main .consultation_record-box-shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+html body > .main-box > .main .consultation_record-box-shadow .add-box {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 550px;
+  height: 350px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 30px #666;
+  margin-left: -455px;
+}
+html body > .main-box > .main .consultation_record-box-shadow .add-box header {
+  background-color: #01b591;
+  font-size: 15px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+}
+html body > .main-box > .main .consultation_record-box-shadow .add-box table {
+  margin-top: 20px;
+}
+html body > .main-box > .main .consultation_record-box-shadow .add-box table tr td {
+  vertical-align: middle;
+  border: none;
+}
+html body > .main-box > .main .consultation_record-box-shadow .add-box table tr td:first-child {
+  text-align: right;
+}
+html body > .main-box > .main .consultation_record-box-shadow .add-box table tr:last-child td {
+  text-align: center;
+}
+html body > .main-box > .main .consultation_record-box-shadow .add-box table tr:last-child td button {
+  margin: 20px  70px;
+}
+html body > .main-box > .main .communication_manage-main table tr td:nth-child(11) {
+  position: relative;
+}
+html body > .main-box > .main .communication_manage-main table tr td:nth-child(11) .operation-box {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 20px gray;
+  z-index: 6;
+}
+html body > .main-box > .main .communication_manage-main table tr td:nth-child(11) .operation-box li {
+  line-height: 30px;
+}
+html body > .main-box > .main .communication_manage-main table tr td:nth-child(11) .operation-box li:hover {
+  background-color: #eef0f2;
+}
+html body > .main-box > .main .communication_manage-main table tr:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+html body > .main-box > .main .communication_manage-main table tr:hover {
+  background-color: #f5f5f5;
+}
+html body > .main-box > .main .listen_manage-main .c-m-con .list-box > table tr td {
+  vertical-align: middle;
+}
+html body > .main-box > .main .listen_manage-main .c-m-con .list-box > table tr td:first-child {
+  width: 118px;
+  padding-left: 0;
+}
+html body > .main-box > .main .listen_manage-main .c-m-con .list-box > table tr:last-child td {
+  text-align: center;
+}
+html body > .main-box > .main .listen_manage-main .c-m-con .list-box > table tr:last-child td button {
+  padding: 6px 30px;
+}
+html body > .main-box > .main .listen_manage-main .c-m-con .c-m-c-main table tr:nth-child(2n) {
+  background-color: #dceefd;
+}
+html body > .main-box > .main .channel_manage-main > header {
+  text-align: center;
+}
+html body > .main-box > .main .channel_manage-main > header > a {
+  width: 150px;
+  border-radius: 17px;
+  margin: 0  10px;
+  margin-bottom: 20px;
+}
+html body > .main-box > .main .channel_manage-box-shadow {
+  display: none;
+}
+html body > .main-box > .main .channel_manage-box-shadow .add-box {
+  height: 380px;
+}
+html body > .main-box > .main .channel_manage-box-shadow table tr td:nth-child(1) {
+  width: 34%;
+}
+html body > .main-box > .main .channel_category-box-shadow .add-box {
+  height: auto;
+}
+html body > .main-box > .main .consult_settings-main {
+  padding: 20px;
+}
+html body > .main-box > .main .consult_settings-main .c-m-con {
+  background-color: #fff;
+  padding: 0 20px 20px 20px;
+}
+html body > .main-box > .main .consult_settings-main .c-m-con header {
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 8px 0;
+}
+html body > .main-box > .main .consult_settings-main .c-m-con header::after {
+  content: "";
+  display: block;
+  border-top: 1px dashed #ddd;
+}
+html body > .main-box > .main .consult_settings-main .c-m-con table tr td {
+  vertical-align: middle;
+  border: none;
+}
+html body > .main-box > .main .consult_settings-main .c-m-con table tr:last-child td {
+  padding-top: 20px;
+}
+html body > .main-box > .main .consult_settings-main .c-m-con table tr:last-child td button {
+  padding: 6px 30px;
+}
+html body > .main-box > .main .office_center-main .c-m-con .c-m-c-main .main table tr td:nth-child(12) {
+  position: relative;
+}
+html body > .main-box > .main .office_center-main .c-m-con .c-m-c-main .main table tr td:nth-child(12) .operation-box {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 20px gray;
+  z-index: 6;
+}
+html body > .main-box > .main .office_center-main .c-m-con .c-m-c-main .main table tr td:nth-child(12) .operation-box li {
+  line-height: 30px;
+}
+html body > .main-box > .main .office_center-main .c-m-con .c-m-c-main .main table tr td:nth-child(12) .operation-box li:hover {
+  background-color: #eef0f2;
+}
+html body > .main-box > .main .theOrderLog {
+  padding: 20px;
+}
+html body > .main-box > .main .theOrderLog .header {
+  background-color: #fff;
+  padding: 10px;
+}
+html body > .main-box > .main .theOrderLog .header h4 {
+  font-size: 17px;
+  line-height: 30px;
+}
+html body > .main-box > .main .theOrderLog .remind {
+  line-height: 35px;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+html body > .main-box > .main .theOrderLog .theOrderLog-main {
+  margin-top: 20px;
+  background-color: #fff;
+}
+html body > .main-box > .main .theOrderLog .theOrderLog-main .tittle {
+  line-height: 30px;
+  background-color: rgba(20, 138, 255, 0.25);
+  border: 1px solid #4a8bc2;
+  padding: 0 10px;
+}
+html body > .main-box > .main .theOrderLog .theOrderLog-main table {
+  margin: 0;
+}
+html body > .main-box > .main .theOrderLog .theOrderLog-main table tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+html body > .main-box > .main .theOrderLog .theOrderLog-main table tr:nth-child(2n) {
+  background-color: #dceefd;
+}
+html body > .main-box > .main .theOrderLog .theOrderLog-main table tr:hover {
+  background-color: #abd9ff !important;
+}
+html body > .main-box > .main .theOrderLog .theOrderLog-main .footer {
+  padding: 10px 0;
+}
+html body > .main-box > .main .theOrderLog .theOrderLog-main .footer .col-sm-5 {
+  padding-left: 50px;
+}
+html body > .main-box > .main .signUp,
+html body > .main-box > .main .theOrderLog {
+  padding-top: 0;
+}
+html body > .main-box > .main .signUp > form table,
+html body > .main-box > .main .theOrderLog > form table {
+  background-color: #fff;
+  margin-top: 20px;
+}
+html body > .main-box > .main .signUp > form table tr th,
+html body > .main-box > .main .theOrderLog > form table tr th {
+  position: relative;
+  font-size: 20px;
+  border: none;
+}
+html body > .main-box > .main .signUp > form table tr th:after,
+html body > .main-box > .main .theOrderLog > form table tr th:after {
+  position: absolute;
+  width: 97%;
+  bottom: 0;
+  left: 1.5%;
+  content: "";
+  border-top: 1px dashed #bec0c2;
+}
+html body > .main-box > .main .signUp > form table tr th:first-child,
+html body > .main-box > .main .theOrderLog > form table tr th:first-child,
+html body > .main-box > .main .signUp > form table tr td:first-child,
+html body > .main-box > .main .theOrderLog > form table tr td:first-child {
+  padding-left: 20px;
+}
+html body > .main-box > .main .signUp > form table tr th:last-child,
+html body > .main-box > .main .theOrderLog > form table tr th:last-child,
+html body > .main-box > .main .signUp > form table tr td:last-child,
+html body > .main-box > .main .theOrderLog > form table tr td:last-child {
+  padding-right: 20px;
+}
+html body > .main-box > .main .signUp > form table tr td,
+html body > .main-box > .main .theOrderLog > form table tr td {
+  border: none;
+}
+html body > .main-box > .main .signUp > form table tr td b,
+html body > .main-box > .main .theOrderLog > form table tr td b {
+  font-weight: 700;
+}
+html body > .main-box > .main .signUp > form table tr td #price,
+html body > .main-box > .main .theOrderLog > form table tr td #price {
+  width: 100px;
+}
+html body > .main-box > .main .signUp > form table tr td .top,
+html body > .main-box > .main .theOrderLog > form table tr td .top {
+  margin-bottom: 10px;
+}
+html body > .main-box > .main .signUp > form table tr td .bottom,
+html body > .main-box > .main .theOrderLog > form table tr td .bottom {
+  margin-top: 10px;
+}
+html body > .main-box > .main .signUp > form table:nth-child(2) td,
+html body > .main-box > .main .theOrderLog > form table:nth-child(2) td {
+  height: 200px;
+  text-align: center;
+  background: url("../img/bg_02.png") no-repeat center 80px;
+  background-size: 190px 97px;
+}
+html body > .main-box > .main .signUp > form table:nth-child(2) td div,
+html body > .main-box > .main .theOrderLog > form table:nth-child(2) td div {
+  color: #959697;
+  line-height: 30px;
+  margin-top: 185px;
+  padding-bottom: 20px;
+}
+html body > .main-box > .main .signUp > form .pay tr td:first-child,
+html body > .main-box > .main .theOrderLog > form .pay tr td:first-child {
+  width: 100px;
+}
+html body > .main-box > .main .signUp > form .tag,
+html body > .main-box > .main .theOrderLog > form .tag {
+  background-color: #fff;
+  padding: 10px;
+}
+html body > .main-box > .main .signUp > form .tag span,
+html body > .main-box > .main .theOrderLog > form .tag span {
+  color: #959697;
+}
+html body > .main-box > .main .signUp > form .tag a,
+html body > .main-box > .main .theOrderLog > form .tag a {
+  color: #4a8bc2;
+  margin-left: 10px;
+}
+html body > .main-box > .main .signUp > form .footer,
+html body > .main-box > .main .theOrderLog > form .footer {
+  text-align: center;
+}
+html body > .main-box > .main .signUp > form .footer button,
+html body > .main-box > .main .theOrderLog > form .footer button {
+  padding: 6px 30px;
+  margin: 0 20px;
+}
+html body > .main-box > .main .signUp-shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+html body > .main-box > .main .signUp-shadow .add-box {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 550px;
+  background-color: #fff;
+  box-shadow: 0 0 30px #666;
+  margin-left: -455px;
+}
+html body > .main-box > .main .signUp-shadow .add-box header {
+  background-color: #01b591;
+  font-size: 15px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+}
+html body > .main-box > .main .signUp-shadow .add-box table {
+  margin-top: 20px;
+}
+html body > .main-box > .main .signUp-shadow .add-box table tr td {
+  border: none;
+  padding: 10px 20px;
+}
+html body > .main-box > .main .signUp-shadow .add-box table tr:last-child td {
+  text-align: center;
+}
+html body > .main-box > .main .signUp-shadow .add-box table tr:last-child td button {
+  margin: 0 70px;
+}
+html body > .main-box > .main .student_account {
+  padding: 20px;
+}
+html body > .main-box > .main .student_account form table {
+  background-color: #fff;
+}
+html body > .main-box > .main .student_account form table tr th {
+  position: relative;
+  font-size: 20px;
+  border: none;
+}
+html body > .main-box > .main .student_account form table tr th:after {
+  position: absolute;
+  width: 97%;
+  bottom: 0;
+  left: 1.5%;
+  content: "";
+  border-top: 1px dashed #bec0c2;
+}
+html body > .main-box > .main .student_account form table tr th:first-child,
+html body > .main-box > .main .student_account form table tr td:first-child {
+  padding-left: 20px;
+}
+html body > .main-box > .main .student_account form table tr th:last-child,
+html body > .main-box > .main .student_account form table tr td:last-child {
+  padding-right: 20px;
+}
+html body > .main-box > .main .student_account form table tr td {
+  border: none;
+}
+html body > .main-box > .main .student_account form table tr td b {
+  font-weight: 700;
+}
+html body > .main-box > .main .student_account form table tr td #price {
+  width: 100px;
+}
+html body > .main-box > .main .student_account form table tr td .top {
+  margin-bottom: 10px;
+}
+html body > .main-box > .main .student_account form table tr td .bottom {
+  margin-top: 10px;
+}
+html body > .main-box > .main .student_account form > .table-box {
+  background-color: #fff;
+  padding: 0 20px;
+}
+html body > .main-box > .main .student_account form > .table-box table:first-child tr td:first-child {
+  width: 11%;
+  padding-left: 0;
+}
+html body > .main-box > .main .student_account form > .table-box table:first-child tr td:last-child {
+  padding-right: 0;
+}
+html body > .main-box > .main .student_account form > .table-box table:first-child tr .internal-note,
+html body > .main-box > .main .student_account form > .table-box table:first-child tr .foreign-note {
+  width: 100%;
+}
+html body > .main-box > .main .student_account form .tag {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+html body > .main-box > .main .student_account form .tag span {
+  color: #959697;
+}
+html body > .main-box > .main .student_account form .tag a {
+  margin-left: 10px;
+}
+html body > .main-box > .main .student_account form .footer {
+  text-align: center;
+}
+html body > .main-box > .main .student_account form .footer button {
+  padding: 6px 30px;
+  margin: 0 20px;
+}
+html body > .main-box > .main .students-box-shadow .change-box {
+  margin-left: -466px;
+}
+html body > .main-box > .main .students-box-shadow .change-box .c-b-c-bottom {
+  padding: 0 30px;
+}
+html body > .main-box > .main .students-box-shadow .change-box .c-b-c-bottom h6 {
+  font-size: 12px;
+  line-height: 25px;
+}
+html body > .main-box > .main .students-box-shadow .change-box .c-b-c-bottom ul {
+  list-style: decimal;
+  padding-left: 13px;
+  padding-bottom: 40px;
+}
+html body > .main-box > .main .students-box-shadow .change-box .c-b-c-bottom ul li {
+  font-size: 12px;
+  line-height: 15px;
+}
+html body > .main-box > .main .students-box-shadow .change-box .button-box {
+  text-align: center;
+}
+html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td {
+  padding: 20px 0;
+  vertical-align: middle;
+  text-align: center;
+}
+html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td:first-child,
+html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td:last-child {
+  width: 40%;
+}
+html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td:nth-child(2) {
+  position: relative;
+}
+html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td:nth-child(2) i {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  color: #4a8bc2;
+  font-size: 30px;
+  margin-left: -14px;
+}
+html body > .main-box > .main .petty_expenses form > .box {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+html body > .main-box > .main .petty_expenses form > .box > .tittle {
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  background-color: #404040;
+}
+html body > .main-box > .main .petty_expenses form > .box > .con {
+  position: relative;
+  min-height: 200px;
+}
+html body > .main-box > .main .petty_expenses form > .box > .con .default {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  margin-left: -120px;
+}
+html body > .main-box > .main .petty_expenses form > .box > .con .default .left i {
+  font-size: 60px;
+}
+html body > .main-box > .main .petty_expenses form > .box > .con .default .right > a {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box > table tr td {
+  position: relative;
+}
+html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box > table tr td .operation-box {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 20px grey;
+  z-index: 6;
+}
+html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box > table tr td .operation-box li {
+  line-height: 30px;
+}
+html body > .main-box > .main .add_newCourse .a-m-top {
+  margin-bottom: 20px;
+}
+html body > .main-box > .main .add_newCourse form .table {
+  background-color: #fff;
+}
+html body > .main-box > .main .add_newCourse form .table tr th {
+  /*color: #fff;
+                  line-height: 15px;
+                  text-align: center;
+                  background-color: #404040;*/
+  position: relative;
+  font-size: 20px;
+  border: none;
+}
+html body > .main-box > .main .add_newCourse form .table tr th:after {
+  position: absolute;
+  width: 97%;
+  bottom: 0;
+  left: 1.5%;
+  content: "";
+  border-top: 1px dashed #bec0c2;
+}
+html body > .main-box > .main .add_newCourse form .table tr th:first-child,
+html body > .main-box > .main .add_newCourse form .table tr td:first-child {
+  padding-left: 20px;
+}
+html body > .main-box > .main .add_newCourse form .table tr th:last-child,
+html body > .main-box > .main .add_newCourse form .table tr td:last-child {
+  padding-right: 20px;
+}
+html body > .main-box > .main .add_newCourse form .table tr td {
+  /*line-height: 15px;*/
+  vertical-align: middle;
+  border: none;
+}
+html body > .main-box > .main .add_newCourse form .table tr td .block {
+  width: 100%;
+}
+html body > .main-box > .main .add_newCourse form table:first-child tr td:first-child,
+html body > .main-box > .main .add_newCourse form table:nth-child(2) tr td:first-child {
+  width: 100px;
+}
+html body > .main-box > .main .add_newCourse form table:nth-child(3) tr td {
+  text-align: center;
+}
+html body > .main-box > .main .add_newCourse form table:nth-child(3) tr .default-box {
+  position: relative;
+  height: 200px;
+  text-align: center;
+}
+html body > .main-box > .main .add_newCourse form table:nth-child(3) tr .default-box .default {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  margin-left: -120px;
+}
+html body > .main-box > .main .add_newCourse form table:nth-child(3) tr .default-box .default .left i {
+  font-size: 60px;
+}
+html body > .main-box > .main .add_newCourse form table:nth-child(3) tr .default-box .default .right > a {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+html body > .main-box > .main .add_newCourse form table:nth-child(3) tr:nth-child(2) td {
+  text-align: left;
+}
+html body > .main-box > .main .add_newCourse form .footer {
+  text-align: center;
+}
+html body > .main-box > .main .add_newCourse form .footer button {
+  padding: 6px 30px;
+  margin: 0 20px;
+}
+html body > .main-box > .main .add_newCourse-box-shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+html body > .main-box > .main .add_newCourse-box-shadow .add-box {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 550px;
+  height: 275px;
+  background-color: #fff;
+  box-shadow: 0 0 30px #000;
+  margin-left: -455px;
+}
+html body > .main-box > .main .add_newCourse-box-shadow .add-box header {
+  background-color: #4a8bc2;
+  font-size: 15px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+}
+html body > .main-box > .main .add_newCourse-box-shadow .add-box table {
+  margin-top: 20px;
+}
+html body > .main-box > .main .add_newCourse-box-shadow .add-box table tr td {
+  vertical-align: middle;
+  border: none;
+}
+html body > .main-box > .main .add_newCourse-box-shadow .add-box table tr td:first-child {
+  text-align: right;
+  width: 35%;
+}
+html body > .main-box > .main .add_newCourse-box-shadow .add-box table tr:last-child td {
+  text-align: center;
+}
+html body > .main-box > .main .add_newCourse-box-shadow .add-box table tr:last-child td button {
+  margin: 20px  70px;
+}
+html body > .main-box > .main .swiping-card {
+  width: 80%;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+html body > .main-box > .main .swiping-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 80px;
+}
+html body > .main-box > .main .swiping-card .card {
+  width: 600px;
+  height: 340px;
+  font-size: 22px;
+  color: #fff;
+  line-height: 340px;
+  background-color: skyblue;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+html body > .main-box > .main .swiping-card .bottom {
+  line-height: 30px;
+  padding: 20px 0;
+}
+html body > .main-box > .main .wage-box-shadow {
+  display: none;
+}
+html body > .main-box > .main .wage-box-shadow .change-box {
+  width: 320px;
+  margin-left: -375px;
+}
+html body > .main-box > .main .wage-box-shadow .change-box form {
+  height: 350px;
+  overflow: auto;
+}
+html body > .main-box > .main .wage-box-shadow .change-box form table tr td,
+html body > .main-box > .main .wage-box-shadow .change-box form table tr th {
+  text-align: center;
+}
+html body > .main-box > .main .wage-box-shadow .change-box .button-box {
+  padding: 5px 0;
+  text-align: center;
+}
+html body > .main-box > .main .wage-box-shadow .change-box .button-box a {
+  margin: 0 20px;
+}
+html body > .main-box > .main .performance_manage .c-m-con .list-box table tr td:first-child {
+  width: 115px;
+}
+html body > .main-box > .main .performance_settings .c-m-top .c-m-t-list li {
+  float: left;
+  width: 50%;
+  margin: 15px 0;
+}
+html body > .main-box > .main .performance_settings .c-m-top .c-m-t-list li .c-m-t-l-tittle {
+  line-height: 45px;
+  border: 1px dashed #bec0c2;
+  padding: 0 10px;
+}
+html body > .main-box > .main .performance_settings .c-m-top .c-m-t-list li .c-m-t-l-tittle a {
+  float: right;
+  color: #01b591;
+  margin: 0 10px;
+}
+html body > .main-box > .main .performance_settings .c-m-top .c-m-t-list li .c-m-t-l-tittle a:nth-child(2) {
+  margin-right: 0;
+}
+html body > .main-box > .main .performance_settings .c-m-top .c-m-t-list li .c-m-t-l-method {
+  height: 105px;
+  line-height: 25px;
+  overflow: auto;
+  padding: 20px 10px;
+}
+html body > .main-box > .main .performance_settings .c-m-top .c-m-t-list li:nth-child(2n) {
+  padding-left: 10px;
+}
+html body > .main-box > .main .performance_settings .c-m-top .c-m-t-list li:nth-child(2n-1) {
+  padding-right: 10px;
+}
+html body > .main-box > .main .add_newSet form {
+  background-color: #fff;
+  padding: 20px;
+}
+html body > .main-box > .main .add_newSet form h6 {
+  font-size: 16px;
+  line-height: 30px;
+}
+html body > .main-box > .main .add_newSet form .content {
+  margin: 0 20px 20px 20px;
+}
+html body > .main-box > .main .add_newSet form .content .yellow {
+  color: #ff960a;
+  position: relative;
+  text-indent: 1em;
+}
+html body > .main-box > .main .add_newSet form .content .yellow .circle {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  left: 0;
+  top: 2px;
+  background-color: #ff960a;
+  border-radius: 50%;
+}
+html body > .main-box > .main .add_newSet form .content .radio {
+  line-height: 20px;
+}
+html body > .main-box > .main .add_newSet form .content p {
+  margin: 10px 0;
+}
+html body > .main-box > .main .add_newSet form .content > .row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+html body > .main-box > .main .add_newSet form .content > .row .col-sm-1 {
+  margin-top: 10px;
+}
+html body > .main-box > .main .add_newSet form .content > .row .col-sm-11 .row input {
+  width: 60%;
+}
+html body > .main-box > .main .add_newSet form .content > .row .col-sm-11 .row textarea {
+  width: 60%;
+}
+html body > .main-box > .main .textbook_settings-box-shadow .change-box .c-b-con form {
+  height: auto;
+  overflow: inherit;
+}
+html body > .main-box > .main .textbook_settings-box-shadow .change-box .c-b-con form table tr td {
+  border: none;
+  vertical-align: middle;
+}
+html body > .main-box > .main .textbook_settings-box-shadow .change-box .c-b-con form table tr:nth-child(5) td {
+  vertical-align: top;
+}
+html body > .main-box > .main .textbook_settings-box-shadow .change-box .c-b-con form p {
+  padding: 10px 0;
+}
