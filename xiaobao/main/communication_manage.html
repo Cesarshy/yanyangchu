@@ -154,7 +154,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="list clearfix form-inline">
+                <div class="list clearfix form-inline no-mul">
                     <div class="list-tittle" style="width: 80px;">
                         更多选项：
                     </div>
@@ -511,39 +511,106 @@
             </div>
         </div>
     </div>
-    <div class="consultation_record-box-shadow">
-        <form class="main form-inline add-box">
-            <header>新增沟通记录</header>
-            <table class="table">
-                <tr>
-                    <td>新增沟通记录：</td>
-                    <td>
-                        <textarea name="consultCon" id="consultCon" cols="40" rows="5"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>新增回访提醒：</td>
-                    <td>
-                        <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                            <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                        </div>
-                        <input type="hidden" id="dtp_input2" value="" />
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button type="button" class="btn btn-primary cancel">
-                            取消
-                        </button>
-                        <button type="submit" class="btn btn-success">
-                            确定
-                        </button>
-                    </td>
-                </tr>
-            </table>
-        </form>
+    <div class="box-shadow communication_manage-box-shadow">
+        <div class="change-box">
+            <header>编辑沟通记录</header>
+            <div class="c-b-con">
+                <form class="form-horizontal form-inline">
+                    <table class="table">
+                        <tbody><tr>
+                            <td>姓名：</td>
+                            <td>
+                                <input type="text" class="form-control" disabled="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>联系方式：</td>
+                            <td>
+                                <select class="form-control" name="contact" id="contact">
+                                    <option value="1">母亲电话</option>
+                                </select>
+                                <input type="text" class="form-control" disabled="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                沟通日期：
+                            </td>
+                            <td>
+                                <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly="">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input1" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                咨询校区：
+                            </td>
+                            <td>
+                                <select name="campus" id="campus" class="form-control">
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                沟通类型：
+                            </td>
+                            <td>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 售前沟通
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 试听邀约
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 活动通知
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> 电话通知
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> 电话服务
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"> 电话家访
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option7"> 其他
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                沟通内容：
+                            </td>
+                            <td>
+                                <textarea name="content" id="content" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </form>
+                <div class="button-box clearfix">
+                    <a id="close" href="javascript:;" class="btn btn-default fl">取消</a>
+                    <a href="javascript:;" class="btn btn-primary fr">确定</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
 <script src="js/communication_manage.js"></script>
 <script src="js/mul_choice.js"></script>

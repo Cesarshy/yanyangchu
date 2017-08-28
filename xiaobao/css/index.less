@@ -1408,7 +1408,7 @@ html{
                 }
                 >.table-box{
                   padding: 0 20px;
-                  >table{
+                  table{
                     font-size: 12px;
                     text-align: center;
                     margin: 0;
@@ -1466,6 +1466,7 @@ html{
                       }
                       td:nth-child(10){
                         position: relative;
+                        width: 76px;
                         .choose-box{
                           display: none;
                           position: absolute;
@@ -1574,12 +1575,14 @@ html{
         }
         .consultation_record-box-shadow-2{
           .change-box{
+            top: 30px !important;
             width: 900px !important;
             margin-left: -685px !important;
             form{
               table{
                 border-top: 1px solid #999;
                 margin-top: 5px;
+                margin-bottom: 5px;
                 tr{
                   td{
                     vertical-align: middle;
@@ -1594,6 +1597,21 @@ html{
                   td{
                     vertical-align: top;
                   }
+                }
+              }
+            }
+            .button-box{
+              #hasChoose{
+                display: inline-block;
+                line-height: 30px;
+                padding-left: 10px;
+                border: 1px solid rgb(185, 190, 197);
+                i{
+                  cursor: pointer;
+                  padding:0 10px;
+                }
+                i:hover{
+                  color: red;
                 }
               }
             }
@@ -1627,6 +1645,22 @@ html{
             }
             tr:hover{
               background-color: #f5f5f5;
+            }
+          }
+        }
+        .communication_manage-box-shadow{
+          .change-box{
+            top: 60px;
+            form{
+              height: 400px;
+              overflow: auto;
+              .table{
+                tr{
+                  td:first-child{
+                    width: 90px;
+                  }
+                }
+              }
             }
           }
         }

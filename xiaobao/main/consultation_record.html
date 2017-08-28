@@ -293,7 +293,7 @@
                                     <ul class="operation-box">
                                         <li><a href="javascript:;">查看详情</a></li>
                                         <li><a href="javascript:;">办理试听</a></li>
-                                        <li><a href="javascript:;">办报名</a></li>
+                                        <li><a href="#signUp">办报名</a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -335,7 +335,7 @@
                                     <ul class="operation-box">
                                         <li><a href="javascript:;">查看详情</a></li>
                                         <li><a href="javascript:;">办理试听</a></li>
-                                        <li><a href="javascript:;">办报名</a></li>
+                                        <li><a href="#signUp">办报名</a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -377,7 +377,7 @@
                                     <ul class="operation-box">
                                         <li><a href="javascript:;">查看详情</a></li>
                                         <li><a href="javascript:;">办理试听</a></li>
-                                        <li><a href="javascript:;">办报名</a></li>
+                                        <li><a href="#signUp">办报名</a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -419,7 +419,7 @@
                                     <ul class="operation-box">
                                         <li><a href="javascript:;">查看详情</a></li>
                                         <li><a href="javascript:;">办理试听</a></li>
-                                        <li><a href="javascript:;">办报名</a></li>
+                                        <li><a href="#signUp">办报名</a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -461,7 +461,7 @@
                                     <ul class="operation-box">
                                         <li><a href="javascript:;">查看详情</a></li>
                                         <li><a href="javascript:;">办理试听</a></li>
-                                        <li><a href="javascript:;">办报名</a></li>
+                                        <li><a href="#signUp">办报名</a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -503,7 +503,7 @@
                                     <ul class="operation-box">
                                         <li><a href="javascript:;">查看详情</a></li>
                                         <li><a href="javascript:;">办理试听</a></li>
-                                        <li><a href="javascript:;">办报名</a></li>
+                                        <li><a href="#signUp">办报名</a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -561,7 +561,7 @@
             </table>
         </form>
     </div>
-    <div  class="box-shadow wage-box-shadow consultation_record-box-shadow-2" style="display: block">
+    <div  class="box-shadow wage-box-shadow consultation_record-box-shadow-2">
         <div class="change-box">
             <header>选择班级及其日程</header>
             <div class="c-b-con">
@@ -593,7 +593,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>上课星期</td>
+                            <td style="line-height: 34px;">上课星期</td>
                             <td>
                                 <label class="checkbox-inline">
                                     <input type="checkbox" name="weekday" id="weekday1" value="option1"> 周一
@@ -613,13 +613,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td style="line-height: 34px;">
                                 课程
                             </td>
                             <td class="clearfix">
                                 <div class="checkbox-box fl">
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" name="courses" id="courses1" value="1"> 周五
+                                        <input type="checkbox" name="courses" id="courses1" value="1"> 语言开发课
                                     </label>
                                 </div>
                                 <div class="box-open fr">
@@ -628,26 +628,21 @@
                             </td>
                         </tr>
                     </table>
+                    <table id="table" class="table-striped">
+                    </table>
                 </form>
-                <div class="button-box">
-                    <a id="close" href="javascript:;" class="btn btn-default">关闭</a>
-                    <a href="javascript:;" class="btn btn-primary">下载工资表模板</a>
+                <div class="button-box clearfix">
+                    <a id="close" href="javascript:;" class="btn btn-default fl">关闭</a>
+                    已选择
+                    <div id="hasChoose">
+                        <span></span>
+                        <i class="iconfont icon-shanchu"></i>
+                    </div>
+                    <a href="javascript:;" class="btn btn-primary fr">确定</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $('.form_date').datetimepicker({
-        language:'zh-CN',
-        weekStart: 1,
-        todayBtn:  1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 2,
-        minView: 2,
-        forceParse: 0
-    });
-</script>
 <script src="js/consultation_record.js"></script>
 <script src="js/mul_choice.js"></script>

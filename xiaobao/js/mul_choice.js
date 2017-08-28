@@ -13,9 +13,10 @@ function addMul() {
             var that = $(this);
             $(this).on('click', '.open_mul', function () {
                 var arr = [];
-                $(this).hide().siblings('ul').find('li').each(
+                $(this).hide().siblings('ul').find('a').each(
                     function ( i, v) {
-
+                        /*打开按钮组多选开关*/
+                        $(this).attr('open-mul', 'true')
                     }
                 )
                 that.find('.button-box').show()

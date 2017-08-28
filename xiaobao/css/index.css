@@ -1287,66 +1287,67 @@ html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .ma
 html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box {
   padding: 0 20px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table {
   font-size: 12px;
   text-align: center;
   margin: 0;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .icon-nan1 {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .icon-nan1 {
   color: #4dd0e1;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .icon-nv1 {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .icon-nv1 {
   color: #f6aadb;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .green {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .green {
   color: white;
   background-color: #45df45;
   padding: 5px 10px;
   border-radius: 15px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .yellow {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .yellow {
   color: white;
   background-color: #e3e32d;
   padding: 5px 10px;
   border-radius: 15px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .blue {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .blue {
   color: white;
   background-color: skyblue;
   padding: 5px 10px;
   border-radius: 15px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .pink {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .pink {
   color: white;
   background-color: pink;
   padding: 5px 10px;
   border-radius: 15px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .red {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .red {
   color: white;
   background-color: #ed7878;
   padding: 5px 10px;
   border-radius: 15px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .violet {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .violet {
   color: white;
   background-color: #9D4A9C;
   padding: 5px 10px;
   border-radius: 15px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table .gray {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table .gray {
   color: white;
   background-color: gray;
   padding: 5px 10px;
   border-radius: 15px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td {
   vertical-align: middle;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(10) {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td:nth-child(10) {
   position: relative;
+  width: 76px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(10) .choose-box {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td:nth-child(10) .choose-box {
   display: none;
   position: absolute;
   left: 0;
@@ -1355,17 +1356,17 @@ html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .ma
   z-index: 6;
   box-shadow: 0 3px 20px gray;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(10) .choose-box li {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td:nth-child(10) .choose-box li {
   line-height: 35px;
   width: 100%;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(10) .choose-box li:hover {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td:nth-child(10) .choose-box li:hover {
   background-color: #eef0f2;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(15) {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td:nth-child(15) {
   position: relative;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(15) .operation-box {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td:nth-child(15) .operation-box {
   display: none;
   position: absolute;
   left: 0;
@@ -1374,16 +1375,16 @@ html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .ma
   box-shadow: 0 3px 20px gray;
   z-index: 6;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(15) .operation-box li {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td:nth-child(15) .operation-box li {
   line-height: 30px;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr td:nth-child(15) .operation-box li:hover {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr td:nth-child(15) .operation-box li:hover {
   background-color: #eef0f2;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr:nth-child(2n) {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr:nth-child(2n) {
   background-color: #f9f9f9;
 }
-html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box > table tr:hover {
+html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .table-box table tr:hover {
   background-color: #f5f5f5 !important;
 }
 html body > .main-box > .main .consultation_record-main .c-m-con .c-m-c-main .main > .footer {
@@ -1441,12 +1442,14 @@ html body > .main-box > .main .consultation_record-box-shadow .add-box table tr:
   margin: 20px  70px;
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box {
+  top: 30px !important;
   width: 900px !important;
   margin-left: -685px !important;
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table {
   border-top: 1px solid #999;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr td {
   vertical-align: middle;
@@ -1458,6 +1461,19 @@ html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr:last-child td {
   vertical-align: top;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .button-box #hasChoose {
+  display: inline-block;
+  line-height: 30px;
+  padding-left: 10px;
+  border: 1px solid #b9bec5;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .button-box #hasChoose i {
+  cursor: pointer;
+  padding: 0 10px;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .button-box #hasChoose i:hover {
+  color: red;
 }
 html body > .main-box > .main .communication_manage-main table tr td:nth-child(11) {
   position: relative;
@@ -1482,6 +1498,16 @@ html body > .main-box > .main .communication_manage-main table tr:nth-child(2n) 
 }
 html body > .main-box > .main .communication_manage-main table tr:hover {
   background-color: #f5f5f5;
+}
+html body > .main-box > .main .communication_manage-box-shadow .change-box {
+  top: 60px;
+}
+html body > .main-box > .main .communication_manage-box-shadow .change-box form {
+  height: 400px;
+  overflow: auto;
+}
+html body > .main-box > .main .communication_manage-box-shadow .change-box form .table tr td:first-child {
+  width: 90px;
 }
 html body > .main-box > .main .listen_manage-main .c-m-con .list-box > table tr td {
   vertical-align: middle;

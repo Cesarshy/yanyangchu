@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1503885078246'); /* IE9*/
-  src: url('iconfont.eot?t=1503885078246#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1503885078246') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1503885078246') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1503885078246#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1503889931348'); /* IE9*/
+  src: url('iconfont.eot?t=1503889931348#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1503889931348') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1503889931348') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1503889931348#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -78,4 +78,6 @@
 .icon-jilu:before { content: "\e65b"; }
 
 .icon-kaishi-copy:before { content: "\e752"; }
+
+.icon-shanchu:before { content: "\e62e"; }
 
