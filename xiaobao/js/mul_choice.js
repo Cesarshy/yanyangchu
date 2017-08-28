@@ -26,6 +26,7 @@ function addMul() {
             })
             that.on('click', '.mul_cancel', function () {
                 $(this).parent().hide().siblings('.open_mul').show()
+                $(this).parent().parent().find('ul li a').attr('open-mul', 'false')
             })
         }
     })

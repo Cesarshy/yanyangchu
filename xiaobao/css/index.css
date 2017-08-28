@@ -1228,6 +1228,7 @@ html body > .main-box > .main .consultation_record-main .c-m-con {
   padding-bottom: 15px;
 }
 html body > .main-box > .main .consultation_record-main .c-m-con .list-box {
+  position: relative;
   background-color: #fff;
   padding: 0 20px;
 }
@@ -1524,6 +1525,13 @@ html body > .main-box > .main .listen_manage-main .c-m-con .list-box > table tr:
 }
 html body > .main-box > .main .listen_manage-main .c-m-con .c-m-c-main table tr:nth-child(2n) {
   background-color: #dceefd;
+}
+html body > .main-box > .main .listen_manage-box-shadow .change-box {
+  width: 320px;
+  margin-left: -375px;
+}
+html body > .main-box > .main .listen_manage-box-shadow .button-box {
+  padding-top: 15px;
 }
 html body > .main-box > .main .channel_manage-main > header {
   text-align: center;

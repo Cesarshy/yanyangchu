@@ -46,7 +46,8 @@ $(function () {
     })
     /*按钮组点击事件*/
     $('body').on('click','.list-box .list >ul .btn-default', function () {
-        if($(this).attr('open-mul')){
+        if($(this).attr('open-mul') === 'true'){
+            console.log($(this).attr('open-mul'));
             $(this).toggleClass('orange');
         }else{
             $('.list-box .list >ul .btn-default').removeClass('orange');
