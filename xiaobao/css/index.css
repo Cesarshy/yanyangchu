@@ -56,7 +56,7 @@ html .box-shadow > div header {
 }
 html body {
   height: 100%;
-  font-family: "Arial";
+  font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\\5b8b体", sans-serif;
   /*>header{
       position: fixed;
       top: 0;
@@ -1439,6 +1439,25 @@ html body > .main-box > .main .consultation_record-box-shadow .add-box table tr:
 }
 html body > .main-box > .main .consultation_record-box-shadow .add-box table tr:last-child td button {
   margin: 20px  70px;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box {
+  width: 900px !important;
+  margin-left: -685px !important;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table {
+  border-top: 1px solid #999;
+  margin-top: 5px;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr td {
+  vertical-align: middle;
+  text-align: left !important;
+  border-top: none;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr td i {
+  font-size: 12px;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr:last-child td {
+  vertical-align: top;
 }
 html body > .main-box > .main .communication_manage-main table tr td:nth-child(11) {
   position: relative;

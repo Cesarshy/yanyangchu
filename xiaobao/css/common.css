@@ -57,3 +57,6 @@ a:link,a:visited,a:hover,a:active{
 i{
     font-style: normal;
 }
+a:focus{
+    outline: none;
+}

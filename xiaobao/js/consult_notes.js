@@ -150,6 +150,7 @@ $(function () {
         $('.c-m-b-l-header >span').html(a.replace(/-/,'年').replace(/-/,'月')+'日')
         console.log(a.replace(/-/g,'/'));
         a = a.replace(/-/g,'/');
+        console.log(new Date(a));
         setDate(new Date(a))
     })
 
