@@ -1,0 +1,100 @@
+<div class="personal-center">
+    <ul class="header clearfix">
+        <li>
+            <h3>
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 咨询本
+            </h3>
+        </li>
+        <li>
+            <a href="#/consult_notes">我的咨询本</a>
+        </li>
+        <li>
+            <a href="#/consultation_record">咨询记录</a>
+        </li>
+        <li>
+            <a href="#/communication_manage">沟通管理</a>
+        </li>
+        <li>
+            <a href="#/listen_manage">试听管理</a>
+        </li>
+        <li>
+            <a href="#/channel_manage">渠道管理</a>
+        </li>
+        <li>
+            <a class="current" href="#/market_analysis">市场分析</a>
+        </li>
+        <li>
+            <a href="#/consult_settings">设置</a>
+        </li>
+    </ul>
+    <div class="consult_notes-main consultation_record-main listen_manage-main channel_manage-main market_analysis-main">
+        <header>
+            <a href="#/market_analysis" class="btn btn-default">售前管理分析</a>
+            <a href="#/consultation_analysis" class="btn btn-primary">咨询记录分析</a>
+            <a href="#/communication_analyasis" class="btn btn-default">沟通记录分析</a>
+            <a href="#/audition_conversition" class="btn btn-default">试听转化分析</a>
+            <a href="#/signUp_analysis" class="btn btn-default">报名订单分析</a>
+            <a href="#/signUp_stu_analysis" class="btn btn-default">报名学员分析</a>
+        </header>
+        <div class="c-m-con echarts-group">
+            <!--咨询人数统计-->
+            <div class="c-m-c-top clearfix">
+                <h4 class="title clearfix">
+                    咨询人数统计
+                    <a href="javascript:;" class="fr btn btn-default">查看详情 <i class="iconfont icon-xiangqing"></i></a>
+                </h4>
+                <ul class="clearfix">
+                    <li>
+                        <div class="type">新增咨询人数</div>
+                        <div class="num">387</div>
+                    </li>
+                    <li>
+                        <div class="type">
+                            成交率
+                        </div>
+                        <div class="num">0%</div>
+                    </li>
+                    <li>
+                        <div class="type">失败率</div>
+                        <div class="num">0%</div>
+                    </li>
+                </ul>
+                <div id="echarts_1"></div>
+                <div id="echarts_2"></div>
+            </div>
+            <div class="c-m-c-middle clearfix">
+                <div class="c-m-c-m-left">
+                    <h4 class="title clearfix">
+                        校区咨询量对比
+                        <a href="javascript:;" class="fr btn btn-default">查看详情 <i class="iconfont icon-xiangqing"></i></a>
+                    </h4>
+                    <div id="echarts_3"></div>
+                </div>
+                <div class="c-m-c-m-right">
+                    <h4 class="title clearfix">
+                        售前人员咨询量对比
+                        <a href="javascript:;" class="fr btn btn-default">查看详情 <i class="iconfont icon-xiangqing"></i></a>
+                    </h4>
+                    <div id="echarts_4"></div>
+                </div>
+            </div>
+            <div class="c-m-c-bottom">
+                <div class="c-m-c-b-left">
+                    <h4 class="title clearfix">
+                        渠道分类咨询量对比
+                        <a href="javascript:;" class="fr btn btn-default">查看详情 <i class="iconfont icon-xiangqing"></i></a>
+                    </h4>
+                    <div id="echarts_5"></div>
+                </div>
+                <div class="c-m-c-b-right">
+                    <h4 class="title clearfix">
+                        渠道咨询量对比
+                        <a href="javascript:;" class="fr btn btn-default">查看详情 <i class="iconfont icon-xiangqing"></i></a>
+                    </h4>
+                    <div id="echarts_6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/consultation_analysis.js"></script>

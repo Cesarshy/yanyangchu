@@ -1073,6 +1073,7 @@ html{
         .consult_notes-main{
           padding: 20px;
           .c-m-top{
+            position: relative;
             background-color: #fff;
             padding: 15px 20px;
             >button,a{
@@ -1081,6 +1082,19 @@ html{
             .right{
               button{
                 height: 34px;
+              }
+            }
+            >.switch{
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              i{
+                font-size: 12px;
+                color: #01b591;
+                cursor: pointer;
+                border: 1px solid #333;
+                border-radius: 2px;
+                padding: 2px;
               }
             }
           }
@@ -1655,11 +1669,15 @@ html{
             form{
               height: 400px;
               overflow: auto;
+              padding: 0 20px;
               .table{
                 tr{
                   td:first-child{
                     width: 90px;
                   }
+                }
+                textarea{
+                  resize: none;
                 }
               }
             }
@@ -1702,6 +1720,15 @@ html{
           .change-box{
             width: 320px;
             margin-left: -375px;
+            .c-b-con{
+              form{
+                .radio{
+                  input{
+                    top: 5px;
+                  }
+                }
+              }
+            }
           }
           .button-box{
             padding-top: 15px;
@@ -1736,6 +1763,102 @@ html{
         .channel_category-box-shadow{
           .add-box{
             height: auto;
+          }
+        }
+        /*市场分析*/
+        .market_analysis-main{
+          .c-m-con{
+            .echarts-box{
+              background-color: #fff;
+              padding: 20px;
+              .title{
+                font-size: 20px;
+              }
+              .e-content{
+                text-align: center;
+                >ul{
+                  display: inline-block;
+                  width: auto;
+                  margin-top: 15px;
+                  li{
+                    float: left;
+                  }
+                }
+              }
+            }
+          }
+         /* 咨询记录分析*/
+          .c-m-con.echarts-group{
+            .title{
+              font-size: 20px;
+            }
+            .c-m-c-top{
+              background-color: #fff;
+              padding: 20px;
+              >ul{
+                padding: 20px 0;
+                li{
+                  float: left;
+                  width: 33.333%;
+                  text-align: center;
+                  .num{
+                    font-size: 40px;
+                    line-height: 55px;
+                  }
+                }
+              }
+              #echarts_1{
+                float: left;
+                width: 35%;
+                height: 330px;
+              }
+              #echarts_2{
+                float: left;
+                width: 65%;
+                height: 330px;
+              }
+            }
+            .c-m-c-middle{
+              margin-top: 20px;
+              .c-m-c-m-left{
+                float: left;
+                width: 49%;
+                background-color: #fff;
+                padding: 20px;
+                #echarts_3{
+                  height: 300px;
+                }
+              }
+              .c-m-c-m-right{
+                float: right;
+                width: 49%;
+                background-color: #fff;
+                padding: 20px;
+                #echarts_4{
+                  height: 300px;
+                }
+              }
+            }
+            .c-m-c-bottom{
+              .c-m-c-b-left{
+                float: left;
+                width: 49%;
+                background-color: #fff;
+                padding: 20px;
+                #echarts_5{
+                  height: 300px;
+                }
+              }
+              .c-m-c-b-right{
+                float: right;
+                width: 49%;
+                background-color: #fff;
+                padding: 20px;
+                #echarts_6{
+                  height: 300px;
+                }
+              }
+            }
           }
         }
         /*咨询设置*/

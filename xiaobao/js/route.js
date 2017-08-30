@@ -38,6 +38,16 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'main/channel_manage.html'
     }).when('/market_analysis', {
         templateUrl: 'main/market_analysis.html'
+    }).when('/consultation_analysis', {
+        templateUrl: 'main/consultation_analysis.html'
+    }).when('/communication_analyasis', {
+        templateUrl: 'main/communication_analyasis.html'
+    }).when('/audition_conversition', {
+        templateUrl: 'main/audition_conversition.html'
+    }).when('/signUp_analysis', {
+        templateUrl: 'main/signUp_analysis.html'
+    }).when('/signUp_stu_analysis', {
+        templateUrl: 'main/signUp_stu_analysis.html'
     }).when('/channel_category', {
         templateUrl: 'main/channel_category.html'
     }).when('/consult_settings', {

@@ -287,6 +287,7 @@ html body > .main-box > .main {
   /*试听管理*/
   /*渠道管理*/
   /*渠道分类*/
+  /*市场分析*/
   /*咨询设置*/
   /*办理中心*/
   /*订单日志*/
@@ -974,6 +975,7 @@ html body > .main-box > .main .consult_notes-main {
   padding: 20px;
 }
 html body > .main-box > .main .consult_notes-main .c-m-top {
+  position: relative;
   background-color: #fff;
   padding: 15px 20px;
 }
@@ -983,6 +985,19 @@ html body > .main-box > .main .consult_notes-main .c-m-top a {
 }
 html body > .main-box > .main .consult_notes-main .c-m-top .right button {
   height: 34px;
+}
+html body > .main-box > .main .consult_notes-main .c-m-top > .switch {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+html body > .main-box > .main .consult_notes-main .c-m-top > .switch i {
+  font-size: 12px;
+  color: #01b591;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 2px;
+  padding: 2px;
 }
 html body > .main-box > .main .consult_notes-main .c-m-bottom {
   margin-top: 10px;
@@ -1506,9 +1521,13 @@ html body > .main-box > .main .communication_manage-box-shadow .change-box {
 html body > .main-box > .main .communication_manage-box-shadow .change-box form {
   height: 400px;
   overflow: auto;
+  padding: 0 20px;
 }
 html body > .main-box > .main .communication_manage-box-shadow .change-box form .table tr td:first-child {
   width: 90px;
+}
+html body > .main-box > .main .communication_manage-box-shadow .change-box form .table textarea {
+  resize: none;
 }
 html body > .main-box > .main .listen_manage-main .c-m-con .list-box > table tr td {
   vertical-align: middle;
@@ -1529,6 +1548,9 @@ html body > .main-box > .main .listen_manage-main .c-m-con .c-m-c-main table tr:
 html body > .main-box > .main .listen_manage-box-shadow .change-box {
   width: 320px;
   margin-left: -375px;
+}
+html body > .main-box > .main .listen_manage-box-shadow .change-box .c-b-con form .radio input {
+  top: 5px;
 }
 html body > .main-box > .main .listen_manage-box-shadow .button-box {
   padding-top: 15px;
@@ -1553,6 +1575,95 @@ html body > .main-box > .main .channel_manage-box-shadow table tr td:nth-child(1
 }
 html body > .main-box > .main .channel_category-box-shadow .add-box {
   height: auto;
+}
+html body > .main-box > .main .market_analysis-main {
+  /* 咨询记录分析*/
+}
+html body > .main-box > .main .market_analysis-main .c-m-con .echarts-box {
+  background-color: #fff;
+  padding: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con .echarts-box .title {
+  font-size: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con .echarts-box .e-content {
+  text-align: center;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con .echarts-box .e-content > ul {
+  display: inline-block;
+  width: auto;
+  margin-top: 15px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con .echarts-box .e-content > ul li {
+  float: left;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .title {
+  font-size: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-top {
+  background-color: #fff;
+  padding: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-top > ul {
+  padding: 20px 0;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-top > ul li {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-top > ul li .num {
+  font-size: 40px;
+  line-height: 55px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-top #echarts_1 {
+  float: left;
+  width: 35%;
+  height: 330px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-top #echarts_2 {
+  float: left;
+  width: 65%;
+  height: 330px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-middle {
+  margin-top: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-middle .c-m-c-m-left {
+  float: left;
+  width: 49%;
+  background-color: #fff;
+  padding: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-middle .c-m-c-m-left #echarts_3 {
+  height: 300px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-middle .c-m-c-m-right {
+  float: right;
+  width: 49%;
+  background-color: #fff;
+  padding: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-middle .c-m-c-m-right #echarts_4 {
+  height: 300px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-bottom .c-m-c-b-left {
+  float: left;
+  width: 49%;
+  background-color: #fff;
+  padding: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-bottom .c-m-c-b-left #echarts_5 {
+  height: 300px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-bottom .c-m-c-b-right {
+  float: right;
+  width: 49%;
+  background-color: #fff;
+  padding: 20px;
+}
+html body > .main-box > .main .market_analysis-main .c-m-con.echarts-group .c-m-c-bottom .c-m-c-b-right #echarts_6 {
+  height: 300px;
 }
 html body > .main-box > .main .consult_settings-main {
   padding: 20px;

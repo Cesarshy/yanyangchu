@@ -16,7 +16,7 @@ function addMul() {
                 $(this).hide().siblings('ul').find('a').each(
                     function ( i, v) {
                         /*打开按钮组多选开关*/
-                        $(this).attr('open-mul', 'true')
+                        $(this).attr('open-mul', 'true').removeClass('orange');
                     }
                 )
                 that.find('.button-box').show()
@@ -26,9 +26,14 @@ function addMul() {
             })
             that.on('click', '.mul_cancel', function () {
                 $(this).parent().hide().siblings('.open_mul').show()
-                $(this).parent().parent().find('ul li a').attr('open-mul', 'false')
+                $(this).parent().parent().find('ul li a').attr('open-mul', 'false').removeClass('orange');
             })
         }
     })
+}
+
+/*给list-bxo添加展开/合拢按钮*/
+function addSwitch() {
+    $('.list-box').parent().siblings('.c-m-top').css('position','relative')
 }
 addMul()

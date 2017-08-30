@@ -6,4 +6,5 @@ $(function () {
     $('.cancel').on('click', function () {
         $('.channel_manage-box-shadow').hide()
     })
+
 })

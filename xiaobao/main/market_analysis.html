@@ -27,14 +27,14 @@
             <a href="#/consult_settings">设置</a>
         </li>
     </ul>
-    <div class="consult_notes-main consultation_record-main listen_manage-main channel_manage-main">
+    <div class="consult_notes-main consultation_record-main listen_manage-main channel_manage-main market_analysis-main">
         <header>
-            <a href="javascript:;" class="btn btn-default">售前管理分析</a>
-            <a href="javascript:;" class="btn btn-default">咨询记录分析</a>
-            <a href="javascript:;" class="btn btn-default">沟通记录分析</a>
-            <a href="javascript:;" class="btn btn-default">试听转化分析</a>
-            <a href="javascript:;" class="btn btn-default">报名订单分析</a>
-            <a href="javascript:;" class="btn btn-default">报名学员分析</a>
+            <a href="#/market_analysis" class="btn btn-primary">售前管理分析</a>
+            <a href="#/consultation_analysis" class="btn btn-default">咨询记录分析</a>
+            <a href="#/communication_analyasis" class="btn btn-default">沟通记录分析</a>
+            <a href="#/audition_conversition" class="btn btn-default">试听转化分析</a>
+            <a href="#/signUp_analysis" class="btn btn-default">报名订单分析</a>
+            <a href="#/signUp_stu_analysis" class="btn btn-default">报名学员分析</a>
         </header>
         <div class="c-m-con">
             <form class="list-box form-inline add-shadow">
@@ -110,52 +110,67 @@
                     </tr>
                 </table>
             </form>
+            <div class="echarts-box">
+                <h4 class="title">
+                    售前管理分析
+                </h4>
+                <div class="e-content">
 
+                    <ul class="clearfix">
+                        <li>
+                            <a id="echartsA" class="btn btn-primary" href="javascript:;">沟通记录量</a>
+                        </li>
+                        <li>
+                            <a id="echartsB" class="btn" href="javascript:;">试听记录量</a>
+                        </li>
+                        <li>
+                            <a id="echartsC" class="btn" href="javascript:;">试听到访量</a>
+                        </li>
+                        <li>
+                            <a id="echartsD" class="btn" href="javascript:;">成交人数</a>
+                        </li>
+                        <li>
+                            <a id="echartsE" class="btn" href="javascript:;">成交订单量</a>
+                        </li>
+                        <li>
+                            <a id="echartsF" class="btn" href="javascript:;">应收成交额</a>
+                        </li>
+                        <li>
+                            <a id="echartsG" class="btn" href="javascript:;">实收成交额</a>
+                        </li>
+                    </ul>
+                    <div id="echarts" style="height: 400px;">
+
+                    </div>
+                </div>
+            </div>
             <div class="c-m-c-main">
                 <div class="main add-shadow">
                     <div class="table-box" style="padding-top: 20px">
                         <table id="consult-table" class="table table-bordered table-hover">
                             <tr>
-                                <td>渠道分类</td>
-                                <td>关联渠道数</td>
-                                <td>创建时间</td>
+                                <td>销售员</td>
+                                <td>现有线索量</td>
+                                <td>沟通记录量</td>
+                                <td>试听记录量</td>
+                                <td>试听到访量</td>
+                                <td>成交人数</td>
+                                <td>成交订单量</td>
+                                <td>应收成交额</td>
+                                <td>实收成交额</td>
                                 <td>操作</td>
                             </tr>
                             <tr>
-                                <td>校宝秀活动</td>
-                                <td>0</td>
-                                <td>2017-07-06 17:00:00</td>
-                                <td>
-                                    <a href="javascript:;">编辑</a>
-                                    <a href="javascript:;">删除</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>校宝秀活动</td>
-                                <td>0</td>
-                                <td>2017-07-06 17:00:00</td>
-                                <td>
-                                    <a href="javascript:;">编辑</a>
-                                    <a href="javascript:;">删除</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>校宝秀活动</td>
-                                <td>0</td>
-                                <td>2017-07-06 17:00:00</td>
-                                <td>
-                                    <a href="javascript:;">编辑</a>
-                                    <a href="javascript:;">删除</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>校宝秀活动</td>
-                                <td>0</td>
-                                <td>2017-07-06 17:00:00</td>
-                                <td>
-                                    <a href="javascript:;">编辑</a>
-                                    <a href="javascript:;">删除</a>
-                                </td>
+                                <td>聚金汇神</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
                             </tr>
                         </table>
                     </div>
@@ -177,28 +192,5 @@
             </div>
         </div>
     </div>
-    <div class="consultation_record-box-shadow channel_manage-box-shadow channel_category-box-shadow">
-        <form class="main form-inline add-box">
-            <header>新建渠道分类</header>
-            <table class="table">
-                <tr>
-                    <td>名称：</td>
-                    <td>
-                        <input class="form-control" name="channelName" id="channelName" type="text">
-                    </td>
-                </tr>
-                <td colspan="2">
-                    <button type="button" class="btn btn-primary cancel">
-                        取消
-                    </button>
-                    <button type="submit" class="btn btn-success">
-                        确定
-                    </button>
-                </td>
-                </tr>
-            </table>
-        </form>
-    </div>
 </div>
-<script src="js/channel_category.js"></script>
-<script src="js/mul_choice.js"></script>
+<script src="js/market_analysis.js"></script>
