@@ -1458,9 +1458,12 @@ html body > .main-box > .main .consultation_record-box-shadow .add-box table tr:
   margin: 20px  70px;
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box {
-  top: 30px !important;
+  top: 75px !important;
   width: 900px !important;
   margin-left: -685px !important;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form .c-b-c-top {
+  margin-bottom: 10px;
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table {
   border-top: 1px solid #999;
@@ -1470,13 +1473,18 @@ html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr td {
   vertical-align: middle;
   text-align: left !important;
-  border-top: none;
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr td i {
   font-size: 12px;
 }
-html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr:last-child td {
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr td:first-child {
+  width: 95px;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr.vTop td {
   vertical-align: top;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box form table tr:last-child td {
+  border-bottom: 1px solid #ddd;
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .button-box #hasChoose {
   display: inline-block;
@@ -1490,6 +1498,21 @@ html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .but
 }
 html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .button-box #hasChoose i:hover {
   color: red;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .box-open {
+  position: relative;
+  height: 30px;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .box-open a {
+  position: absolute;
+  right: 0;
+  font-size: 10px;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .box-open a i {
+  font-size: 10px;
+}
+html body > .main-box > .main .consultation_record-box-shadow-2 .change-box .box-open a:first-child {
+  display: none;
 }
 html body > .main-box > .main .communication_manage-main table tr td:nth-child(11) {
   position: relative;
@@ -1795,14 +1818,15 @@ html body > .main-box > .main .theOrderLog > form table tr td:last-child {
 }
 html body > .main-box > .main .signUp > form table tr td,
 html body > .main-box > .main .theOrderLog > form table tr td {
+  vertical-align: middle;
   border: none;
 }
 html body > .main-box > .main .signUp > form table tr td b,
 html body > .main-box > .main .theOrderLog > form table tr td b {
   font-weight: 700;
 }
-html body > .main-box > .main .signUp > form table tr td #price,
-html body > .main-box > .main .theOrderLog > form table tr td #price {
+html body > .main-box > .main .signUp > form table tr td .price,
+html body > .main-box > .main .theOrderLog > form table tr td .price {
   width: 100px;
 }
 html body > .main-box > .main .signUp > form table tr td .top,
@@ -1812,6 +1836,24 @@ html body > .main-box > .main .theOrderLog > form table tr td .top {
 html body > .main-box > .main .signUp > form table tr td .bottom,
 html body > .main-box > .main .theOrderLog > form table tr td .bottom {
   margin-top: 10px;
+}
+html body > .main-box > .main .signUp > form table tr td .label-box,
+html body > .main-box > .main .theOrderLog > form table tr td .label-box {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+html body > .main-box > .main .signUp > form table tr td .label-box i,
+html body > .main-box > .main .theOrderLog > form table tr td .label-box i {
+  font-size: 14px;
+  cursor: pointer;
+}
+html body > .main-box > .main .signUp > form table tr.vTop td,
+html body > .main-box > .main .theOrderLog > form table tr.vTop td {
+  vertical-align: top;
+}
+html body > .main-box > .main .signUp > form table tr.vTop td:first-child,
+html body > .main-box > .main .theOrderLog > form table tr.vTop td:first-child {
+  line-height: 34px;
 }
 html body > .main-box > .main .signUp > form table:nth-child(2) td,
 html body > .main-box > .main .theOrderLog > form table:nth-child(2) td {
@@ -1826,10 +1868,6 @@ html body > .main-box > .main .theOrderLog > form table:nth-child(2) td div {
   line-height: 30px;
   margin-top: 185px;
   padding-bottom: 20px;
-}
-html body > .main-box > .main .signUp > form .pay tr td:first-child,
-html body > .main-box > .main .theOrderLog > form .pay tr td:first-child {
-  width: 100px;
 }
 html body > .main-box > .main .signUp > form .tag,
 html body > .main-box > .main .theOrderLog > form .tag {
@@ -1891,6 +1929,47 @@ html body > .main-box > .main .signUp-shadow .add-box table tr:last-child td {
 }
 html body > .main-box > .main .signUp-shadow .add-box table tr:last-child td button {
   margin: 0 70px;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box {
+  top: 75px;
+  width: 900px;
+  margin-left: -660px;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box form {
+  height: 400px;
+  overflow: auto;
+  padding: 20px;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box form .top > button {
+  width: 20%;
+  padding: 6.5px 15px;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box form .top > input {
+  width: 80%;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box form > p {
+  font-size: 12px;
+  line-height: 25px;
+  margin-top: 10px;
+  padding: 0 10px;
+  border: 1px solid #00aff0;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box form table {
+  width: 100%;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box form table tr td {
+  padding: 5px;
+  text-align: center;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box form table tr td .form-control {
+  height: 23px;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box .button-box {
+  text-align: center;
+  padding: 20px;
+}
+html body > .main-box > .main .tagSettings-box-shadow .change-box .button-box a {
+  margin: 0 50px;
 }
 html body > .main-box > .main .student_account {
   padding: 20px;

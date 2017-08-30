@@ -45,7 +45,7 @@ $(function () {
         singleSelect: false,
         search: false, //不显示搜索框
         searchAlign: 'left',
-        sidePagination: "client", //服务端处理分页
+        sidePagination: "server", //服务端处理分页
         columns: [
             {
                 title: '班级名称/人数',
@@ -91,5 +91,18 @@ $(function () {
     })
     $('#close').on('click', function () {
         $('.consultation_record-box-shadow-2').hide()
+    })
+
+    /*办理试听盒子*/
+    /*收缩 拉伸*/
+    $('#closure').on('click', function () {
+        $('#tableList').hide()
+        $(this).hide();
+        $('#opening').show()
+    })
+    $('#opening').on('click', function () {
+        $('#tableList').show()
+        $(this).hide();
+        $('#closure').show()
     })
 })

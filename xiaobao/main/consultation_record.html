@@ -575,9 +575,9 @@
                             <input class="form-control form-inline fr" type="search" placeholder="请输入用户名称">
                         </div>
                     </div>
-                    <table class="table">
+                    <table id="tableList" class="table">
                         <tr>
-                            <td>上课日期</td>
+                            <td>上课日期：</td>
                             <td>
                                 <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                                     <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
@@ -593,7 +593,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="line-height: 34px;">上课星期</td>
+                            <td style="line-height: 34px;">上课星期：</td>
                             <td>
                                 <label class="checkbox-inline">
                                     <input type="checkbox" name="weekday" id="weekday1" value="option1"> 周一
@@ -612,9 +612,9 @@
                                 </label>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="vTop">
                             <td style="line-height: 34px;">
-                                课程
+                                课程：
                             </td>
                             <td class="clearfix">
                                 <div class="checkbox-box fl">
@@ -622,12 +622,13 @@
                                         <input type="checkbox" name="courses" id="courses1" value="1"> 语言开发课
                                     </label>
                                 </div>
-                                <div class="box-open fr">
-                                    <a href="javascript:;">展开<i class="iconfont icon-zhankai"></i></a>
-                                </div>
                             </td>
                         </tr>
                     </table>
+                    <div class="box-open clearfix">
+                        <a id="opening" href="javascript:;" class="btn btn-default">展开<i class="iconfont icon-zhankai"></i></a>
+                        <a id="closure" href="javascript:;" class="btn btn-default">收起<i class="iconfont icon-shouqi"></i></a>
+                    </div>
                     <table id="table" class="table-striped">
                     </table>
                 </form>

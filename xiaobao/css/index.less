@@ -1590,10 +1590,13 @@ html{
         }
         .consultation_record-box-shadow-2{
           .change-box{
-            top: 30px !important;
+            top: 75px !important;
             width: 900px !important;
             margin-left: -685px !important;
             form{
+              .c-b-c-top{
+                margin-bottom: 10px;
+              }
               table{
                 border-top: 1px solid #999;
                 margin-top: 5px;
@@ -1602,15 +1605,22 @@ html{
                   td{
                     vertical-align: middle;
                     text-align: left !important;
-                    border-top: none;
                     i{
                       font-size: 12px;
                     }
                   }
+                  td:first-child{
+                    width: 95px;
+                  }
+                }
+                tr.vTop{
+                  td{
+                    vertical-align: top;
+                  }
                 }
                 tr:last-child{
                   td{
-                    vertical-align: top;
+                    border-bottom: 1px solid #ddd;
                   }
                 }
               }
@@ -1628,6 +1638,21 @@ html{
                 i:hover{
                   color: red;
                 }
+              }
+            }
+            .box-open{
+              position: relative;
+              height: 30px;
+              a{
+                position: absolute;
+                right: 0;
+                font-size: 10px;
+                i{
+                  font-size: 10px;
+                }
+              }
+              a:first-child{
+                display: none;
               }
             }
           }
@@ -2004,11 +2029,12 @@ html{
                   padding-right: 20px;
                 }
                 td{
+                  vertical-align: middle;
                   border: none;
                   b{
                     font-weight: 700;
                   }
-                  #price{
+                  .price{
                     width: 100px;
                   }
                   .top{
@@ -2017,6 +2043,22 @@ html{
                   .bottom{
                     margin-top: 10px;
                   }
+                  .label-box{
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    i{
+                      font-size: 14px;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+              tr.vTop{
+                td{
+                  vertical-align: top;
+                }
+                td:first-child{
+                  line-height: 34px;
                 }
               }
             }
@@ -2031,13 +2073,6 @@ html{
                   line-height: 30px;
                   margin-top: 185px;
                   padding-bottom: 20px;
-                }
-              }
-            }
-            .pay{
-              tr{
-                td:first-child{
-                  width: 100px;
                 }
               }
             }
@@ -2099,6 +2134,53 @@ html{
                     margin: 0 70px;
                   }
                 }
+              }
+            }
+          }
+        }
+        .tagSettings-box-shadow{
+          .change-box{
+            top: 75px;
+            width: 900px;
+            margin-left: -660px;
+            form{
+              height: 400px;
+              overflow: auto;
+              padding: 20px;
+              .top{
+                >button{
+                  width: 20%;
+                  padding: 6.5px 15px;
+                }
+                >input{
+                  width: 80%;
+                }
+              }
+              >p{
+                font-size: 12px;
+                line-height: 25px;
+                margin-top: 10px;
+                padding: 0 10px;
+                border: 1px solid #00aff0;
+              }
+              table{
+                width: 100%;
+                tr{
+                  td{
+                    padding: 5px;
+                    text-align: center;
+                    .form-control{
+                      height: 23px;
+                    }
+                  }
+                }
+              }
+            }
+            .button-box{
+              text-align: center;
+              padding: 20px;
+              a{
+                margin: 0 50px;
               }
             }
           }

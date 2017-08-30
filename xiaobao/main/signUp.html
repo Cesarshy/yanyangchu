@@ -62,7 +62,7 @@
                             <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
                         </div>
-                        <input type="hidden" id="dtp_input2" value="" />
+                        <input type="hidden" id="dtp_input1" value="" />
                     </td>
                     <td>
                         母亲电话;
@@ -83,11 +83,11 @@
                     <th colspan="2">报名信息</th>
                 </tr>
                 <tr>
-                    <td>
-                        <div><a href="javascript:;" class="btn btn-default">选择课程报名</a><br><br>适用于一对一或先报课程后分班的学员报名</div>
+                    <td style="width: 50%;">
+                        <div><a id="openO2O" href="javascript:;" class="btn btn-default">选择一对一报名</a><br><br>适用于一对一的学员报名</div>
                     </td>
                     <td>
-                        <div><a href="javascript:;" class="btn btn-default">选择班级报名</a><br><br>适用于已建班级，直接报入班级的学员报名</div>
+                        <div><a id="classSignUp" href="javascript:;" class="btn btn-default">选择班级报名</a><br><br>适用于已建班级，直接报入班级的学员报名</div>
                     </td>
                 </tr>
             </table>
@@ -106,18 +106,23 @@
                     <td>应收金额：</td>
                     <td>+<b>0.00</b>元</td>
                 </tr>
-                <tr>
+                <tr class="vTop">
                     <td>收款路径：</td>
                     <td>
-                        <select class="form-control" name="paymentMethod" id="paymentMethod">
-                            <option value="1">现金</option>
-                            <option value="2">支付宝</option>
-                            <option value="3">微信</option>
-                        </select>
-                        <input class="form-control" name="price" id="price" type="text">元
-                        &nbsp;&nbsp;对方账号：<input class="form-control" name="otherAccount" type="text">
-                        &nbsp;&nbsp;流水单号：<input class="form-control" name="waterNum" type="text">
-                        &nbsp;&nbsp;<a href="javascript:;" class="btn btn-blue">收款账户</a>
+                        <span>
+                            <select class="form-control" name="paymentMethod_1">
+                                 <option value="1">现金</option>
+                                 <option value="2">支付宝</option>
+                                 <option value="3">微信</option>
+                            </select>
+                            <input class="form-control price" name="price_1" type="text">元
+                        &nbsp;  &nbsp;对方账号：<input class="form-control" name="otherAccount_1" type="text">
+                        &nbsp;&nbsp;流水单号：<input class="form-control" name="waterNum_1" type="text">
+                        &nbsp;&nbsp;
+                        </span>
+                        <a id="addAco" href="javascript:;" class="btn btn-blue">
+                            <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>收款账户
+                        </a>
                     </td>
                 </tr>
                 <tr>
@@ -136,9 +141,12 @@
                     <td>学员账户：</td>
                     <td>+<b>0.00</b>元</td>
                 </tr>
-                <tr>
+                <tr class="vTop">
                     <td rowspan="2">订单标签：</td>
-                    <td><span style="color: #959697">还未添加任何标签</span></td>
+                    <!--<td><span style="color: #959697">还未添加任何标签</span></td>-->
+                    <td id="tag">
+                        <span class="label-box btn btn-default">教材 <i class="iconfont icon-guanbi"></i></span>
+                    </td>
                 </tr>
                 <tr>
                     <td style="padding-left: 8px">
@@ -178,7 +186,7 @@
                             <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
                         </div>
-                        <input type="hidden" id="dtp_input3" value="" />
+                        <input type="hidden" id="dtp_input2" value="" />
                     </td>
                 </tr>
             </table>
@@ -191,10 +199,10 @@
     </div>
     <div class="signUp-shadow">
         <form class="main form-inline add-box">
-            <header>订单标签设置</header>
+            <header>订单标签选择</header>
             <table class="table">
                 <tr>
-                    <td><a href="javascript:;"><i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>设置订单标签</a></td>
+                    <td><a id="openSet" href="javascript:;"><i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>设置订单标签</a></td>
                 </tr>
                 <tr>
                     <td>
@@ -217,7 +225,7 @@
                         <button id="cancel" type="button" class="btn btn-primary cancel">
                             取消
                         </button>
-                        <button type="submit" class="btn btn-success">
+                        <button id="ensure" type="submit" class="btn btn-success">
                             确定
                         </button>
                     </td>
@@ -225,7 +233,7 @@
             </table>
         </form>
     </div>
-    <div  class="box-shadow wage-box-shadow">
+    <div id="chooseStu"  class="box-shadow wage-box-shadow">
         <div class="change-box">
             <header>选择学员</header>
             <div class="c-b-con">
@@ -241,6 +249,166 @@
                     <a id="close" href="javascript:;" class="btn btn-default">关闭</a>
                     <a href="javascript:;" class="btn btn-primary">确定</a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div  class="box-shadow wage-box-shadow consultation_record-box-shadow-2">
+        <div class="change-box">
+            <header>选择一对一</header>
+            <div class="c-b-con">
+                <form class="form-horizontal form-inline">
+                    <div class="c-b-c-top clearfix">
+                        <select name="campus" id="campus_form" class="form-control">
+                            <option value="1">郑州校区</option>
+                        </select>
+                        <div class="fr form-inline fr ng-pristine ng-valid">
+                            <button type="submit" class="btn btn-default fr" style="padding: 6px 15px;"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> 搜索</button>
+                            <input class="form-control form-inline fr" type="search" placeholder="请输入用户名称">
+                        </div>
+                    </div>
+                    <table id="tableList_1" class="table">
+                        <tr>
+                            <td>课程类别：</td>
+                            <td>
+                                <a href="javascript:;" class="btn btn-default">
+                                    围棋
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="line-height: 34px;">收费模式：</td>
+                            <td>
+                                <a href="javascript:;" class="btn btn-default">按课时</a>
+                                <a href="javascript:;" class="btn btn-default">按时间</a>
+                                <a href="javascript:;" class="btn btn-default">按期</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="line-height: 34px;">
+                                课程类型：
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="btn btn-default">班课</a>
+                                <a href="javascript:;" class="btn btn-default">一对一</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>学期：</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <div class="box-open clearfix">
+                        <a id="opening" href="javascript:;" class="btn btn-default">展开<i class="iconfont icon-zhankai"></i></a>
+                        <a id="closure" href="javascript:;" class="btn btn-default">收起<i class="iconfont icon-shouqi"></i></a>
+                    </div>
+                    <table id="table" class="table-striped">
+                    </table>
+                </form>
+                <div class="button-box clearfix">
+                    <a id="close_2" href="javascript:;" class="btn btn-default fl">关闭</a>
+                    <a id="ensure_2" href="javascript:;" class="btn btn-primary fr">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="box-shadow wage-box-shadow consultation_record-box-shadow-2 consultation_record-box-shadow-3">
+        <div class="change-box">
+            <header>选择班级</header>
+            <div class="c-b-con">
+                <form class="form-horizontal form-inline">
+                    <div class="c-b-c-top clearfix">
+                        <select name="campus" id="campus_form_2" class="form-control">
+                            <option value="1">郑州校区</option>
+                        </select>
+                        <div class="fr form-inline fr ng-pristine ng-valid">
+                            <button type="submit" class="btn btn-default fr" style="padding: 6px 15px;"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> 搜索</button>
+                            <input class="form-control form-inline fr" type="search" placeholder="请输入用户名称">
+                        </div>
+                    </div>
+                    <table id="tableList_2" class="table">
+                        <tr>
+                            <td>开班日期：</td>
+                            <td>
+                                <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input3" data-link-format="yyyy-mm-dd">
+                                    <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input3" value="" />
+                                至
+                                <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input4" data-link-format="yyyy-mm-dd">
+                                    <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input4" value="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="line-height: 34px;">上课时间：</td>
+                            <td>
+                                <a href="javascript:;" class="btn btn-default">周一</a>
+                                <a href="javascript:;" class="btn btn-default">周二</a>
+                                <a href="javascript:;" class="btn btn-default">周三</a>
+                                <a href="javascript:;" class="btn btn-default">周四</a>
+                                <a href="javascript:;" class="btn btn-default">周五</a>
+                                <a href="javascript:;" class="btn btn-default">周六</a>
+                                <a href="javascript:;" class="btn btn-default">周日</a>
+                                <a href="javascript:;" class="btn btn-default">无</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="line-height: 34px;">
+                                课程类型：
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="btn btn-default">班课</a>
+                                <a href="javascript:;" class="btn btn-default">一对一</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>学期：</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <div class="box-open clearfix">
+                        <a id="opening_2" href="javascript:;" class="btn btn-default">展开<i class="iconfont icon-zhankai"></i></a>
+                        <a id="closure_2" href="javascript:;" class="btn btn-default">收起<i class="iconfont icon-shouqi"></i></a>
+                    </div>
+                    <table id="table_2" class="table-striped">
+                    </table>
+                </form>
+                <div class="button-box clearfix">
+                    <a id="close_3" href="javascript:;" class="btn btn-default fl">关闭</a>
+                    <a id="ensure_3" href="javascript:;" class="btn btn-primary fr">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--订单标签设置-->
+    <div style="display: block" class="box-shadow tagSettings-box-shadow">
+        <div class="change-box">
+            <header>
+                订单标签设置
+            </header>
+            <form action="">
+                <div class="top clearfix">
+                    <button id="newTag" type="button" class="btn btn-primary fr">新增标签</button>
+                    <input id="tagName" maxlength="8" class="form-control form-inline fr" type="search" placeholder="订单名称最长8个字">
+                </div>
+                <p class="bg-info">
+                    共有<span>1</span>个标签，启动标签<span>1</span>个
+                </p>
+                <table class="form-inline">
+                    <tr>
+                        <td>
+                            <input class="my-checkbox_2" type="checkbox" name="my-checkbox" value="tag_1" checked>
+                            <input type="text" class="form-control" maxlength="8" value="教材">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="button-box">
+                <a id="close_4" href="javascript:;" class="btn btn-default">取消</a>
+                <a id="ensure_4" href="javascript:;" class="btn btn-primary">保存</a>
             </div>
         </div>
     </div>

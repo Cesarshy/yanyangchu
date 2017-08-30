@@ -51,7 +51,8 @@ $(function () {
         }else{
            /* $('.list-box .list >ul .btn-default').removeClass('orange');*/
             $(this).parent().siblings('li').find('a').removeClass('orange');
-            $(this).addClass('orange')
+            $(this).toggleClass('orange')
+            console.log(1);
         }
     })
 });
