@@ -53,6 +53,10 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'main/consult_settings.html'
     }).when('/office_center', {
         templateUrl: 'main/office_center.html'
+    }).when('/myDay', {
+        templateUrl: 'main/myDay.html'
+    }).when('/campusDay', {
+        templateUrl: 'main/campusDay.html'
     }).when('/theOrderLog', {
         templateUrl: 'main/theOrderLog.html'
     }).when('/signUp', {
@@ -178,7 +182,14 @@ app.config(['$routeProvider', function ($routeProvider) {
     }).when('/course', {
         templateUrl: 'main/course.html'
     }).when('/add_newCourse', {
-        templateUrl: 'main/add_newCourse.html'
+        templateUrl: 'main/add_newCourse.html',
+        controller: 'myCtrl',
+        controller: function ($scope) {
+            $scope.courseType = [
+                '围棋类',
+                '模特'
+            ];
+        }
     }).when('/course_type_settings', {
         templateUrl: 'main/course_type_settings.html'
     }).when('/class', {

@@ -1,7 +1,7 @@
 <div class="consult_notes-main addConsult-main add_newCourse">
     <div class="c-m-top a-m-top">
         <h4 class="blue">新增课程</h4>
-        <p>当前位置：<a href="#/course">课程设置</a>&nbsp;>&nbsp;<a href="#add_newCourse">新增课程</a></p>
+        <p>当前位置：<a href="#/course">课程设置</a>&nbsp;>&nbsp;新增课程</p>
     </div>
     <form action="" class="form-inline">
         <table class="table table-bordered">
@@ -12,9 +12,7 @@
                 <td>课程类别：</td>
                 <td>
                     <select class="form-control" name="classType" id="classType">
-                        <option value="0">请选择课程类别</option>
-                        <option value="1">围棋类</option>
-                        <option value="2">模特</option>
+                        <option ng-repeat="item in courseType track by $index" value={{$index}}>{{item}}</option>
                     </select>
                     <a id="addCourseType" class="btn btn-blue" href="javascript:;"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>新建课程类别</a>
                 </td>
@@ -155,7 +153,7 @@
         <table class="table">
             <tr>
                 <td>序号：</td>
-                <td><input type="text" class="form-control"></td>
+                <td><input type="text" class="form-control" disabled></td>
             </tr>
             <tr>
                 <td>类别名称：</td>
@@ -165,10 +163,10 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <button type="button" class="btn btn-primary cancel">
+                    <button type="button" class="btn btn-default cancel">
                         取消
                     </button>
-                    <button type="submit" class="btn btn-success">
+                    <button type="submit" class="btn btn-primary">
                         确定
                     </button>
                 </td>

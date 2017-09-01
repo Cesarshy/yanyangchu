@@ -1,0 +1,156 @@
+<div class="consult_notes-main addConsult-main add_newCourse">
+    <div class="c-m-top a-m-top">
+        <h4 class="blue">我的今日</h4>
+        <p>当前位置：<a href="#/office_center">办理中心</a>&nbsp;>&nbsp;我的今日</p>
+    </div>
+    <div class="myDay">
+        <div class="c-m-chooseDate form-inline">
+            <button type="button" id="yesterday" class="btn btn-primary">
+                <i class="glyphicon glyphicon-menu-left" aria-hidden="true"></i>
+                前一天
+            </button>
+            &nbsp;&nbsp;
+            <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                <input style="background-color:#fff;" name="staDate" class="form-control" size="16" type="text" value="" readonly>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+            <input type="hidden" id="dtp_input1" value="" />
+            &nbsp;&nbsp;
+            <button type="button" id="tomorrow" class="btn btn-primary">
+                后一天
+                <i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <hr>
+        <div class="c-m-content">
+            <header>
+                [艳阳初] [ 2017-09-01 收费交接单 ]
+            </header>
+            <table class="table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th colspan="4">业务办理明细表</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th></th>
+                    <th>收入</th>
+                    <th>支出</th>
+                    <th>总计</th>
+                </tr>
+                <tr>
+                    <td>学费</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>教材</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>杂费</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>学员账户</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>总计</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <table class="table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th colspan="4">账户收支明细表</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th></th>
+                    <th>收入</th>
+                    <th>支出</th>
+                    <th>总计</th>
+                </tr>
+                <tr>
+                    <td>现金</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>刷卡</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>转账</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>支付宝</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>微信</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>总计</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <footer>
+                打印时间：<span id="time"></span>
+                &nbsp;&nbsp;&nbsp;
+                交账人签字：
+                &nbsp;&nbsp;&nbsp;
+                接账人签字：
+            </footer>
+        </div>
+        <hr>
+        <div class="button-box">
+            <a href="#/office_center" class="btn btn-default">
+                今日明细
+            </a>
+            <a href="javascript:;" class="btn btn-default">
+                针式打印
+            </a>
+            <a href="javascript:;" class="btn btn-default">
+                热敏打印
+            </a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        language:'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script src="js/myDay.js"></script>

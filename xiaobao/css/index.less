@@ -38,6 +38,9 @@ html{
   .glyphicon {
     font-size: 12px;
   }
+  .glyphicon-star{
+    color: #e3e32d;
+  }
   .box-shadow{
     position: fixed;
     top: 0;
@@ -61,6 +64,16 @@ html{
         color: white;
       }
     }
+  }
+  .toRight{
+    display: inline-block;
+    border: 5px solid transparent;
+    border-left: 5px solid #333;
+  }
+  .toBottom{
+    display: none;
+    border: 5px solid transparent;
+    border-top: 5px solid #333;
   }
   body{
     height: 100%;
@@ -1245,6 +1258,42 @@ html{
               }
             }
           }
+          >.myDay{
+            text-align: center;
+            background-color: #fff;
+            padding: 20px 0;
+            .c-m-content{
+              padding-top: 20px;
+              table{
+                width: 60%;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                thead{
+                  tr{
+                    th{
+                      font-size: 16px;
+                    }
+                  }
+                }
+                tr{
+                  th{
+                    text-align: center;
+                    line-height: 2;
+                  }
+                  td{
+                    width: 25%;
+                    text-align: center;
+                    line-height:2;
+                  }
+                }
+              }
+              >header{
+                font-size: 18px;
+                line-height: 2;
+                margin-bottom: 30px;
+              }
+            }
+          }
         }
         /*新增咨询本*/
         .addConsult-main{
@@ -2118,6 +2167,9 @@ html{
             .c-b-c-top{
               margin-bottom: 10px;
             }
+            .button-box{
+              padding-top: 10px;
+            }
           }
         }
         .signUp-shadow{
@@ -2321,6 +2373,7 @@ html{
             }
             .button-box{
               text-align: center;
+              padding-top: 10px;
             }
           }
         }
@@ -2401,13 +2454,82 @@ html{
             }
           }
         }
+        /*教材选择*/
+        .textbook-choose{
+          .change-box{
+            top: 100px;
+            width: 700px;
+            margin-left: -590px;
+            form{
+              padding: 20px;
+              .t-c-f-main{
+                .t-c-f-m-left,.t-c-f-m-right{
+                  width: 49%;
+                  border: 1px solid #ddd;
+                  >.title{
+                    line-height: 30px;
+                    text-align: center;
+                  }
+                  .search{
+                    >button{
+                      padding: 6.5px 15px;
+                    }
+                    >input{
+                      width: 245px;
+                    }
+                  }
+                  .large-box{
+                    height: 300px;
+                    overflow: auto;
+                    .ul-box{
+                      line-height: 25px;
+                      padding: 5px;
+                      .ul-title{
+                        cursor: pointer;
+                      }
+                      ul{
+                        li{
+                          cursor: pointer;
+                          padding-left: 14px;
+                        }
+                        li:hover{
+                          color: #fff;
+                          background-color: #01b591;
+                        }
+                      }
+                    }
+                  }
+                }
+                .t-c-f-m-left{
+                  ul{
+                    display: none;
+                  }
+                }
+                .t-c-f-m-right{
+                  .search{
+                    line-height: 34px;
+                    border-bottom: 1px solid #ddd;
+                    padding-left: 19px;
+                  }
+                }
+              }
+              .button-box{
+                text-align: center;
+                padding-top: 10px;
+                a{
+                  margin: 0 100px;
+                }
+              }
+            }
+          }
+        }
         /*课程设置*/
         .course{
           >.c-m-con{
             >.c-m-c-main{
               >.main{
                 >.table-box{
-                  >table{
+                  table{
                     tr{
                       td{
                         position: relative;
@@ -2539,10 +2661,10 @@ html{
             width: 550px;
             height: 275px;
             background-color: #fff;
-            box-shadow: 0 0 30px #000;
+            box-shadow: 0 0 30px #666;
             margin-left: -455px;
             header{
-              background-color: #4a8bc2;
+              background-color: #01b591;
               font-size: 15px;
               line-height: 45px;
               text-align: center;
@@ -2616,7 +2738,7 @@ html{
               }
             }
             .button-box{
-              padding: 5px 0;
+              padding-top: 10px;
               text-align: center;
               a{
                 margin: 0 20px;

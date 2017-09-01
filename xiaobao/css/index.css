@@ -40,6 +40,9 @@ html .label-box {
 html .glyphicon {
   font-size: 12px;
 }
+html .glyphicon-star {
+  color: #e3e32d;
+}
 html .box-shadow {
   position: fixed;
   top: 0;
@@ -63,6 +66,16 @@ html .box-shadow > div header {
   line-height: 45px;
   text-align: center;
   color: white;
+}
+html .toRight {
+  display: inline-block;
+  border: 5px solid transparent;
+  border-left: 5px solid #333;
+}
+html .toBottom {
+  display: none;
+  border: 5px solid transparent;
+  border-top: 5px solid #333;
 }
 html body {
   height: 100%;
@@ -306,6 +319,7 @@ html body > .main-box > .main {
   /*学员列表弹出框*/
   /*转班*/
   /* 教材杂费*/
+  /*教材选择*/
   /*课程设置*/
   /*新增课程*/
   /*学员刷卡*/
@@ -1144,6 +1158,36 @@ html body > .main-box > .main .consult_notes-main .c-m-bottom .c-m-b-right .c-m-
   font-size: 11px !important;
   height: 30px !important;
 }
+html body > .main-box > .main .consult_notes-main > .myDay {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 0;
+}
+html body > .main-box > .main .consult_notes-main > .myDay .c-m-content {
+  padding-top: 20px;
+}
+html body > .main-box > .main .consult_notes-main > .myDay .c-m-content table {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+html body > .main-box > .main .consult_notes-main > .myDay .c-m-content table thead tr th {
+  font-size: 16px;
+}
+html body > .main-box > .main .consult_notes-main > .myDay .c-m-content table tr th {
+  text-align: center;
+  line-height: 2;
+}
+html body > .main-box > .main .consult_notes-main > .myDay .c-m-content table tr td {
+  width: 25%;
+  text-align: center;
+  line-height: 2;
+}
+html body > .main-box > .main .consult_notes-main > .myDay .c-m-content > header {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
 html body > .main-box > .main .addConsult-main .a-m-top {
   padding: 10px 25px;
 }
@@ -1913,6 +1957,9 @@ html body > .main-box > .main .chooseStu-shadow .change-box table {
 html body > .main-box > .main .chooseStu-shadow .change-box .c-b-c-top {
   margin-bottom: 10px;
 }
+html body > .main-box > .main .chooseStu-shadow .change-box .button-box {
+  padding-top: 10px;
+}
 html body > .main-box > .main .signUp-shadow {
   display: none;
   position: fixed;
@@ -2095,6 +2142,7 @@ html body > .main-box > .main .students-box-shadow .change-box .c-b-c-bottom ul 
 }
 html body > .main-box > .main .students-box-shadow .change-box .button-box {
   text-align: center;
+  padding-top: 10px;
 }
 html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td {
   padding: 20px 0;
@@ -2154,10 +2202,75 @@ html body > .main-box > .main .petty_expenses form > .box > .con .default .right
   margin-top: 10px;
   margin-left: 20px;
 }
-html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box > table tr td {
+html body > .main-box > .main .textbook-choose .change-box {
+  top: 100px;
+  width: 700px;
+  margin-left: -590px;
+}
+html body > .main-box > .main .textbook-choose .change-box form {
+  padding: 20px;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right {
+  width: 49%;
+  border: 1px solid #ddd;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left > .title,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right > .title {
+  line-height: 30px;
+  text-align: center;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left .search > button,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right .search > button {
+  padding: 6.5px 15px;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left .search > input,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right .search > input {
+  width: 245px;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left .large-box,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right .large-box {
+  height: 300px;
+  overflow: auto;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left .large-box .ul-box,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right .large-box .ul-box {
+  line-height: 25px;
+  padding: 5px;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left .large-box .ul-box .ul-title,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right .large-box .ul-box .ul-title {
+  cursor: pointer;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left .large-box .ul-box ul li,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right .large-box .ul-box ul li {
+  cursor: pointer;
+  padding-left: 14px;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left .large-box .ul-box ul li:hover,
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right .large-box .ul-box ul li:hover {
+  color: #fff;
+  background-color: #01b591;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-left ul {
+  display: none;
+}
+html body > .main-box > .main .textbook-choose .change-box form .t-c-f-main .t-c-f-m-right .search {
+  line-height: 34px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 19px;
+}
+html body > .main-box > .main .textbook-choose .change-box form .button-box {
+  text-align: center;
+  padding-top: 10px;
+}
+html body > .main-box > .main .textbook-choose .change-box form .button-box a {
+  margin: 0 100px;
+}
+html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box table tr td {
   position: relative;
 }
-html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box > table tr td .operation-box {
+html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box table tr td .operation-box {
   display: none;
   position: absolute;
   left: 0;
@@ -2166,7 +2279,7 @@ html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-
   box-shadow: 0 3px 20px grey;
   z-index: 6;
 }
-html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box > table tr td .operation-box li {
+html body > .main-box > .main .course > .c-m-con > .c-m-c-main > .main > .table-box table tr td .operation-box li {
   line-height: 30px;
 }
 html body > .main-box > .main .add_newCourse .a-m-top {
@@ -2259,11 +2372,11 @@ html body > .main-box > .main .add_newCourse-box-shadow .add-box {
   width: 550px;
   height: 275px;
   background-color: #fff;
-  box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 30px #666;
   margin-left: -455px;
 }
 html body > .main-box > .main .add_newCourse-box-shadow .add-box header {
-  background-color: #4a8bc2;
+  background-color: #01b591;
   font-size: 15px;
   line-height: 45px;
   text-align: center;
@@ -2328,7 +2441,7 @@ html body > .main-box > .main .wage-box-shadow .change-box form table tr th {
   text-align: center;
 }
 html body > .main-box > .main .wage-box-shadow .change-box .button-box {
-  padding: 5px 0;
+  padding-top: 10px;
   text-align: center;
 }
 html body > .main-box > .main .wage-box-shadow .change-box .button-box a {
