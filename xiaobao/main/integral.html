@@ -39,7 +39,7 @@
                 <table class="table">
                     <tr>
                         <td colspan="2">
-                            <a href="javascript:;" class="btn btn-primary">选择学员</a>
+                            <a id="choose" href="javascript:;" class="btn btn-primary">选择学员</a>
                         </td>
                     </tr>
                     <tr>
@@ -96,7 +96,7 @@
                     <td>应收金额：</td>
                     <td>+<b>0.00</b>元</td>
                 </tr>
-                <tr>
+                <tr class="vTop">
                     <td>收款路径：</td>
                     <td>
                         <select class="form-control" name="paymentMethod" id="paymentMethod">
@@ -104,10 +104,12 @@
                             <option value="2">支付宝</option>
                             <option value="3">微信</option>
                         </select>
-                        <input class="form-control" name="price" id="price" type="text">元
+                        <input class="form-control price" name="price" type="text">元
                         &nbsp;&nbsp;对方账号：<input class="form-control" name="otherAccount" type="text">
                         &nbsp;&nbsp;流水单号：<input class="form-control" name="waterNum" type="text">
-                        &nbsp;&nbsp;<a href="javascript:;" class="btn btn-blue">收款账户</a>
+                        &nbsp;&nbsp;<a id="addAco" href="javascript:;" class="btn btn-blue">
+                        <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>收款账户
+                    </a>
                     </td>
                 </tr>
                 <tr>
@@ -126,9 +128,12 @@
                     <td>学员账户：</td>
                     <td>+<b>0.00</b>元</td>
                 </tr>
-                <tr>
-                    <td rowspan="2">订单标签：</td>
-                    <td><span style="color: #959697">还未添加任何标签</span></td>
+                <tr class="vTop">
+                    <td rowspan="2" style="line-height: 34px;">订单标签：</td>
+                    <!--<td><span id='info' style="color: #959697">还未添加任何标签</span></td>-->
+                    <td id="tag">
+                        <span id='info' style="color: #959697;line-height: 34px;">还未添加任何标签</span>
+                    </td>
                 </tr>
                 <tr>
                     <td style="padding-left: 8px">
@@ -182,39 +187,85 @@
     </div>
     <div class="signUp-shadow">
         <form class="main form-inline add-box">
-            <header>订单标签设置</header>
+            <header>订单标签选择</header>
             <table class="table">
                 <tr>
-                    <td><a href="javascript:;"><i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>设置订单标签</a></td>
+                    <td><a id="openSet" href="javascript:;"><i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>设置订单标签</a></td>
                 </tr>
                 <tr>
-                    <td>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="tag" id="tag1" value="option1"> 未使用
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="tag" id="tag2" value="option2"> 续费
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="tag" id="tag3" value="option3"> 优惠
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="tag" id="tag4" value="option3"> 赠送
-                        </label>
+                    <td id="currentTagList">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td>
                         <button id="cancel" type="button" class="btn btn-primary cancel">
                             取消
                         </button>
-                        <button type="submit" class="btn btn-success">
+                        <button id="ensure" type="submit" class="btn btn-success">
                             确定
                         </button>
                     </td>
                 </tr>
             </table>
         </form>
+    </div>
+    <div id="chooseStu"  class="box-shadow chooseStu-shadow">
+        <div class="change-box">
+            <header>选择学员</header>
+            <div class="c-b-con">
+                <form class="form-horizontal form-inline">
+                    <div class="c-b-c-top clearfix">
+                        校区：
+                        <select name="campus" id="campus_form" class="form-control">
+                            <option value="1">郑州校区</option>
+                        </select>
+                        <div class="fr form-inline fr ng-pristine ng-valid">
+                            <button type="submit" class="btn btn-default fr" style="padding: 6px 15px;"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> 搜索</button>
+                            <input class="form-control form-inline fr" type="search" placeholder="请输入用户名称">
+                            <select name="type" class="form-control">
+                                <option value="1">学员姓名</option>
+                                <option value="2">手机号</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table id="table_3" class="table-striped">
+                    </table>
+                </form>
+                <div class="button-box clearfix">
+                    <a id="close" href="javascript:;" class="btn btn-default fl">关闭</a>
+                    <a href="javascript:;" class="btn btn-primary fr">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--订单标签设置-->
+    <div class="box-shadow tagSettings-box-shadow">
+        <div class="change-box">
+            <header>
+                订单标签设置
+            </header>
+            <form action="">
+                <div class="top clearfix">
+                    <button id="newTag" type="button" class="btn btn-primary fr">新增标签</button>
+                    <input id="tagName" maxlength="8" class="form-control form-inline fr" type="search" placeholder="订单名称最长8个字">
+                </div>
+                <p class="bg-info">
+                    共有<span id="sum">1</span>个标签，启动标签<span id="openSum">1</span>个
+                </p>
+                <table class="form-inline">
+                    <tr>
+                        <!--<td>
+                            <input class="my-checkbox_2" type="checkbox" name="my-checkbox" value="tag_1" checked>
+                            <input type="text" class="form-control" maxlength="8" value="教材">
+                        </td>-->
+                    </tr>
+                </table>
+            </form>
+            <div class="button-box">
+                <a id="close_4" href="javascript:;" class="btn btn-default">取消</a>
+                <a id="ensure_4" href="javascript:;" class="btn btn-primary">保存</a>
+            </div>
+        </div>
     </div>
 </div>
 <script type="text/javascript">

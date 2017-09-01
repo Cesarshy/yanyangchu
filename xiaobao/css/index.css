@@ -13,6 +13,12 @@ html a:active {
 html a:focus {
   outline: none;
 }
+html .icon-nan1 {
+  color: #4dd0e1;
+}
+html .icon-nv1 {
+  color: #f6aadb;
+}
 html .orange {
   color: #fff !important;
   background-color: #f5873e !important;
@@ -26,6 +32,10 @@ html .warning {
   padding-left: 20px;
   font-size: 14px;
   color: #e44a4a;
+}
+html .label-box {
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 html .glyphicon {
   font-size: 12px;
@@ -1873,10 +1883,9 @@ html body > .main-box > .main .signUp > form .tag,
 html body > .main-box > .main .theOrderLog > form .tag {
   background-color: #fff;
   padding: 10px;
-}
-html body > .main-box > .main .signUp > form .tag span,
-html body > .main-box > .main .theOrderLog > form .tag span {
-  color: #959697;
+  /*>span{
+                color: #959697;
+              }*/
 }
 html body > .main-box > .main .signUp > form .tag a,
 html body > .main-box > .main .theOrderLog > form .tag a {
@@ -1891,6 +1900,18 @@ html body > .main-box > .main .signUp > form .footer button,
 html body > .main-box > .main .theOrderLog > form .footer button {
   padding: 6px 30px;
   margin: 0 20px;
+}
+html body > .main-box > .main .chooseStu-shadow .change-box {
+  width: 700px;
+  top: 100px;
+  margin-left: -585px;
+}
+html body > .main-box > .main .chooseStu-shadow .change-box table {
+  max-height: 400px;
+  overflow: auto;
+}
+html body > .main-box > .main .chooseStu-shadow .change-box .c-b-c-top {
+  margin-bottom: 10px;
 }
 html body > .main-box > .main .signUp-shadow {
   display: none;
@@ -1918,6 +1939,8 @@ html body > .main-box > .main .signUp-shadow .add-box header {
   color: white;
 }
 html body > .main-box > .main .signUp-shadow .add-box table {
+  max-height: 200px;
+  overflow: auto;
   margin-top: 20px;
 }
 html body > .main-box > .main .signUp-shadow .add-box table tr td {
@@ -1999,12 +2022,13 @@ html body > .main-box > .main .student_account form table tr td:last-child {
   padding-right: 20px;
 }
 html body > .main-box > .main .student_account form table tr td {
+  vertical-align: middle;
   border: none;
 }
 html body > .main-box > .main .student_account form table tr td b {
   font-weight: 700;
 }
-html body > .main-box > .main .student_account form table tr td #price {
+html body > .main-box > .main .student_account form table tr td .price {
   width: 100px;
 }
 html body > .main-box > .main .student_account form table tr td .top {
@@ -2013,12 +2037,16 @@ html body > .main-box > .main .student_account form table tr td .top {
 html body > .main-box > .main .student_account form table tr td .bottom {
   margin-top: 10px;
 }
+html body > .main-box > .main .student_account form table .vTop td {
+  vertical-align: top;
+  line-height: 34px;
+}
 html body > .main-box > .main .student_account form > .table-box {
   background-color: #fff;
   padding: 0 20px;
 }
 html body > .main-box > .main .student_account form > .table-box table:first-child tr td:first-child {
-  width: 11%;
+  width: 90px;
   padding-left: 0;
 }
 html body > .main-box > .main .student_account form > .table-box table:first-child tr td:last-child {
@@ -2030,11 +2058,11 @@ html body > .main-box > .main .student_account form > .table-box table:first-chi
 }
 html body > .main-box > .main .student_account form .tag {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 9px 20px;
   margin-bottom: 20px;
-}
-html body > .main-box > .main .student_account form .tag span {
-  color: #959697;
+  /*              span{
+                color: #959697;
+              }*/
 }
 html body > .main-box > .main .student_account form .tag a {
   margin-left: 10px;
@@ -2087,6 +2115,17 @@ html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2)
   color: #4a8bc2;
   font-size: 30px;
   margin-left: -14px;
+}
+html body > .main-box > .main .turn_class form .tag > span:first-child {
+  float: left;
+  line-height: 34px;
+}
+html body > .main-box > .main .turn_class form .tag > div {
+  overflow: hidden;
+}
+html body > .main-box > .main .turn_class form .tag > div .label-box {
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 html body > .main-box > .main .petty_expenses form > .box {
   background-color: #fff;

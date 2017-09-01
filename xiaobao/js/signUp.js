@@ -1,10 +1,26 @@
 $(function () {
+
+    var tagList = [],
+        a = 0;
+    /*当前便签设置里开启的标签就行选择显示*/
+    function tagListTem() {
+        $('#currentTagList').html('');
+        $(tagList).each(function (i, v) {
+            var a = '<label class="checkbox-inline">\n' +
+                '                            <input type="checkbox" name="tag" id="tag'+i+'" value="option'+i+'"> '+v+'\n' +
+                '                        </label>'
+            $('#currentTagList').html($('#currentTagList').html() + a)
+        });
+    }
+
     /*订单标签选择*/
     function chooseTag() {
+
         $('#addTag').on('click', function () {
             $('.signUp-shadow').show();
         })
         $('#cancel').on('click', function () {
+            console.log(1);
             $('.signUp-shadow').hide();
         })
         $('#ensure').on('click', function () {
@@ -24,28 +40,118 @@ $(function () {
             $('.signUp-shadow').hide();
         })
 
+        /*删除当前所显示的标签*/
         $('.table.pay').on('click', '.label-box i', function () {
             $(this).parent().remove();
             /*没有标签则显示文字*/
             if($('#tag').find('.label-box')){
-                console.log(1);
                 $('#tag').html('<span style="color: #959697">还未添加任何标签</span>')
             }
         })
     }
-   chooseTag();
+
 
     /*订单标签设置*/
+    var list = [
+        {
+            name: '教材',
+            state: true
+        },
+        {
+            name: '优惠',
+            state: true
+        },
+        {
+            name: '赠送',
+            state: false
+        }
+    ];
     function setTag() {
         /*打开盒子*/
         $('#openSet').on('click', function () {
-            $('tagSettings-box-shadow').show()
+            $('.tagSettings-box-shadow').show()
         });
         /*初始化开关组件*/
-        $(".my-checkbox_2").bootstrapSwitch({size: 'mini'});
+        $(list).each(function (i, v) {
+            var table = $('.tagSettings-box-shadow table')
+            if(i%3 === 0){
+                if(v.state){
+                    b = '                        <td>\n' +
+                        '                            <input class="my-checkbox_2" type="checkbox" id="switch'+i+1+'" name="my-checkbox4" value="tag_'+i+1+'" checked>\n' +
+                        '                            <input type="text" class="form-control" maxlength="8" value='+v.name+'>\n' +
+                        '                        </td>\n';
+                }else{
+                    b = '                        <td>\n' +
+                        '                            <input class="my-checkbox_2" type="checkbox" id="switch'+i+1+'" name="my-checkbox4" value="tag_'+i+1+'">\n' +
+                        '                            <input type="text" class="form-control" maxlength="8" value='+v.name+'>\n' +
+                        '                        </td>\n';
+                }
+
+                var tr = document.createElement('tr');
+                $(tr).html(b);
+                table.find('tbody').append(tr);
+                table.find('#switch'+i+1).bootstrapSwitch({
+                    size: 'mini',
+                    onSwitchChange:function(event,state){
+                        if(state==true){
+                            $(this).prop('checked',true);
+                        }else{
+                            $(this).prop('checked',false);
+                        }
+                    }
+                });
+            }else{
+                if(v.state){
+                    b = '                            <input class="my-checkbox_2"  type="checkbox" id="switch\'+i+1+\'" name="my-checkbox4"  value="tag_'+i+1+'"  checked>\n' +
+                        '                            <input type="text" class="form-control" maxlength="8" value='+v.name+'>\n';
+                }else{
+                    b = '                            <input class="my-checkbox_2"  type="checkbox" id="switch\'+i+1+\'" name="my-checkbox4"  value="tag_'+i+1+'">\n' +
+                        '                            <input type="text" class="form-control" maxlength="8" value='+v.name+'>\n';
+                }
+
+                var td =document.createElement('td');
+                $(td).html(b);
+                table.find('tr:last-child').append(td);
+                table.find('#switch'+i+1).bootstrapSwitch({
+                    size: 'mini',
+                    onSwitchChange:function(event,state){
+                        if(state==true){
+                            $(this).prop('checked',true);
+                        }else{
+                            /* $(this).val("2");*/
+                            $(this).prop('checked',false);
+                        }
+                    }
+                });
+            }
+        })
+        $(".my-checkbox_2").bootstrapSwitch({
+            size: 'mini',
+            onSwitchChange:function(event,state){
+                if(state==true){
+                    $(this).prop('checked',true);
+                }else{
+                   /* $(this).val("2");*/
+                    $(this).prop('checked',false);
+                }
+            }
+        });
+
+        $('.tagSettings-box-shadow form table td input[type=checkbox]').each(function (i, v) {
+            if($(this).prop('checked') === true){
+                tagList.push($(this).parent().parent().siblings('input').val());
+            }
+        });
+
+        /*数量信息显示*/
+        $('#sum').html(list.length);
+        $('#openSum').html(tagList.length);
+
         $('#close_4').on('click', function () {
             $('.tagSettings-box-shadow').hide()
         });
+
+        /*新增标签类型*/
         $('#newTag').on('click', function () {
             var length = $(this).parent().siblings('table').find('td').length,
                 a = length % 3,
@@ -53,41 +159,80 @@ $(function () {
                 c = $('#tagName').val(),
                 d = /^[\s]*$/,
                 table = $(this).parent().siblings('table'),
-                nowId = table.find('tr:last-child td:last-child .my-checkbox_2').attr('value').replace(/tag_/,''),
+                nowId = parseInt(table.find('tr:last-child td:last-child .my-checkbox_2').attr('value').replace(/tag_/,'')),
                 times = 0;
-            console.log(nowId);
             if( d.test(c) ){
                 return false;
             }else{
                 times++;
                 nowId += times;
                 if(a === 0){
-                    b = '<tr>\n' +
-                        '                        <td>\n' +
-                        '                            <input class="my-checkbox_2" type="checkbox" name="my-checkbox4" value="tag_'+nowId+'">\n' +
+                    b = '                        <td>\n' +
+                        '                            <input class="my-checkbox_2" id="switch'+nowId+'" type="checkbox" name="my-checkbox4" value="tag_'+nowId+'">\n' +
                         '                            <input type="text" class="form-control" maxlength="8" value='+c+'>\n' +
-                        '                        </td>\n' +
-                        '                    </tr>';
-                    table.html(table.find('tbody').html()+b);
-                    table.find('tr:last-child td:last-child .my-checkbox_2').bootstrapSwitch({size: 'mini'});
+                        '                        </td>\n';
+                    var tr = document.createElement('tr');
+                    $(tr).html(b);
+                    table.find('tbody').append(tr);
+                    table.find('#switch'+nowId).bootstrapSwitch({
+                        size: 'mini',
+                        onSwitchChange:function(event,state){
+                            if(state==true){
+                                $(this).prop('checked',true);
+                            }else{
+                                $(this).prop('checked',false);
+                            }
+                        }
+                    });
                 }else{
-                    b = '<td>\n' +
-                        '                            <input class="my-checkbox_2" type="checkbox" name="my-checkbox4"  value="tag_'+nowId+'">\n' +
-                        '                            <input type="text" class="form-control" maxlength="8" value='+c+'>\n' +
-                        '                        </td>';
-                    table.find('tr:last-child').html(table.find('tr:last-child').html() + b);
-                    table.find('tr:last-child td:last-child .my-checkbox_2').bootstrapSwitch({size: 'mini'});
+                    b = '                            <input class="my-checkbox_2" id="switch'+nowId+'"  type="checkbox" name="my-checkbox4"  value="tag_'+nowId+'">\n' +
+                        '                            <input type="text" class="form-control" maxlength="8" value='+c+'>\n';
+                    var td =document.createElement('td');
+                    $(td).html(b);
+                    table.find('tr:last-child').append(td);
+                    table.find('#switch'+nowId).bootstrapSwitch({
+                        size: 'mini',
+                        onSwitchChange:function(event,state){
+                            if(state==true){
+                                $(this).prop('checked',true);
+                            }else{
+                                /* $(this).val("2");*/
+                                $(this).prop('checked',false);
+                            }
+                        }
+                    });
                 }
             }
-        })
-        $('.my-checkbox_2').on('change', function () {
-            console.log($(this).prop('checked'));
-        })
-        $('#ensure_4').on('click', function () {
 
+            /*更新总标签数量*/
+            list= [];
+            table.find('input[type=text]').each(
+                function (i, v) {
+                    list.push($(this).val())
+                }
+            )
+            $('#sum').html(list.length);
         })
+
+        /*保存标签设置*/
+        $('#ensure_4').on('click', function () {
+            tagList = [];
+           $(this).parent().siblings('form').find('table input[type=checkbox]').each(function (i, v) {
+               if($(this).prop('checked') === true){
+                   tagList.push($(this).parent().parent().siblings('input').val());
+               }
+           });
+
+           /*更新选中标签数量*/
+            tagListTem();
+            $('#openSum').html(tagList.length);
+            $('.tagSettings-box-shadow').hide()
+        });
+
+        tagListTem()
     }
-    setTag()
+    setTag();
+    chooseTag();
 
     /*选择已有学员*/
     function chooseStu() {
@@ -98,7 +243,42 @@ $(function () {
             $('#chooseStu').hide();
         })
     }
-
+    chooseStu()
+    $("#table_3").bootstrapTable({
+        url: "duoBaoActivityList",
+        dataType: "json",
+        pagination: true, //分页
+        singleSelect: false,
+        search: false, //不显示搜索框
+        searchAlign: 'left',
+        sidePagination: "server", //服务端处理分页
+        onClickRow: function (row, $element, field) {
+            console.log(row);
+            console.log(field);
+        },
+        columns: [
+            {
+                title: '姓名',
+                field: 'name',
+                align: 'center'
+            },
+            {
+                title: '联系方式',
+                field: 'contact',
+                align: 'center'
+            },
+            {
+                title: '在读课程',
+                field: 'classType',
+                align: 'center'
+            }
+        ],
+        data: [{
+            name: ' <i class="iconfont icon-nan1"></i>张三',
+            contact: '13100000000',
+            classType: '围棋'
+        }]
+    });
 
     /*选择一对一弹窗*/
     function show2hide(a, b, c) {
@@ -109,7 +289,7 @@ $(function () {
             $(c).hide()
         })
     }
-    show2hide('#openO2O' ,'#close_2', '.consultation_record-box-shadow-2')
+    show2hide('#openO2O' ,'#close_2', '.consultation_record-box-shadow-4')
     /*按钮点击事件*/
     $('.box-shadow .change-box form #tableList_1, #tableList_2').on('click', 'a', function () {
         $(this).addClass('orange').siblings('a').removeClass('orange');

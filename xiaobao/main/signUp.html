@@ -143,9 +143,9 @@
                 </tr>
                 <tr class="vTop">
                     <td rowspan="2">订单标签：</td>
-                    <!--<td><span style="color: #959697">还未添加任何标签</span></td>-->
+                    <!--<td><span id='info' style="color: #959697">还未添加任何标签</span></td>-->
                     <td id="tag">
-                        <span class="label-box btn btn-default">教材 <i class="iconfont icon-guanbi"></i></span>
+                        <span id='info' style="color: #959697;line-height: 34px;">还未添加任何标签</span>
                     </td>
                 </tr>
                 <tr>
@@ -205,23 +205,11 @@
                     <td><a id="openSet" href="javascript:;"><i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i>设置订单标签</a></td>
                 </tr>
                 <tr>
-                    <td>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="tag" id="tag1" value="option1"> 未使用
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="tag" id="tag2" value="option2"> 续费
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="tag" id="tag3" value="option3"> 优惠
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="tag" id="tag4" value="option3"> 赠送
-                        </label>
+                    <td id="currentTagList">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td>
                         <button id="cancel" type="button" class="btn btn-primary cancel">
                             取消
                         </button>
@@ -233,26 +221,36 @@
             </table>
         </form>
     </div>
-    <div id="chooseStu"  class="box-shadow wage-box-shadow">
+    <div id="chooseStu"  class="box-shadow chooseStu-shadow">
         <div class="change-box">
             <header>选择学员</header>
             <div class="c-b-con">
-                <form class="form-horizontal">
-                    <table class="table table-striped">
-                        <tr ng-repeat="item in students" repeat-finish>
-                            <td><input type="radio" name="inlineRadio" id="inlineRadio{{item.id}}" value={{item.id}}></td>
-                            <td>{{item.name}}</td>
-                        </tr>
+                <form class="form-horizontal form-inline">
+                    <div class="c-b-c-top clearfix">
+                        校区：
+                        <select name="campus" id="campus_form" class="form-control">
+                            <option value="1">郑州校区</option>
+                        </select>
+                        <div class="fr form-inline fr ng-pristine ng-valid">
+                            <button type="submit" class="btn btn-default fr" style="padding: 6px 15px;"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> 搜索</button>
+                            <input class="form-control form-inline fr" type="search" placeholder="请输入用户名称">
+                            <select name="type" class="form-control">
+                                <option value="1">学员姓名</option>
+                                <option value="2">手机号</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table id="table_3" class="table-striped">
                     </table>
                 </form>
-                <div class="button-box">
-                    <a id="close" href="javascript:;" class="btn btn-default">关闭</a>
-                    <a href="javascript:;" class="btn btn-primary">确定</a>
+                <div class="button-box clearfix">
+                    <a id="close" href="javascript:;" class="btn btn-default fl">关闭</a>
+                    <a href="javascript:;" class="btn btn-primary fr">确定</a>
                 </div>
             </div>
         </div>
     </div>
-    <div  class="box-shadow wage-box-shadow consultation_record-box-shadow-2">
+    <div  class="box-shadow wage-box-shadow consultation_record-box-shadow-2 consultation_record-box-shadow-4">
         <div class="change-box">
             <header>选择一对一</header>
             <div class="c-b-con">
@@ -384,7 +382,7 @@
         </div>
     </div>
     <!--订单标签设置-->
-    <div style="display: block" class="box-shadow tagSettings-box-shadow">
+    <div class="box-shadow tagSettings-box-shadow">
         <div class="change-box">
             <header>
                 订单标签设置
@@ -395,14 +393,14 @@
                     <input id="tagName" maxlength="8" class="form-control form-inline fr" type="search" placeholder="订单名称最长8个字">
                 </div>
                 <p class="bg-info">
-                    共有<span>1</span>个标签，启动标签<span>1</span>个
+                    共有<span id="sum">1</span>个标签，启动标签<span id="openSum">1</span>个
                 </p>
                 <table class="form-inline">
                     <tr>
-                        <td>
+                        <!--<td>
                             <input class="my-checkbox_2" type="checkbox" name="my-checkbox" value="tag_1" checked>
                             <input type="text" class="form-control" maxlength="8" value="教材">
-                        </td>
+                        </td>-->
                     </tr>
                 </table>
             </form>

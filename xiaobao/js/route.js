@@ -161,7 +161,20 @@ app.config(['$routeProvider', function ($routeProvider) {
             ]
         }
     }).when('/integral', {
-        templateUrl: 'main/integral.html'
+        templateUrl: 'main/integral.html',
+        controller: 'myCtr',
+        controller: function ($scope) {
+            $scope.students = [
+                {
+                    id: 1,
+                    name: '张三'
+                },
+                {
+                    id: 2,
+                    name: '李四'
+                }
+            ]
+        }
     }).when('/course', {
         templateUrl: 'main/course.html'
     }).when('/add_newCourse', {

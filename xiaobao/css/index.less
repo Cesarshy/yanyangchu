@@ -11,6 +11,12 @@ html{
   a:focus{
     outline: none;
   }
+  .icon-nan1{
+    color: #4dd0e1;
+  }
+  .icon-nv1{
+    color: #f6aadb;
+  }
   .orange{
     color: #fff !important;
     background-color: #f5873e !important;
@@ -24,6 +30,10 @@ html{
     padding-left: 20px;
     font-size: 14px;
     color: #e44a4a;
+  }
+  .label-box {
+    margin-bottom: 5px;
+    margin-right: 5px;
   }
   .glyphicon {
     font-size: 12px;
@@ -2079,9 +2089,9 @@ html{
             .tag{
               background-color: #fff;
               padding: 10px;
-              span{
+              /*>span{
                 color: #959697;
-              }
+              }*/
               a{
                 color: #4a8bc2;
                 margin-left: 10px;
@@ -2093,6 +2103,20 @@ html{
                 padding: 6px 30px;
                 margin: 0 20px;
               }
+            }
+          }
+        }
+        .chooseStu-shadow{
+          .change-box{
+            width: 700px;
+            top: 100px;
+            margin-left: -585px;
+            table{
+              max-height: 400px;
+              overflow: auto;
+            }
+            .c-b-c-top{
+              margin-bottom: 10px;
             }
           }
         }
@@ -2120,6 +2144,8 @@ html{
               color: white;
             }
             table{
+              max-height: 200px;
+              overflow: auto;
               margin-top: 20px;
               tr{
                 td{
@@ -2212,11 +2238,12 @@ html{
                   padding-right: 20px;
                 }
                 td{
+                  vertical-align: middle;
                   border: none;
                   b{
                     font-weight: 700;
                   }
-                  #price{
+                  .price{
                     width: 100px;
                   }
                   .top{
@@ -2227,6 +2254,12 @@ html{
                   }
                 }
               }
+              .vTop{
+                td{
+                  vertical-align: top;
+                  line-height: 34px;
+                }
+              }
             }
             >.table-box{
               background-color: #fff;
@@ -2234,7 +2267,7 @@ html{
               table:first-child{
                 tr{
                   td:first-child{
-                    width: 11%;
+                    width: 90px;
                     padding-left: 0;
                   }
                   td:last-child{
@@ -2248,11 +2281,11 @@ html{
             }
             .tag{
               background-color: #fff;
-              padding: 10px 20px;
+              padding: 9px 20px;
               margin-bottom: 20px;
-              span{
+/*              span{
                 color: #959697;
-              }
+              }*/
               a{
                 margin-left: 10px;
               }
@@ -2314,6 +2347,19 @@ html{
                     font-size: 30px;
                     margin-left: -14px;
                   }
+                }
+              }
+            }
+            .tag{
+              >span:first-child{
+                float: left;
+                line-height: 34px;
+              }
+              >div{
+                overflow: hidden;
+                .label-box{
+                  margin-bottom: 5px;
+                  margin-right: 5px;
                 }
               }
             }
