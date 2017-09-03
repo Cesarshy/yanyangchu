@@ -43,7 +43,7 @@
                 </tr>
                 <tr>
                     <td>
-                        姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="form-control" type="text">
+                        姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="name" class="form-control" type="text">
                     </td>
                     <td>
                         学员性别：
@@ -65,8 +65,8 @@
                         <input type="hidden" id="dtp_input1" value="" />
                     </td>
                     <td>
-                        母亲电话;
-                        <input class="form-control" type="text">
+                        联系方式;
+                        <input id="contact" class="form-control" type="text">
                     </td>
                 </tr>
                 <tr>
@@ -84,10 +84,307 @@
                 </tr>
                 <tr>
                     <td style="width: 50%;">
-                        <div><a id="openO2O" href="javascript:;" class="btn btn-default">选择一对一报名</a><br><br>适用于一对一的学员报名</div>
+                        <div><a id="openO2O" href="javascript:;" class="btn btn-default">选择课程报名</a><br><br>适用于一对一或先报课程后分班的学员报名</div>
                     </td>
                     <td>
                         <div><a id="classSignUp" href="javascript:;" class="btn btn-default">选择班级报名</a><br><br>适用于已建班级，直接报入班级的学员报名</div>
+                    </td>
+                </tr>
+            </table>
+            <table class="table hasChoose">
+                <tr>
+                    <th colspan="2">
+                        围棋6版(BK街舞 )
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        选择班级：
+                    </td>
+                    <td>
+                        <select name="class" class="form-control">
+                            <option value="0">待分班</option>
+                        </select>
+                        <a href="javascript:;" class="btn btn-default">
+                            <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+                            新建班级
+                        </a>
+                        <div class="cost fr">
+                            <i class="iconfont icon-jine"></i>
+                            应收：<span>3600</span>元
+                            <a href="javascript:;" class="btn btn-default">
+                                <i class="iconfont icon-guanbi"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>学费：</td>
+                    <td>
+                        <span class="price">3800</span>
+                        元
+                        &nbsp;&nbsp;
+                        <span class="price">3800</span>
+                        元/期（86课时）
+                    </td>
+                </tr>
+                <tr>
+                    <td>优惠：</td>
+                    <td>
+                        <span class="price">0.00</span>
+                        元
+                        <select name="changePrice" class="form-control">
+                            <option value="1">原价</option>
+                            <option value="2">优惠</option>
+                            <option value="3">插班减少</option>
+                            <option value="4">折扣</option>
+                        </select>
+                        <span class="discount">
+                            <input type="text" class="form-control">
+                            元
+                            <a href="javascript:;" class="btn btn-default">
+                                <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+                                添加优惠
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>教材：</td>
+                    <td>
+                        <span class="price">0.00</span>
+                        元
+                    </td>
+                </tr>
+                <tr>
+                    <td>杂费：</td>
+                    <td>
+                        <span class="price">0.00</span>
+                        元
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="javascript:;" class="btn btn-default">
+                            <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+                            新增教材杂费
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>对内备注：</td>
+                    <td>
+                        <input style="width: 100%;" type="text" class="form-control" placeholder="该备注只对内部操作人员可见">
+                    </td>
+                </tr>
+                <tr>
+                    <td>对外备注：</td>
+                    <td>
+                        <input style="width: 100%;" type="text" class="form-control" placeholder="该备注将会被打印">
+                    </td>
+                </tr>
+            </table>
+            <table class="table hasChoose">
+                <tr>
+                    <th colspan="2">
+                        2017-2018春K英语课程(BK街舞 )
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        选择老师：
+                    </td>
+                    <td>
+                        <select name="class" class="form-control">
+                            <option value="0">请选择老师</option>
+                        </select>
+                        <div class="cost fr">
+                            <i class="iconfont icon-jine"></i>
+                            应收：<span>3600</span>元
+                            <a href="javascript:;" class="btn btn-default">
+                                <i class="iconfont icon-guanbi"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        每次上课：
+                    </td>
+                    <td>
+                        学员<input type="text" class="form-control">课时
+                        教师<input type="text" class="form-control">课时
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        上课时间：
+                    </td>
+                    <td>
+                        <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input5" data-link-format="yyyy-mm-dd">
+                            <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly="">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                        </div>
+                        <input type="hidden" id="dtp_input5" value="">
+                        至
+                        <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input6" data-link-format="yyyy-mm-dd">
+                            <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly="">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
+                        </div>
+                        <input type="hidden" id="dtp_input6" value="">
+                        最多排
+                        <input type="text" class="form-control">
+                        次 <span class="warning">（不填则按日期排满）</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        重复设置：
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="week" value="option1"> 全选
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="week" value="option2"> 周一
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="week" value="option3"> 周二
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="week" value="option4"> 周三
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="week" value="option5"> 周四
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="week" value="option6"> 周五
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="week" value="option7"> 周六
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="week" value="option8"> 周日
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        上课时段：
+                    </td>
+                    <td>
+                        <select name="hour_1" class="form-control">
+
+                        </select>
+                        :
+                        <select name="min_1" class="form-control">
+
+                        </select>
+                        到
+                        <select name="hour_2" class="form-control">
+
+                        </select>
+                        :
+                        <select name="min_2" class="form-control">
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>教师：</td>
+                    <td>
+                        <span class="teacher_blank">
+                            请选择教师
+                        </span>
+                        <div class="teacher_list_1">
+                            <table class="teacher_list">
+
+                            </table>
+                        </div>
+                        <span class="teacher_blacnk">
+                            请选择助教
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        上课主题：
+                    </td>
+                    <td>
+                        <input type="text" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        教室：
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>学费：</td>
+                    <td>
+                        <span class="price">3800</span>
+                        元
+                        &nbsp;&nbsp;
+                        <span class="price">3800</span>
+                        元/期（86课时）
+                    </td>
+                </tr>
+                <tr>
+                    <td>优惠：</td>
+                    <td>
+                        <span class="price">0.00</span>
+                        元
+                        <select name="changePrice" class="form-control">
+                            <option value="1">原价</option>
+                            <option value="2">优惠</option>
+                            <option value="3">插班减少</option>
+                            <option value="4">折扣</option>
+                        </select>
+                        <span class="discount">
+                            <input type="text" class="form-control">
+                            元
+                            <a href="javascript:;" class="btn btn-default">
+                                <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+                                添加优惠
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>教材：</td>
+                    <td>
+                        <span class="price">0.00</span>
+                        元
+                    </td>
+                </tr>
+                <tr>
+                    <td>杂费：</td>
+                    <td>
+                        <span class="price">0.00</span>
+                        元
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="javascript:;" class="btn btn-default">
+                            <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+                            新增教材杂费
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>对内备注：</td>
+                    <td>
+                        <input style="width: 100%;" type="text" class="form-control" placeholder="该备注只对内部操作人员可见">
+                    </td>
+                </tr>
+                <tr>
+                    <td>对外备注：</td>
+                    <td>
+                        <input style="width: 100%;" type="text" class="form-control" placeholder="该备注将会被打印">
                     </td>
                 </tr>
             </table>
@@ -245,18 +542,18 @@
                 </form>
                 <div class="button-box clearfix">
                     <a id="close" href="javascript:;" class="btn btn-default fl">关闭</a>
-                    <a href="javascript:;" class="btn btn-primary fr">确定</a>
+                    <a id="ensure_5" href="javascript:;" class="btn btn-primary fr">确定</a>
                 </div>
             </div>
         </div>
     </div>
     <div  class="box-shadow wage-box-shadow consultation_record-box-shadow-2 consultation_record-box-shadow-4">
         <div class="change-box">
-            <header>选择一对一</header>
+            <header>选择课程</header>
             <div class="c-b-con">
                 <form class="form-horizontal form-inline">
                     <div class="c-b-c-top clearfix">
-                        <select name="campus" id="campus_form" class="form-control">
+                        <select name="campus" id="campus_form_3" class="form-control">
                             <option value="1">郑州校区</option>
                         </select>
                         <div class="fr form-inline fr ng-pristine ng-valid">

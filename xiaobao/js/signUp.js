@@ -1,7 +1,9 @@
 $(function () {
 
     var tagList = [],
-        a = 0;
+        a = 0,
+        /*存储选定学员信息*/
+        stu;
     /*当前便签设置里开启的标签就行选择显示*/
     function tagListTem() {
         $('#currentTagList').html('');
@@ -242,6 +244,19 @@ $(function () {
         $('#close').on('click', function () {
             $('#chooseStu').hide();
         })
+        $('#ensure_5').on('click', function () {
+            if(stu){
+                $('#name').val(stu.name).attr('disabled', true);
+                $('#contact').val(stu.contact).attr('disabled', true);
+                if(stu.sex === '男'){
+                    $('input[name="inlineRadioOptions"][value = "option1"]').prop('checked',true);
+                }else{
+                    $('input[name="inlineRadioOptions"][value = "option2"]').prop('checked',true);
+                }
+                $('input[name="inlineRadioOptions"]').attr('disabled', true).parent().addClass('disabled')
+                $('#chooseStu').hide();
+            }
+        })
     }
     chooseStu()
     $("#table_3").bootstrapTable({
@@ -253,8 +268,23 @@ $(function () {
         searchAlign: 'left',
         sidePagination: "server", //服务端处理分页
         onClickRow: function (row, $element, field) {
-            console.log(row);
-            console.log(field);
+            $element.css({
+                'background': '#01b591',
+                'color': '#fff'
+            }).siblings('tr').css({
+                'background': '#fff' ,
+                'color': '#000'
+            });
+            stu = row;
+            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
+            console.log(test.test(stu.name));
+            if(test.test(stu.name)){
+                stu.sex = '男'
+            }else{
+                stu.sex = '女'
+            }
+            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
+            console.log(stu);
         },
         columns: [
             {
@@ -273,11 +303,18 @@ $(function () {
                 align: 'center'
             }
         ],
-        data: [{
+        data: [
+            {
             name: ' <i class="iconfont icon-nan1"></i>张三',
             contact: '13100000000',
             classType: '围棋'
-        }]
+             },
+            {
+                name: ' <i class="iconfont icon-nv1"></i>李红',
+                contact: '13100000000',
+                classType: '钢琴'
+            }
+        ]
     });
 
     /*选择一对一弹窗*/
@@ -318,21 +355,25 @@ $(function () {
         search: false, //不显示搜索框
         searchAlign: 'left',
         sidePagination: "server", //服务端处理分页
+        onClickRow: function (row, $element, field) {
+            $element.css({
+                'background': '#01b591',
+                'color': '#fff'
+            });
+            stu = row;
+            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
+            console.log(test.test(stu.name));
+            if(test.test(stu.name)){
+                stu.sex = '男'
+            }else{
+                stu.sex = '女'
+            }
+            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
+            console.log(stu);
+        },
         columns: [
             {
-                field : 'checked',
-                checkbox : true,
-                formatter : function(value, row, index) {
-                    if (row.state == true)
-                        return {
-                            disabled : true,//设置是否可用
-                            checked : true//设置选中
-                        };
-                    return value;
-                }
-            },
-            {
-                title: '一对一名称',
+                title: '课程名称',
                 field: 'className',
                 align: 'center'
             },
@@ -347,9 +388,30 @@ $(function () {
                 align: 'center'
             },
             {
+                title: '类型',
+                field: 'type',
+                align: 'center'
+            },
+            {
                 title: '开班数',
                 field: 'num',
                 align: 'center'
+            }
+        ],
+        data: [
+            {
+                className: '新媒体设计',
+                costs: "16000.00元/年",
+                classType: '三四作文',
+                type: '班课',
+                num: '10'
+            },
+            {
+                className: '新媒体设计',
+                costs: "16000.00元/年",
+                classType: '三四作文',
+                type: '一对一',
+                num: '10'
             }
         ]
     });
@@ -367,19 +429,23 @@ $(function () {
         search: false, //不显示搜索框
         searchAlign: 'left',
         sidePagination: "server", //服务端处理分页
+        onClickRow: function (row, $element, field) {
+            $element.css({
+                'background': '#01b591',
+                'color': '#fff'
+            });
+            stu = row;
+            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
+            console.log(test.test(stu.name));
+            if(test.test(stu.name)){
+                stu.sex = '男'
+            }else{
+                stu.sex = '女'
+            }
+            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
+            console.log(stu);
+        },
         columns: [
-            {
-                field : 'checked',
-                checkbox : true,
-                formatter : function(value, row, index) {
-                    if (row.state == true)
-                        return {
-                            disabled : true,//设置是否可用
-                            checked : true//设置选中
-                        };
-                    return value;
-                }
-            },
             {
                 title: '班级名称',
                 field: 'className',
@@ -401,9 +467,29 @@ $(function () {
                 align: 'center'
             },
             {
-                title: '开班数',
-                field: 'num',
+                title: '教师',
+                field: 'teacher',
                 align: 'center'
+            },
+            {
+                title: '开班',
+                field: 'staTime',
+                align: 'center'
+            },
+            {
+                title: '上课时间',
+                field: 'classTime'
+            }
+        ],
+        data: [
+            {
+                className: 'BK街舞美术教育基础课1班',
+                costs: '100.00 元/课时',
+                classType: '拉丁舞1',
+                peoNum: '2/4',
+                teacher: 'Asa张',
+                staTime: '09-01',
+                classTime: '每天 08:00-22:00'
             }
         ]
     });
@@ -425,4 +511,72 @@ $(function () {
         var box = document.createElement('div');
         $(box).css('padding-top', '5px').html(a).appendTo($(this).parent());
     })
+
+    /*教师列表*/
+    $('.teacher_list').bootstrapTable({
+        url: "duoBaoActivityList",
+        dataType: "json",
+        pagination: true, //分页
+        singleSelect: false,
+        search: true, //不显示搜索框
+        searchAlign: 'left',
+        sidePagination: "server", //服务端处理分页
+        onClickRow: function (row, $element, field) {
+            /*$element.css({
+                'background': '#01b591',
+                'color': '#fff'
+            }).siblings('tr').css({
+                'background': '#fff' ,
+                'color': '#000'
+            });*/
+            stu = row;
+            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
+            console.log(test.test(stu.name));
+            if(test.test(stu.name)){
+                stu.sex = '男'
+            }else{
+                stu.sex = '女'
+            }
+            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
+            $('.teacher_blank').html(stu.name)
+            $('.teacher_list_1').hide()
+        },
+        columns: [
+            {
+                title: '姓名',
+                field: 'name',
+                align: 'center'
+            },
+            {
+                title: '手机号',
+                field: 'phone',
+                align: 'center'
+            },
+            {
+                title: '冲突状态',
+                field: 'conflict',
+                align: 'center'
+            },
+            {
+                title: '时段',
+                field: 'type',
+                align: 'center',
+                formatter: function (value, row, index) {
+                    return "<a href='javascript:;' class='btn btn-primary'>查看</a>"
+                }
+            }
+        ],
+        data: [
+            {
+                name: '<i class="iconfont icon-nan1"></i>张三',
+                phone: '13100000000',
+                conflict: '<i class="iconfont icon-kongxian"></i>空闲'
+            },
+            {
+                name: '<i class="iconfont icon-nv1"></i>李红',
+                phone: '13100000000',
+                conflict: '<i class="iconfont icon-chongtu-fuben"></i>冲突'
+            }
+        ]
+    });
 })

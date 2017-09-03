@@ -75,6 +75,18 @@ html{
     border: 5px solid transparent;
     border-top: 5px solid #333;
   }
+  .icon-jine{
+    color: #01b591;
+  }
+  .icon-kongxian{
+    position: relative;
+    top:2px;
+    font-size: 20px;
+    color: lightgreen;
+  }
+  .icon-chongtu-fuben{
+    color: red;
+  }
   body{
     height: 100%;
     font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\\5b8b体", sans-serif;
@@ -1656,7 +1668,7 @@ html{
               .c-b-c-top{
                 margin-bottom: 10px;
               }
-              table{
+              >table{
                 border-top: 1px solid #999;
                 margin-top: 5px;
                 margin-bottom: 5px;
@@ -2063,11 +2075,28 @@ html{
         /*报名*/
         .signUp,.theOrderLog{
           padding-top: 0;
+          .teacher_blank{
+            display: inline-block;
+            width: 185px;
+            line-height: 2;
+            border: 1px solid #ddd;
+            padding: 0 12px;
+          }
+          td{
+            vertical-align: middle;
+          }
           >form{
-            table{
+            .hasChoose{
+              tr:nth-child(2){
+                td:first-child{
+                  width: 100px;
+                }
+              }
+            }
+            >table{
               background-color: #fff;
               margin-top: 20px;
-              tr{
+              >tr{
                 th{
                   position: relative;
                   font-size: 20px;
@@ -2121,7 +2150,7 @@ html{
                 }
               }
             }
-            table:nth-child(2){
+            >table:nth-child(2){
               td{
                 height: 200px;
                 text-align: center;
