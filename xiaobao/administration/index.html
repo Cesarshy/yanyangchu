@@ -6,73 +6,85 @@
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../lib/bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.min.css">
-    <link rel="stylesheet" href="../lib/font_nlcrudciodyujtt9/iconfont.css">
+    <link rel="stylesheet" href="../lib/font/iconfont.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body ng-app="myApp">
+    <div class="sidebar">
+        <h1>
+            <div><img src="img/logo.jpg" alt=""></div>新东方英语（专业版）
+        </h1>
+        <ul class="sidebar-menu">
+            <li>
+                <a class="current" href="index.html">
+                    <i class="glyphicon glyphicon-home"  aria-hidden="true"></i>
+                    <span>控制台</span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#/analysis">
+                    <i class="glyphicon glyphicon-align-justify"  aria-hidden="true"></i>
+                    <span>数据分析</span>
+                    <span class="arrow"></span>
+                </a>
+            </li>
+            <li style="position: relative">
+                <a href="javascript:;">
+                    <i class="glyphicon glyphicon-briefcase"  aria-hidden="true" ></i>
+                    <span>机构申请</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="#/add_group">新增机构</a></li>
+                    <li><a href="#/application_list">机构列表</a></li>
+                    <li><a href="#/list">机构到期列表</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="glyphicon glyphicon-asterisk"  aria-hidden="true" ></i>
+                    <span>管理员管理</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul>
+                    <li><a href="#/add_administrator">添加管理员</a></li>
+                    <li><a href="#/administrator_list">管理员列表</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <header>
-    <a href="javascript:;" class="switch-box fl">
-        <span class="glyphicon glyphicon-menu-hamburger"  aria-hidden="true"></span>
-    </a>
-    <a class="brand fl" href="index.html">
-        <img src="../img/logo.jpg" alt="">
-    </a>
-        <span class="fl">艳阳初</span>
-    <ul class="h-right fr clearfix">
-        <li>
-            <a href="#/myself">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                艳阳初
-            </a>
-        </li>
-        <li>
-            <a href="./login.html">退出</a>
-        </li>
-    </ul>
-</header>
-    <ul class="sidebar-menu">
-    <li>
-        <a class="current" href="index.html">
-            <i class="glyphicon glyphicon-home"  aria-hidden="true"></i>
-            <span>控制台</span>
-            <span class="arrow open"></span>
+        <a href="javascript:;" type="button" id="switch" class="switch-box fl">
+            <span class="glyphicon glyphicon-menu-hamburger"  aria-hidden="true"></span>
         </a>
-    </li>
-    <li>
-        <a href="#/analysis">
-            <i class="glyphicon glyphicon-align-justify"  aria-hidden="true"></i>
-            <span>数据分析</span>
-            <span class="arrow"></span>
-        </a>
-    </li>
-    <li>
-        <a href="javascript:;">
-            <i class="glyphicon glyphicon-briefcase"  aria-hidden="true" ></i>
-            <span>机构申请</span>
-            <span class="arrow"></span>
-        </a>
-        <ul>
-            <li><a href="#/add_group">新增机构</a></li>
-            <li><a href="#/application_list">机构列表</a></li>
-            <li><a href="#/list">机构到期列表</a></li>
+        <ul class="h-right fr clearfix">
+            <li>
+                <a href="#/myself">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true" style="top: -1px"></span>
+                    艳阳初
+                </a>
+            </li>
+            <!--<li>
+                <a href="#/organization_center">机构中心</a>
+            </li>
+            <li>
+                <a href="javascript:;">帮助中心</a>
+            </li>
+            <li>
+                <a href="javascript:;">联系我们</a>
+            </li>-->
+            <li>
+                <a href="./login.html">退出</a>
+            </li>
         </ul>
-    </li>
-    <li>
-        <a href="javascript:;">
-            <i class="glyphicon glyphicon-asterisk"  aria-hidden="true" ></i>
-            <span>管理员管理</span>
-            <span class="arrow"></span>
-        </a>
-        <ul>
-            <li><a href="#/add_administrator">添加管理员</a></li>
-            <li><a href="#/administrator_list">管理员列表</a></li>
-        </ul>
-    </li>
-</ul>
-    <div class="main" ng-view>
+    </header>
+    <div class="main-box">
+        <div class="main" ng-view>
 
+        </div>
     </div>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.nicescroll.js"></script>

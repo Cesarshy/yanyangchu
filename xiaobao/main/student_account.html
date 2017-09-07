@@ -44,6 +44,35 @@
                     </tr>
                     <tr>
                         <td>
+                            姓名：
+                        </td>
+                        <td>
+                            <input id="name" class="form-control" type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            性别：
+                        </td>
+                        <td>
+                            <label class="radio-inline disabled">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" disabled> 男
+                            </label>
+                            <label class="radio-inline disabled">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" disabled> 女
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            联系方式：
+                        </td>
+                        <td>
+                            <input id="contact" class="form-control" type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                             办理类型：
                         </td>
                         <td>
@@ -171,11 +200,11 @@
                     </td>
                     <td>
                         经办时间：
-                        <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <div class="input-group date form_date" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
                             <input style="background-color:#fff;" name="stoDate" class="form-control" size="16" type="text" value="" readonly>
                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar iconfont icon-data"></span></span>
                         </div>
-                        <input type="hidden" id="dtp_input3" value="" />
+                        <input type="hidden" id="dtp_input1" value="" />
                     </td>
                 </tr>
             </table>
@@ -233,7 +262,7 @@
                 </form>
                 <div class="button-box clearfix">
                     <a id="close" href="javascript:;" class="btn btn-default fl">关闭</a>
-                    <a href="javascript:;" class="btn btn-primary fr">确定</a>
+                    <a id="ensure_5" href="javascript:;" class="btn btn-primary fr">确定</a>
                 </div>
             </div>
         </div>

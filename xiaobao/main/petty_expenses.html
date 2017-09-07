@@ -35,7 +35,7 @@
     </ul>
     <div class="student_account petty_expenses">
         <form action="" class="form-inline">
-            <div class="box">
+            <div class="box chooseStu">
                 <div class="tittle">
                     学员选择
                 </div>
@@ -45,15 +45,17 @@
                             <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
                         </div>
                         <div class="right fl">
-                            <div class="top">
+                            <!--<div class="top">
                                 还没选择任何学员，是否要<a href="javascript:;">管理教材>></a>
-                            </div>
+                            </div>-->
                             <a id="choose" href="javascript:;" class="btn btn-primary">选择学员</a>
                         </div>
                     </div>
                 </div>
+                <ul class="clearfix">
+                </ul>
             </div>
-            <div class="box">
+            <div class="box chooseText">
                 <div class="tittle">
                     教材选择
                 </div>
@@ -63,12 +65,84 @@
                             <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
                         </div>
                         <div class="right fl">
-                            <div class="top">
+                            <!--<div class="top">
                                 还未添加任何教材
-                            </div>
+                            </div>-->
                             <a id="chooseTextbook" href="javascript:;" class="btn btn-primary">选择教材</a>
                         </div>
                     </div>
+                </div>
+                <div class="table-box">
+                    <table class="table">
+                        <tr class="vTop">
+                            <td>
+                                教材：
+                            </td>
+                            <td class="clearfix">
+                                <div class="price-box">
+                                    <span class="price">
+                                        50.00
+                                    </span>
+                                    元
+                                </div>
+                                <div class="kind">
+                                    <div class="item">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="get" id="inlineCheckbox1" value="option1"> 领用
+                                        </label>
+                                        &nbsp;&nbsp;&nbsp;
+                                        12345
+                                        (
+                                        <input type="text" name="price" class="form-control">
+                                        元
+                                        X
+                                        数量
+                                        <input type="text" name="sum" class="form-control">
+                                        )
+                                        <i class="iconfont icon-guanbi"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="vTop">
+                            <td>杂费：</td>
+                            <td class="clearfix">
+                                <div class="price-box">
+                                    <span class="price">
+                                        50.00
+                                    </span>
+                                    元
+                                </div>
+                                <div class="kind">
+                                    <div class="item">
+                                        12345
+                                        (
+                                        <input type="text" name="otherPrice" class="form-control">
+                                        元
+                                        X
+                                        数量
+                                        <input type="text" name="otherSum" class="form-control">
+                                        )
+                                        <i class="iconfont icon-guanbi"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                对内备注：
+                            </td>
+                            <td>
+                                <input style="width: 100%;" type="text" name="toUs" class="form-control internal-note" placeholder="该备注只对内部操作人员可见">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>对外备注：</td>
+                            <td>
+                                <input style="width: 100%;" type="text" name="toHer" class="form-control foreign-note" placeholder="该备注将会被打印" >
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <table class="table pay add-shadow">
@@ -83,7 +157,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>应收金额：</td>
+                    <td style="width: 110px;">应收金额：</td>
                     <td>+<b>0.00</b>元</td>
                 </tr>
                 <tr class="vTop">
@@ -223,7 +297,7 @@
                 </form>
                 <div class="button-box clearfix">
                     <a id="close" href="javascript:;" class="btn btn-default fl">关闭</a>
-                    <a href="javascript:;" class="btn btn-primary fr">确定</a>
+                    <a id="ensure_6" href="javascript:;" class="btn btn-primary fr">确定</a>
                 </div>
             </div>
         </div>
@@ -313,7 +387,7 @@
                 </div>
                 <div class="button-box">
                     <a id="close_textbook" href="javascript:;" class="btn btn-default">取消</a>
-                    <a href="javascript:;" class="btn btn-primary">保存</a>
+                    <a id="ensure_textbook" href="javascript:;" class="btn btn-primary">保存</a>
                 </div>
             </form>
         </div>

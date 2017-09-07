@@ -89,6 +89,10 @@ html .icon-kongxian {
 html .icon-chongtu-fuben {
   color: red;
 }
+html .font-math {
+  margin: 0 10px;
+  font-size: 14px;
+}
 html body {
   height: 100%;
   font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\\5b8b体", sans-serif;
@@ -229,7 +233,7 @@ html body > .sidebar h1 img {
   margin-top: 15px;
   border-radius: 50%;
 }
-html body > .sidebar ul {
+html body > .sidebar > ul {
   position: absolute;
   top: 0;
   left: 0;
@@ -238,7 +242,7 @@ html body > .sidebar ul {
   padding-top: 60px;
   overflow: auto;
 }
-html body > .sidebar ul li a {
+html body > .sidebar > ul li a {
   display: block;
   color: #fff;
   /*height: 60px;
@@ -250,15 +254,15 @@ html body > .sidebar ul li a {
   border-left: 4px solid #243643;
   font-size: 14px;
 }
-html body > .sidebar ul li a:hover {
+html body > .sidebar > ul li a:hover {
   background-color: #172936;
   border-left: 4px solid #172936;
 }
-html body > .sidebar ul li .current {
+html body > .sidebar > ul li .current {
   background-color: #172936;
   border-left: 4px solid #01b591;
 }
-html body > .sidebar ul li .current:hover {
+html body > .sidebar > ul li .current:hover {
   background-color: #172936;
   border-left: 4px solid #01b591;
 }
@@ -360,6 +364,9 @@ html body > .main-box > .main .btn-primary:hover {
 }
 html body > .main-box > .main .btn-primary:active {
   background-color: #10846d;
+}
+html body > .main-box > .main .btn-primary:active:hover {
+  background-color: #06a787;
 }
 html body > .main-box > .main .add-shadow {
   box-shadow: 0 0 3px 2px #f0f0f0;
@@ -1861,91 +1868,97 @@ html body > .main-box > .main .theOrderLog .teacher_blank {
 html body > .main-box > .main .signUp td,
 html body > .main-box > .main .theOrderLog td {
   vertical-align: middle;
+  border: none;
 }
 html body > .main-box > .main .signUp > form .hasChoose tr:nth-child(2) td:first-child,
 html body > .main-box > .main .theOrderLog > form .hasChoose tr:nth-child(2) td:first-child {
   width: 100px;
 }
-html body > .main-box > .main .signUp > form > table,
-html body > .main-box > .main .theOrderLog > form > table {
+html body > .main-box > .main .signUp > form .table-box,
+html body > .main-box > .main .theOrderLog > form .table-box {
+  padding: 0 20px;
+  background-color: #fff;
+}
+html body > .main-box > .main .signUp > form .table-box > table,
+html body > .main-box > .main .theOrderLog > form .table-box > table {
   background-color: #fff;
   margin-top: 20px;
 }
-html body > .main-box > .main .signUp > form > table > tr th,
-html body > .main-box > .main .theOrderLog > form > table > tr th {
+html body > .main-box > .main .signUp > form .table-box > table tr th,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr th {
   position: relative;
   font-size: 20px;
   border: none;
 }
-html body > .main-box > .main .signUp > form > table > tr th:after,
-html body > .main-box > .main .theOrderLog > form > table > tr th:after {
+html body > .main-box > .main .signUp > form .table-box > table tr th:after,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr th:after {
   position: absolute;
-  width: 97%;
+  width: 100%;
   bottom: 0;
-  left: 1.5%;
+  left: 0;
   content: "";
   border-top: 1px dashed #bec0c2;
 }
-html body > .main-box > .main .signUp > form > table > tr th:first-child,
-html body > .main-box > .main .theOrderLog > form > table > tr th:first-child,
-html body > .main-box > .main .signUp > form > table > tr td:first-child,
-html body > .main-box > .main .theOrderLog > form > table > tr td:first-child {
-  padding-left: 20px;
+html body > .main-box > .main .signUp > form .table-box > table tr th:first-child,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr th:first-child,
+html body > .main-box > .main .signUp > form .table-box > table tr td:first-child,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td:first-child {
+  padding-left: 0;
 }
-html body > .main-box > .main .signUp > form > table > tr th:last-child,
-html body > .main-box > .main .theOrderLog > form > table > tr th:last-child,
-html body > .main-box > .main .signUp > form > table > tr td:last-child,
-html body > .main-box > .main .theOrderLog > form > table > tr td:last-child {
-  padding-right: 20px;
+html body > .main-box > .main .signUp > form .table-box > table tr th:last-child,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr th:last-child,
+html body > .main-box > .main .signUp > form .table-box > table tr td:last-child,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td:last-child {
+  padding-right: 0;
 }
-html body > .main-box > .main .signUp > form > table > tr td,
-html body > .main-box > .main .theOrderLog > form > table > tr td {
+html body > .main-box > .main .signUp > form .table-box > table tr td,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td {
   vertical-align: middle;
   border: none;
 }
-html body > .main-box > .main .signUp > form > table > tr td b,
-html body > .main-box > .main .theOrderLog > form > table > tr td b {
+html body > .main-box > .main .signUp > form .table-box > table tr td b,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td b {
   font-weight: 700;
 }
-html body > .main-box > .main .signUp > form > table > tr td .price,
-html body > .main-box > .main .theOrderLog > form > table > tr td .price {
+html body > .main-box > .main .signUp > form .table-box > table tr td .price,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td .price {
   width: 100px;
 }
-html body > .main-box > .main .signUp > form > table > tr td .top,
-html body > .main-box > .main .theOrderLog > form > table > tr td .top {
+html body > .main-box > .main .signUp > form .table-box > table tr td .top,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td .top {
   margin-bottom: 10px;
 }
-html body > .main-box > .main .signUp > form > table > tr td .bottom,
-html body > .main-box > .main .theOrderLog > form > table > tr td .bottom {
+html body > .main-box > .main .signUp > form .table-box > table tr td .bottom,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td .bottom {
   margin-top: 10px;
 }
-html body > .main-box > .main .signUp > form > table > tr td .label-box,
-html body > .main-box > .main .theOrderLog > form > table > tr td .label-box {
+html body > .main-box > .main .signUp > form .table-box > table tr td .label-box,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td .label-box {
   margin-bottom: 5px;
   margin-right: 5px;
 }
-html body > .main-box > .main .signUp > form > table > tr td .label-box i,
-html body > .main-box > .main .theOrderLog > form > table > tr td .label-box i {
+html body > .main-box > .main .signUp > form .table-box > table tr td .label-box i,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr td .label-box i {
   font-size: 14px;
   cursor: pointer;
 }
-html body > .main-box > .main .signUp > form > table tr.vTop td,
-html body > .main-box > .main .theOrderLog > form > table tr.vTop td {
+html body > .main-box > .main .signUp > form .table-box > table tr.vTop td,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr.vTop td {
   vertical-align: top;
 }
-html body > .main-box > .main .signUp > form > table tr.vTop td:first-child,
-html body > .main-box > .main .theOrderLog > form > table tr.vTop td:first-child {
+html body > .main-box > .main .signUp > form .table-box > table tr.vTop td:first-child,
+html body > .main-box > .main .theOrderLog > form .table-box > table tr.vTop td:first-child {
   line-height: 34px;
 }
-html body > .main-box > .main .signUp > form > table:nth-child(2) td,
-html body > .main-box > .main .theOrderLog > form > table:nth-child(2) td {
+html body > .main-box > .main .signUp > form .table-box > .chooseType td,
+html body > .main-box > .main .theOrderLog > form .table-box > .chooseType td {
   height: 200px;
   text-align: center;
   background: url("../img/bg_02.png") no-repeat center 80px;
   background-size: 190px 97px;
 }
-html body > .main-box > .main .signUp > form > table:nth-child(2) td div,
-html body > .main-box > .main .theOrderLog > form > table:nth-child(2) td div {
+html body > .main-box > .main .signUp > form .table-box > .chooseType td div,
+html body > .main-box > .main .theOrderLog > form .table-box > .chooseType td div {
   color: #959697;
   line-height: 30px;
   margin-top: 185px;
@@ -2172,19 +2185,22 @@ html body > .main-box > .main .students-box-shadow .change-box .button-box {
   text-align: center;
   padding-top: 10px;
 }
-html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td {
+html body > .main-box > .main .turn_class form table:first-child tr td:first-child {
+  width: 110px;
+}
+html body > .main-box > .main .turn_class form table:nth-child(2) tr td {
   padding: 20px 0;
   vertical-align: middle;
   text-align: center;
 }
-html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td:first-child,
-html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td:last-child {
+html body > .main-box > .main .turn_class form table:nth-child(2) tr td:first-child,
+html body > .main-box > .main .turn_class form table:nth-child(2) tr td:last-child {
   width: 40%;
 }
-html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td:nth-child(2) {
+html body > .main-box > .main .turn_class form table:nth-child(2) tr td:nth-child(2) {
   position: relative;
 }
-html body > .main-box > .main .turn_class form table:first-child tr:nth-child(2) td:nth-child(2) i {
+html body > .main-box > .main .turn_class form table:nth-child(2) tr td:nth-child(2) i {
   position: absolute;
   top: 10px;
   left: 50%;
@@ -2229,6 +2245,81 @@ html body > .main-box > .main .petty_expenses form > .box > .con .default .left 
 html body > .main-box > .main .petty_expenses form > .box > .con .default .right > a {
   margin-top: 10px;
   margin-left: 20px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul {
+  width: 100%;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li {
+  float: left;
+  width: 33.333%;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li .table-box {
+  position: relative;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li .table-box .icon-guanbi {
+  position: absolute;
+  border: 1px solid #333;
+  border-radius: 3px;
+  cursor: pointer;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li .table-box table {
+  border: 4px solid #01b591;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li:nth-child(3n-1) .table-box {
+  padding-left: 13.333px;
+  padding-right: 13.333px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li:nth-child(3n-1) .table-box .icon-guanbi {
+  top: 7px;
+  right: 20px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li:nth-child(3n-2) .table-box {
+  padding-left: 20px;
+  padding-right: 6.667px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li:nth-child(3n-2) .table-box .icon-guanbi {
+  top: 7px;
+  right: 13px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li:nth-child(3n) .table-box {
+  padding-right: 20px;
+  padding-left: 6.667px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseStu > ul li:nth-child(3n) .table-box .icon-guanbi {
+  top: 7px;
+  right: 27px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:first-child .clearfix > div,
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:nth-child(2) .clearfix > div {
+  float: left;
+}
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:first-child .clearfix .price-box,
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:nth-child(2) .clearfix .price-box {
+  padding-right: 20px;
+  padding-top: 5px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:first-child .clearfix .kind .item,
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:nth-child(2) .clearfix .kind .item {
+  padding-bottom: 5px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:first-child .clearfix .kind .item label,
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:nth-child(2) .clearfix .kind .item label {
+  top: -2px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:first-child .clearfix .kind .item .icon-guanbi,
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:nth-child(2) .clearfix .kind .item .icon-guanbi {
+  border: 1px solid #333;
+  border-radius: 3px;
+  cursor: pointer;
+}
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:first-child td:first-child,
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box tr:nth-child(2) td:first-child {
+  padding-top: 13px;
+  width: 110px;
+}
+html body > .main-box > .main .petty_expenses form > .chooseText > .table-box .vTop td {
+  vertical-align: top;
+  line-height: 1.42857143;
 }
 html body > .main-box > .main .textbook-choose .change-box {
   top: 100px;

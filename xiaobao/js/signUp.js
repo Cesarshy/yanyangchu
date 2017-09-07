@@ -327,6 +327,116 @@ $(function () {
         })
     }
     show2hide('#openO2O' ,'#close_2', '.consultation_record-box-shadow-4')
+    $('#ensure_2').on('click', function () {
+        console.log(chooseCourse);
+        if(chooseCourse.type === '班课'){
+            var div = document.createElement('div'),
+                a = '<table class="table hasChoose">\n' +
+                    '                    <tr>\n' +
+                    '                        <th colspan="3">\n' +chooseCourse.courseName +
+                    '                        </th>\n' +
+                    '                    </tr>\n' +
+                    '                    <tr>\n' +
+                    '                        <td>\n' +
+                    '                            选择班级：\n' +
+                    '                        </td>\n' +
+                    '                        <td colspan="2">\n' +
+                    '                            <select name="class" class="form-control">\n' +
+                    '                                <option value="0">待分班</option>\n' +
+                    '                            </select>\n' +
+                    '                            <a href="javascript:;" class="btn btn-default">\n' +
+                    '                                <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>\n' +
+                    '                                新建班级\n' +
+                    '                            </a>\n' +
+                    '                            <div class="cost fr">\n' +
+                    '                                <i class="iconfont icon-jine"></i>\n' +
+                    '                                应收：<span>3600</span>元\n' +
+                    '                                <a href="javascript:;" class="btn btn-default">\n' +
+                    '                                    <i class="iconfont icon-guanbi"></i>\n' +
+                    '                                </a>\n' +
+                    '                            </div>\n' +
+                    '                        </td>\n' +
+                    '                    </tr>\n' +
+                    '                    <tr>\n' +
+                    '                        <td>学费：</td>\n' +
+                    '                        <td colspan="2">\n' +
+                    '                            <span class="price">3800</span>\n' +
+                    '                            元\n' +
+                    '                            &nbsp;&nbsp;\n' +
+                    '                            <span class="price">3800</span>\n' +
+                    '                            元/期（86课时）\n' +
+                    '                        </td>\n' +
+                    '                    </tr>\n' +
+                    '                    <tr>\n' +
+                    '                        <td rowspan="3">优惠：</td>\n' +
+                    '                        <td rowspan="3">\n' +
+                    '                            <span class="price">0.00</span>\n' +
+                    '                            元\n' +
+                    '                        </td>\n' +
+                    '                        <td style="padding-left: 0">\n' +
+                    '                            插班减少：\n' +
+                    '                            <input type="text" name="reduce_1" class="form-control">\n' +
+                    '                            课时\n' +
+                    '                        </td>\n' +
+                    '                    </tr>\n' +
+                    '                    <tr>\n' +
+                    '                        <td>\n' +
+                    '                            优惠：\n' +
+                    '                            <input type="text" name="reduce_2" class="form-control">\n' +
+                    '                            元\n' +
+                    '                        </td>\n' +
+                    '                    </tr>\n' +
+                    '                    <tr>\n' +
+                    '                        <td>\n' +
+                    '                            折扣：\n' +
+                    '                            <select name="discount_1" class="form-control">\n' +
+                    '                                <option value="0">无</option>\n' +
+                    '                                <option value="1">95</option>\n' +
+                    '                                <option value="2">9</option>\n' +
+                    '                                <option value="3">85</option>\n' +
+                    '                                <option value="4">8</option>\n' +
+                    '                                <option value="5">75</option>\n' +
+                    '                                <option value="6">7</option>\n' +
+                    '                                <option value="7">65</option>\n' +
+                    '                                <option value="8">6</option>\n' +
+                    '                                <option value="9">55</option>\n' +
+                    '                                <option value="11">5</option>\n' +
+                    '                                <option value="12">45</option>\n' +
+                    '                                <option value="13">4</option>\n' +
+                    '                                <option value="14">35</option>\n' +
+                    '                                <option value="15">3</option>\n' +
+                    '                                <option value="16">25</option>\n' +
+                    '                                <option value="17">2</option>\n' +
+                    '                                <option value="18">15</option>\n' +
+                    '                                <option value="19">1</option>\n' +
+                    '                            </select>\n' +
+                    '                            折\n' +
+                    '                        </td>\n' +
+                    '                    </tr>\n' +
+                    '                    <!--<tr>\n' +
+                    '                        <td colspan="2">\n' +
+                    '                            <a href="javascript:;" class="btn btn-default">\n' +
+                    '                                <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>\n' +
+                    '                                新增教材杂费\n' +
+                    '                            </a>\n' +
+                    '                        </td>\n' +
+                    '                    </tr>-->\n' +
+                    '                    <tr>\n' +
+                    '                        <td>对内备注：</td>\n' +
+                    '                        <td colspan="2">\n' +
+                    '                            <input style="width: 100%;" type="text" class="form-control" placeholder="该备注只对内部操作人员可见">\n' +
+                    '                        </td>\n' +
+                    '                    </tr>\n' +
+                    '                    <tr>\n' +
+                    '                        <td>对外备注：</td>\n' +
+                    '                        <td colspan="2">\n' +
+                    '                            <input style="width: 100%;" type="text" class="form-control" placeholder="该备注将会被打印">\n' +
+                    '                        </td>\n' +
+                    '                    </tr>\n' +
+                    '                </table>';
+            $(div).addClass('table-box').html()
+        }
+    })
     /*按钮点击事件*/
     $('.box-shadow .change-box form #tableList_1, #tableList_2').on('click', 'a', function () {
         $(this).addClass('orange').siblings('a').removeClass('orange');
@@ -345,8 +455,12 @@ $(function () {
         })
     }
     closure('#closure', '#opening', '#tableList_1');
+
+
     /*bootstrap-table*/
+    /*选择一对一表格*/
     var $table = $('#table');
+    var chooseCourse ; /*点击选择课程存储键*/
     $table.bootstrapTable({
         url: "duoBaoActivityList",
         dataType: "json",
@@ -360,21 +474,12 @@ $(function () {
                 'background': '#01b591',
                 'color': '#fff'
             });
-            stu = row;
-            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
-            console.log(test.test(stu.name));
-            if(test.test(stu.name)){
-                stu.sex = '男'
-            }else{
-                stu.sex = '女'
-            }
-            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
-            console.log(stu);
+            chooseCourse = row;
         },
         columns: [
             {
                 title: '课程名称',
-                field: 'className',
+                field: 'courseName',
                 align: 'center'
             },
             {
@@ -400,15 +505,15 @@ $(function () {
         ],
         data: [
             {
-                className: '新媒体设计',
-                costs: "16000.00元/年",
+                courseName: '新媒体设计',
+                costs: "16000.00元/期",
                 classType: '三四作文',
                 type: '班课',
                 num: '10'
             },
             {
-                className: '新媒体设计',
-                costs: "16000.00元/年",
+                courseName: '新媒体设计',
+                costs: "16000.00元/期",
                 classType: '三四作文',
                 type: '一对一',
                 num: '10'
@@ -420,7 +525,10 @@ $(function () {
     show2hide('#classSignUp' ,'#close_3', '.consultation_record-box-shadow-3')
     /*收缩 拉伸*/
     closure('#closure_2', '#opening_2', '#tableList_2');
+
+    /*选择班级表格*/
     var $table_2 = $('#table_2');
+    var chooseClass;
     $table_2.bootstrapTable({
         url: "duoBaoActivityList",
         dataType: "json",
@@ -434,16 +542,7 @@ $(function () {
                 'background': '#01b591',
                 'color': '#fff'
             });
-            stu = row;
-            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
-            console.log(test.test(stu.name));
-            if(test.test(stu.name)){
-                stu.sex = '男'
-            }else{
-                stu.sex = '女'
-            }
-            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
-            console.log(stu);
+            chooseClass = row;
         },
         columns: [
             {
@@ -457,8 +556,8 @@ $(function () {
                 align: 'center'
             },
             {
-                title: '课程类别',
-                field: 'classType',
+                title: '课程名称',
+                field: 'courseName',
                 align: 'center'
             },
             {
@@ -484,8 +583,8 @@ $(function () {
         data: [
             {
                 className: 'BK街舞美术教育基础课1班',
-                costs: '100.00 元/课时',
-                classType: '拉丁舞1',
+                costs: '10000.00 元/期',
+                courseName: '拉丁舞1',
                 peoNum: '2/4',
                 teacher: 'Asa张',
                 staTime: '09-01',
@@ -513,7 +612,7 @@ $(function () {
     })
 
     /*教师列表*/
-    $('.teacher_list').bootstrapTable({
+    $('.teacher_list_1').bootstrapTable({
         url: "duoBaoActivityList",
         dataType: "json",
         pagination: true, //分页
@@ -538,8 +637,8 @@ $(function () {
                 stu.sex = '女'
             }
             stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
-            $('.teacher_blank').html(stu.name)
-            $('.teacher_list_1').hide()
+            $('#teacher_blank_1').html(stu.name)
+            $('.teacher_list_box_1').hide()
         },
         columns: [
             {
@@ -579,4 +678,261 @@ $(function () {
             }
         ]
     });
+    $('.teacher_list_2').bootstrapTable({
+        url: "duoBaoActivityList",
+        dataType: "json",
+        pagination: true, //分页
+        singleSelect: false,
+        search: true, //不显示搜索框
+        searchAlign: 'left',
+        sidePagination: "server", //服务端处理分页
+        onClickRow: function (row, $element, field) {
+            /*$element.css({
+                'background': '#01b591',
+                'color': '#fff'
+            }).siblings('tr').css({
+                'background': '#fff' ,
+                'color': '#000'
+            });*/
+            stu = row;
+            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
+            console.log(test.test(stu.name));
+            if(test.test(stu.name)){
+                stu.sex = '男'
+            }else{
+                stu.sex = '女'
+            }
+            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
+            $('#teacher_blank_2').html(stu.name)
+            $('.teacher_list_box_2').hide()
+        },
+        columns: [
+            {
+                title: '姓名',
+                field: 'name',
+                align: 'center'
+            },
+            {
+                title: '手机号',
+                field: 'phone',
+                align: 'center'
+            },
+            {
+                title: '冲突状态',
+                field: 'conflict',
+                align: 'center'
+            },
+            {
+                title: '时段',
+                field: 'type',
+                align: 'center',
+                formatter: function (value, row, index) {
+                    return "<a href='javascript:;' class='btn btn-primary'>查看</a>"
+                }
+            }
+        ],
+        data: [
+            {
+                name: '<i class="iconfont icon-nan1"></i>张三',
+                phone: '13100000000',
+                conflict: '<i class="iconfont icon-kongxian"></i>空闲'
+            },
+            {
+                name: '<i class="iconfont icon-nv1"></i>李红',
+                phone: '13100000000',
+                conflict: '<i class="iconfont icon-chongtu-fuben"></i>冲突'
+            }
+        ]
+    });
+    $('.teacher_list_3').bootstrapTable({
+        url: "duoBaoActivityList",
+        dataType: "json",
+        pagination: true, //分页
+        singleSelect: false,
+        search: true, //不显示搜索框
+        searchAlign: 'left',
+        sidePagination: "server", //服务端处理分页
+        onClickRow: function (row, $element, field) {
+            /*$element.css({
+                'background': '#01b591',
+                'color': '#fff'
+            }).siblings('tr').css({
+                'background': '#fff' ,
+                'color': '#000'
+            });*/
+            stu = row;
+            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
+            console.log(test.test(stu.name));
+            if(test.test(stu.name)){
+                stu.sex = '男'
+            }else{
+                stu.sex = '女'
+            }
+            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
+            $('#teacher_blank_3').html(stu.name)
+            $('.teacher_list_box_3').hide()
+        },
+        columns: [
+            {
+                title: '姓名',
+                field: 'name',
+                align: 'center'
+            },
+            {
+                title: '手机号',
+                field: 'phone',
+                align: 'center'
+            },
+            {
+                title: '冲突状态',
+                field: 'conflict',
+                align: 'center'
+            },
+            {
+                title: '时段',
+                field: 'type',
+                align: 'center',
+                formatter: function (value, row, index) {
+                    return "<a href='javascript:;' class='btn btn-primary'>查看</a>"
+                }
+            }
+        ],
+        data: [
+            {
+                name: '<i class="iconfont icon-nan1"></i>张三',
+                phone: '13100000000',
+                conflict: '<i class="iconfont icon-kongxian"></i>空闲'
+            },
+            {
+                name: '<i class="iconfont icon-nv1"></i>李红',
+                phone: '13100000000',
+                conflict: '<i class="iconfont icon-chongtu-fuben"></i>冲突'
+            }
+        ]
+    });
+    $('.teacher_list_4').bootstrapTable({
+        url: "duoBaoActivityList",
+        dataType: "json",
+        pagination: true, //分页
+        singleSelect: false,
+        search: true, //不显示搜索框
+        searchAlign: 'left',
+        sidePagination: "server", //服务端处理分页
+        onClickRow: function (row, $element, field) {
+            /*$element.css({
+                'background': '#01b591',
+                'color': '#fff'
+            }).siblings('tr').css({
+                'background': '#fff' ,
+                'color': '#000'
+            });*/
+            stu = row;
+            var test = new RegExp('<i class="iconfont icon-nan1"></i>');
+            console.log(test.test(stu.name));
+            if(test.test(stu.name)){
+                stu.sex = '男'
+            }else{
+                stu.sex = '女'
+            }
+            stu.name = stu.name.replace(/<i class="iconfont icon-n\w+1"><\/i>/, '');
+            $('#teacher_blank_4').html(stu.name)
+            $('.teacher_list_box_4').hide()
+        },
+        columns: [
+            {
+                title: '姓名',
+                field: 'name',
+                align: 'center'
+            },
+            {
+                title: '手机号',
+                field: 'phone',
+                align: 'center'
+            },
+            {
+                title: '冲突状态',
+                field: 'conflict',
+                align: 'center'
+            },
+            {
+                title: '时段',
+                field: 'type',
+                align: 'center',
+                formatter: function (value, row, index) {
+                    return "<a href='javascript:;' class='btn btn-primary'>查看</a>"
+                }
+            }
+        ],
+        data: [
+            {
+                name: '<i class="iconfont icon-nan1"></i>张三',
+                phone: '13100000000',
+                conflict: '<i class="iconfont icon-kongxian"></i>空闲'
+            },
+            {
+                name: '<i class="iconfont icon-nv1"></i>李红',
+                phone: '13100000000',
+                conflict: '<i class="iconfont icon-chongtu-fuben"></i>冲突'
+            }
+        ]
+    });
+
+    /*教材杂费选择学生*/
+    var chooseStuTimes = 0;
+    $('#ensure_6').on('click', function () {
+        if(stu){
+            chooseStuTimes++;
+            var a = '                    <div class="table-box">\n' +
+                '                            <i class="iconfont icon-guanbi"></i>\n' +
+                '                            <table class="table">\n' +
+                '                                <tr>\n' +
+                '                                    <td style="width: 110px;">\n' +
+                '                                        姓名：\n' +
+                '                                    </td>\n' +
+                '                                    <td>\n' +
+                '                                        <input id="name_'+chooseStuTimes+'" class="form-control" type="text" disabled>\n' +
+                '                                    </td>\n' +
+                '                                </tr>\n' +
+                '                                <tr>\n' +
+                '                                    <td>\n' +
+                '                                        性别：\n' +
+                '                                    </td>\n' +
+                '                                    <td>\n' +
+                '                                        <label class="radio-inline disabled">\n' +
+                '                                            <input type="radio" class="'+chooseStuTimes+'" name="sex_'+chooseStuTimes+'" value="option1" disabled> 男\n' +
+                '                                        </label>\n' +
+                '                                        <label class="radio-inline disabled">\n' +
+                '                                            <input type="radio" class="'+chooseStuTimes+'" name="sex_'+chooseStuTimes+'" value="option2" disabled> 女\n' +
+                '                                        </label>\n' +
+                '                                    </td>\n' +
+                '                                </tr>\n' +
+                '                                <tr>\n' +
+                '                                    <td>\n' +
+                '                                        联系方式：\n' +
+                '                                    </td>\n' +
+                '                                    <td>\n' +
+                '                                        <input id="contact_'+chooseStuTimes+'" class="form-control" type="text" disabled>\n' +
+                '                                    </td>\n' +
+                '                                </tr>\n' +
+                '                            </table>\n' +
+                '                        </div>\n';
+            var li = document.createElement('li');
+            console.log(li);
+            $('.chooseStu >ul').append($(li).html(a).addClass(chooseStuTimes));
+            $('#name_'+chooseStuTimes).val(stu.name).attr('disabled', true);
+            $('#contact_'+chooseStuTimes).val(stu.contact).attr('disabled', true);
+            if(stu.sex === '男'){
+                $('input[name="sex_'+chooseStuTimes+'"][value = "option1"]').prop('checked',true);
+            }else{
+                $('input[name="sex_'+chooseStuTimes+'"][value = "option2"]').prop('checked',true);
+            }
+            $('input[name="sex_'+chooseStuTimes+'"]').attr('disabled', true).parent().addClass('disabled')
+            $('#chooseStu').hide();
+        }
+    })
+    $('.chooseStu').on('click', '.icon-guanbi', function () {
+        $(this).parent().parent().remove()
+    })
+
+
 })

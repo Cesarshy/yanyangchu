@@ -1,20 +1,89 @@
 body{
-  .sidebar-menu{
-    >li{
-      >ul{
-        display: none;
-        li{
-          color: white;
-          a{
-            padding-left: 44px;
-            color: #a0a0a0;
-            background-color: #404040;
-          }
-          a:hover{
-            background-color: #505050;
-          }
-          .current{
-            background-color: #505050;
+  >.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    color: #e5e5e5;
+    height: 100%;
+    width: 230px;
+    background-color:#243643;
+    overflow: hidden;
+    z-index: 4;
+    h1{
+      position: absolute;
+      height: 60px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 60px;
+      padding-left: 30px;
+      background-color:#243643;
+      white-space: nowrap;
+      z-index: 5;
+      div{
+        float: left;
+        height: 100%;
+        margin-right: 5px;
+      }
+      img{
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        border-radius: 50%;
+      }
+    }
+    >ul{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      padding-top: 60px;
+      overflow: auto;
+      li{
+        a{
+          display: block;
+          color: #fff;
+          /*height: 60px;
+          line-height: 60px;*/
+          height: 50px;
+          line-height: 50px;
+          white-space: nowrap;
+          padding-left: 35px;
+          border-left: 4px solid #243643;
+          font-size: 14px;
+        }
+        a:hover{
+          background-color: #172936;
+          border-left: 4px solid #172936;
+        }
+        .current{
+          background-color: #172936;
+          border-left: 4px solid #01b591;
+        }
+        .current:hover{
+          background-color: #172936;
+          border-left: 4px solid #01b591;
+        }
+      }
+    }
+    .sidebar-menu{
+      >li{
+        >ul{
+          display: none;
+          li{
+            color: white;
+            a{
+              padding-left: 44px;
+              color: #a0a0a0;
+              background-color: #172936;
+            }
+            a:hover{
+              background-color: #243643;
+            }
+            .current{
+              background-color: #505050;
+            }
           }
         }
       }
@@ -30,6 +99,11 @@ body{
     .par-set{
       form{
         table{
+          tr{
+            td{
+              vertical-align: middle;
+            }
+          }
           .pwdBox{
             display: none;
           }

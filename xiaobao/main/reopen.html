@@ -37,8 +37,37 @@
         <form action="" class="form-inline">
             <table class="table add-shadow">
                 <tr>
-                    <td>
+                    <td colspan="2">
                         <a href="javascript:;" id="choose" class="btn btn-primary">选择学员</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 110px;">
+                        姓名：
+                    </td>
+                    <td>
+                        <input id="name" class="form-control" type="text" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        性别：
+                    </td>
+                    <td>
+                        <label class="radio-inline disabled">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" disabled> 男
+                        </label>
+                        <label class="radio-inline disabled">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" disabled> 女
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        联系方式：
+                    </td>
+                    <td>
+                        <input id="contact" class="form-control" type="text" disabled>
                     </td>
                 </tr>
             </table>
@@ -54,7 +83,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>应收金额：</td>
+                    <td style="width: 110px;">应收金额：</td>
                     <td>+<b>0.00</b>元</td>
                 </tr>
                 <tr class="vTop">
@@ -230,7 +259,7 @@
                 </form>
                 <div class="button-box clearfix">
                     <a id="close" href="javascript:;" class="btn btn-default fl">关闭</a>
-                    <a href="javascript:;" class="btn btn-primary fr">确定</a>
+                    <a id="ensure_5" href="javascript:;" class="btn btn-primary fr">确定</a>
                 </div>
             </div>
         </div>

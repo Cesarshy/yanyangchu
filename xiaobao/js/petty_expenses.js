@@ -55,4 +55,9 @@ $(function () {
     $('#chooseTextbook').on('click', function () {
         $('.textbook-choose').show()
     })
+
+    /*确定*/
+    $('#ensure_textbook').on('click', function () {
+
+    })
 })

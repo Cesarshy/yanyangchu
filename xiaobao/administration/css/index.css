@@ -1,18 +1,85 @@
-body .sidebar-menu > li > ul {
+body > .sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  color: #e5e5e5;
+  height: 100%;
+  width: 230px;
+  background-color: #243643;
+  overflow: hidden;
+  z-index: 4;
+}
+body > .sidebar h1 {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 60px;
+  padding-left: 30px;
+  background-color: #243643;
+  white-space: nowrap;
+  z-index: 5;
+}
+body > .sidebar h1 div {
+  float: left;
+  height: 100%;
+  margin-right: 5px;
+}
+body > .sidebar h1 img {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 50%;
+}
+body > .sidebar > ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+  overflow: auto;
+}
+body > .sidebar > ul li a {
+  display: block;
+  color: #fff;
+  /*height: 60px;
+          line-height: 60px;*/
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  padding-left: 35px;
+  border-left: 4px solid #243643;
+  font-size: 14px;
+}
+body > .sidebar > ul li a:hover {
+  background-color: #172936;
+  border-left: 4px solid #172936;
+}
+body > .sidebar > ul li .current {
+  background-color: #172936;
+  border-left: 4px solid #01b591;
+}
+body > .sidebar > ul li .current:hover {
+  background-color: #172936;
+  border-left: 4px solid #01b591;
+}
+body > .sidebar .sidebar-menu > li > ul {
   display: none;
 }
-body .sidebar-menu > li > ul li {
+body > .sidebar .sidebar-menu > li > ul li {
   color: white;
 }
-body .sidebar-menu > li > ul li a {
+body > .sidebar .sidebar-menu > li > ul li a {
   padding-left: 44px;
   color: #a0a0a0;
-  background-color: #404040;
+  background-color: #172936;
 }
-body .sidebar-menu > li > ul li a:hover {
-  background-color: #505050;
+body > .sidebar .sidebar-menu > li > ul li a:hover {
+  background-color: #243643;
 }
-body .sidebar-menu > li > ul li .current {
+body > .sidebar .sidebar-menu > li > ul li .current {
   background-color: #505050;
 }
 body .personal-center .line-chart {
@@ -20,6 +87,9 @@ body .personal-center .line-chart {
   height: 400px;
   margin: 0 auto;
   margin-top: 20px;
+}
+body .personal-center .par-set form table tr td {
+  vertical-align: middle;
 }
 body .personal-center .par-set form table .pwdBox {
   display: none;

@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1217d0a5-719c-4fce-9d6b-97c6e4d011d6" name="默认的" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.woff2" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.eot" afterPath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.ttf" afterPath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.woff" afterPath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaobao/js/integral.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/administration/css/index.css" afterPath="$PROJECT_DIR$/xiaobao/administration/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/administration/css/index.less" afterPath="$PROJECT_DIR$/xiaobao/administration/css/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/administration/index.html" afterPath="$PROJECT_DIR$/xiaobao/administration/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/administration/js/index.js" afterPath="$PROJECT_DIR$/xiaobao/administration/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/administration/main/index.html" afterPath="$PROJECT_DIR$/xiaobao/administration/main/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/css/index.css" afterPath="$PROJECT_DIR$/xiaobao/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/css/index.less" afterPath="$PROJECT_DIR$/xiaobao/css/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/js/petty_expenses.js" afterPath="$PROJECT_DIR$/xiaobao/js/petty_expenses.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/js/signUp.js" afterPath="$PROJECT_DIR$/xiaobao/js/signUp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/demo_fontclass.html" afterPath="$PROJECT_DIR$/xiaobao/lib/font/demo_fontclass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/demo_symbol.html" afterPath="$PROJECT_DIR$/xiaobao/lib/font/demo_symbol.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/demo_unicode.html" afterPath="$PROJECT_DIR$/xiaobao/lib/font/demo_unicode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.css" afterPath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.js" afterPath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.svg" afterPath="$PROJECT_DIR$/xiaobao/lib/font/iconfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/addConsult.html" afterPath="$PROJECT_DIR$/xiaobao/main/addConsult.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/add_newCourse.html" afterPath="$PROJECT_DIR$/xiaobao/main/add_newCourse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/closed_class.html" afterPath="$PROJECT_DIR$/xiaobao/main/closed_class.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/integral.html" afterPath="$PROJECT_DIR$/xiaobao/main/integral.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/petty_expenses.html" afterPath="$PROJECT_DIR$/xiaobao/main/petty_expenses.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/refund.html" afterPath="$PROJECT_DIR$/xiaobao/main/refund.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/reopen.html" afterPath="$PROJECT_DIR$/xiaobao/main/reopen.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/signUp.html" afterPath="$PROJECT_DIR$/xiaobao/main/signUp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/student_account.html" afterPath="$PROJECT_DIR$/xiaobao/main/student_account.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaobao/main/turn_class.html" afterPath="$PROJECT_DIR$/xiaobao/main/turn_class.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,66 +33,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47357294">
+    <splitter split-orientation="horizontal" split-proportion="0.39904863">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/xiaobao/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-23">
-                  <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="myDay.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/xiaobao/main/myDay.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1403">
-                  <caret line="152" column="21" lean-forward="false" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
+                <state relative-caret-position="207">
+                  <caret line="153" column="12" lean-forward="true" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
                   <folding>
-                    <element signature="e#497#503#0" expanded="true" />
-                    <element signature="e#503#509#0" expanded="true" />
-                    <element signature="e#994#1000#0" expanded="true" />
-                    <element signature="e#1000#1006#0" expanded="true" />
-                    <element signature="n#table#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#table#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-                    <element signature="e#4025#4031#0" expanded="true" />
-                    <element signature="e#4031#4037#0" expanded="true" />
-                    <element signature="e#4037#4043#0" expanded="true" />
-                    <element signature="e#4083#4089#0" expanded="true" />
-                    <element signature="e#4089#4095#0" expanded="true" />
-                    <element signature="e#4095#4101#0" expanded="true" />
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="petty_expenses.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/xiaobao/main/petty_expenses.html">
+          <file leaf-file-name="integral.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/xiaobao/main/integral.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4117">
-                  <caret line="230" column="17" lean-forward="false" selection-start-line="230" selection-start-column="17" selection-end-line="230" selection-end-column="17" />
+                <state relative-caret-position="1472">
+                  <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
                   <folding>
-                    <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="add_newCourse.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/xiaobao/main/add_newCourse.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3749">
-                  <caret line="163" column="16" lean-forward="false" selection-start-line="163" selection-start-column="16" selection-end-line="163" selection-end-column="16" />
-                  <folding>
-                    <element signature="n#div#0;n#div#1;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#tr#5;n#table#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="e#3657#3663#0" expanded="true" />
+                    <element signature="e#3663#3669#0" expanded="true" />
+                    <element signature="e#3669#3675#0" expanded="true" />
+                    <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <marker date="1504667093777" expanded="false" signature="5409:5455" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -99,134 +70,65 @@
           <file leaf-file-name="signUp.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/xiaobao/main/signUp.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="521">
-                  <caret line="304" column="33" lean-forward="false" selection-start-line="304" selection-start-column="33" selection-end-line="304" selection-end-column="33" />
+                <state relative-caret-position="451">
+                  <caret line="101" column="16" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="204" selection-end-column="24" />
                   <folding>
-                    <element signature="n#table#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="e#5019#5025#0" expanded="true" />
-                    <element signature="e#5025#5031#0" expanded="true" />
-                    <element signature="n#style#0;n#input#0;n#td#1;n#tr#7;n#table#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#input#0;n#td#1;n#tr#8;n#table#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#3;n#table#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#input#0;n#div#1;n#td#1;n#tr#3;n#table#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="e#13424#13430#0" expanded="true" />
-                    <element signature="e#13430#13436#0" expanded="true" />
-                    <element signature="n#style#0;n#input#0;n#td#1;n#tr#14;n#table#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#input#0;n#td#1;n#tr#15;n#table#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#tr#3;n#table#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#5;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#table#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#table#0;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#table#0;n#div#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="e#5620#5626#0" expanded="true" />
+                    <element signature="e#5626#5632#0" expanded="true" />
+                    <element signature="n#style#0;n#td#2;n#tr#3;n#table#0;n#div#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#div#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#td#1;n#tr#7;n#table#0;n#div#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#table#0;n#div#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#div#0;n#td#1;n#tr#5;n#table#0;n#div#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#td#1;n#tr#5;n#table#0;n#div#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#2;n#tr#9;n#table#0;n#div#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#table#0;n#div#5;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#table#0;n#div#6;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/xiaobao/css/index.less">
+          <file leaf-file-name="petty_expenses.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/xiaobao/main/petty_expenses.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="73">
-                  <caret line="2082" column="27" lean-forward="false" selection-start-line="2082" selection-start-column="27" selection-end-line="2082" selection-end-column="27" />
+                <state relative-caret-position="6509">
+                  <caret line="379" column="46" lean-forward="true" selection-start-line="379" selection-start-column="46" selection-end-line="379" selection-end-column="46" />
                   <folding>
-                    <element signature="e#671#1152#0" expanded="false" />
-                    <element signature="e#1163#1263#0" expanded="false" />
-                    <element signature="e#3826#5402#0" expanded="false" />
-                    <element signature="e#5425#6250#0" expanded="false" />
-                    <element signature="e#7122#11926#0" expanded="false" />
-                    <element signature="e#11954#21401#0" expanded="false" />
-                    <element signature="e#21436#26715#0" expanded="false" />
-                    <element signature="e#26751#29169#0" expanded="false" />
-                    <element signature="e#29215#35036#0" expanded="false" />
-                    <element signature="e#29260#29899#0" expanded="false" />
-                    <element signature="e#29921#34077#0" expanded="false" />
-                    <element signature="e#34272#34859#0" expanded="false" />
-                    <element signature="e#34392#34538#0" expanded="false" />
-                    <element signature="e#35079#38190#0" expanded="false" />
-                    <element signature="e#38241#44166#0" expanded="false" />
-                    <element signature="e#38519#39278#0" expanded="false" />
-                    <element signature="e#39495#39843#0" expanded="false" />
-                    <element signature="e#40437#40629#0" expanded="false" />
-                    <element signature="e#40657#40849#0" expanded="false" />
-                    <element signature="e#40875#41067#0" expanded="false" />
-                    <element signature="e#41093#41282#0" expanded="false" />
-                    <element signature="e#41307#41499#0" expanded="false" />
-                    <element signature="e#41527#41719#0" expanded="false" />
-                    <element signature="e#41745#41934#0" expanded="false" />
-                    <element signature="e#42213#42809#0" expanded="false" />
-                    <element signature="e#44206#45444#0" expanded="false" />
-                    <element signature="e#45486#47320#0" expanded="false" />
-                    <element signature="e#46523#46923#0" expanded="false" />
-                    <element signature="e#47372#48162#0" expanded="false" />
-                    <element signature="e#48203#48633#0" expanded="false" />
-                    <element signature="e#48678#49440#0" expanded="false" />
-                    <element signature="e#49474#49834#0" expanded="false" />
-                    <element signature="e#49880#50112#0" expanded="false" />
-                    <element signature="e#50147#50377#0" expanded="false" />
-                    <element signature="e#50431#50500#0" expanded="false" />
-                    <element signature="e#50451#50490#0" expanded="false" />
-                    <element signature="e#50547#53020#0" expanded="false" />
-                    <element signature="e#50567#51058#0" expanded="false" />
-                    <element signature="e#51201#51872#0" expanded="false" />
-                    <element signature="e#51287#51598#0" expanded="false" />
-                    <element signature="e#51959#52183#0" expanded="false" />
-                    <element signature="e#52212#52437#0" expanded="false" />
-                    <element signature="e#53068#53898#0" expanded="false" />
-                    <element signature="e#53943#54811#0" expanded="false" />
-                    <element signature="e#54849#56072#0" expanded="false" />
-                    <element signature="e#57309#57983#0" expanded="false" />
-                    <element signature="e#58248#58671#0" expanded="false" />
-                    <element signature="e#58688#58943#0" expanded="false" />
-                    <element signature="e#59290#59368#0" expanded="false" />
-                    <element signature="e#59391#59441#0" expanded="false" />
-                    <element signature="e#59558#60675#0" expanded="false" />
-                    <element signature="e#60707#61867#0" expanded="false" />
-                    <element signature="e#60938#61139#0" expanded="false" />
-                    <element signature="e#61702#61845#0" expanded="false" />
-                    <element signature="e#62025#63083#0" expanded="false" />
-                    <element signature="e#64978#65632#0" expanded="false" />
-                    <element signature="e#66032#66948#0" expanded="false" />
-                    <element signature="e#67441#67642#0" expanded="false" />
-                    <element signature="e#67771#68314#0" expanded="false" />
-                    <element signature="e#68509#68705#0" expanded="false" />
-                    <element signature="e#68976#69806#0" expanded="false" />
-                    <element signature="e#69846#72345#0" expanded="false" />
+                    <element signature="e#3495#3501#0" expanded="true" />
+                    <element signature="e#3501#3507#0" expanded="true" />
+                    <element signature="e#3507#3513#0" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#table#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="signUp.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/xiaobao/js/signUp.js">
+          <file leaf-file-name="student_account.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/xiaobao/main/student_account.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="537" column="29" lean-forward="true" selection-start-line="537" selection-start-column="29" selection-end-line="537" selection-end-column="29" />
+                <state relative-caret-position="276">
+                  <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/xiaobao/administration/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="299">
+                  <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
                   <folding>
-                    <element signature="e#141#546#0" expanded="false" />
-                    <element signature="e#588#1765#0" expanded="false" />
-                    <element signature="e#1798#2012#0" expanded="false" />
-                    <element signature="e#2036#9369#0" expanded="false" />
-                    <element signature="e#4642#5041#0" expanded="false" />
-                    <element signature="e#5962#8814#0" expanded="false" />
-                    <element signature="e#6406#6451#0" expanded="false" />
-                    <element signature="e#6541#7567#0" expanded="false" />
-                    <element signature="e#8083#8522#0" expanded="false" />
-                    <element signature="e#8883#9339#0" expanded="false" />
-                    <element signature="e#12045#12201#0" expanded="false" />
-                    <element signature="e#12511#12770#0" expanded="false" />
-                    <element signature="e#12904#14766#0" expanded="false" />
-                    <element signature="e#14997#16986#0" expanded="false" />
-                    <element signature="e#17065#18052#0" expanded="false" />
-                    <marker date="1504412804675" expanded="true" signature="1701:1715" ph="..." />
-                    <marker date="1504412804675" expanded="true" signature="17640:17646" ph=" " />
-                    <marker date="1504412804675" expanded="true" signature="17648:17654" ph=" " />
-                    <marker date="1504412804675" expanded="true" signature="17776:17782" ph=" " />
-                    <marker date="1504412804675" expanded="true" signature="17782:17788" ph=" " />
-                    <marker date="1504412804675" expanded="true" signature="17906:17912" ph=" " />
-                    <marker date="1504412804675" expanded="true" signature="17912:17918" ph=" " />
+                    <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -235,8 +137,8 @@
           <file leaf-file-name="route.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/xiaobao/js/route.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3128">
-                  <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
+                <state relative-caret-position="2576">
+                  <caret line="156" column="17" lean-forward="false" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
                   <folding>
                     <element signature="e#642#698#0" expanded="false" />
                     <element signature="e#728#788#0" expanded="false" />
@@ -265,42 +167,161 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="consultation_record.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/xiaobao/js/consultation_record.js">
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/xiaobao/css/index.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1656">
-                  <caret line="72" column="31" lean-forward="false" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+                <state relative-caret-position="517">
+                  <caret line="2177" column="13" lean-forward="false" selection-start-line="2177" selection-start-column="13" selection-end-line="2177" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#671#1152#0" expanded="false" />
+                    <element signature="e#1163#1263#0" expanded="false" />
+                    <element signature="e#3885#5462#0" expanded="false" />
+                    <element signature="e#5485#6310#0" expanded="false" />
+                    <element signature="e#7264#12068#0" expanded="false" />
+                    <element signature="e#12096#21543#0" expanded="false" />
+                    <element signature="e#26893#29311#0" expanded="false" />
+                    <element signature="e#29357#35178#0" expanded="false" />
+                    <element signature="e#29402#30041#0" expanded="false" />
+                    <element signature="e#30063#34219#0" expanded="false" />
+                    <element signature="e#34414#35001#0" expanded="false" />
+                    <element signature="e#34534#34680#0" expanded="false" />
+                    <element signature="e#35221#38332#0" expanded="false" />
+                    <element signature="e#38383#44308#0" expanded="false" />
+                    <element signature="e#38661#39420#0" expanded="false" />
+                    <element signature="e#39637#39985#0" expanded="false" />
+                    <element signature="e#40579#40771#0" expanded="false" />
+                    <element signature="e#40799#40991#0" expanded="false" />
+                    <element signature="e#41017#41209#0" expanded="false" />
+                    <element signature="e#41235#41424#0" expanded="false" />
+                    <element signature="e#41449#41641#0" expanded="false" />
+                    <element signature="e#41669#41861#0" expanded="false" />
+                    <element signature="e#41887#42076#0" expanded="false" />
+                    <element signature="e#42355#42951#0" expanded="false" />
+                    <element signature="e#44348#45586#0" expanded="false" />
+                    <element signature="e#45628#47462#0" expanded="false" />
+                    <element signature="e#46665#47065#0" expanded="false" />
+                    <element signature="e#47514#48304#0" expanded="false" />
+                    <element signature="e#48345#48775#0" expanded="false" />
+                    <element signature="e#48820#49582#0" expanded="false" />
+                    <element signature="e#49616#49976#0" expanded="false" />
+                    <element signature="e#50022#50254#0" expanded="false" />
+                    <element signature="e#50289#50519#0" expanded="false" />
+                    <element signature="e#50573#50642#0" expanded="false" />
+                    <element signature="e#50593#50632#0" expanded="false" />
+                    <element signature="e#50689#53162#0" expanded="false" />
+                    <element signature="e#50709#51200#0" expanded="false" />
+                    <element signature="e#51343#52014#0" expanded="false" />
+                    <element signature="e#51429#51740#0" expanded="false" />
+                    <element signature="e#52101#52325#0" expanded="false" />
+                    <element signature="e#52354#52579#0" expanded="false" />
+                    <element signature="e#53210#54040#0" expanded="false" />
+                    <element signature="e#54085#54953#0" expanded="false" />
+                    <element signature="e#54991#56214#0" expanded="false" />
+                    <element signature="e#56310#56477#0" expanded="false" />
+                    <element signature="e#56490#56565#0" expanded="false" />
+                    <element signature="e#56772#59072#0" expanded="false" />
+                    <element signature="e#58609#59058#0" expanded="false" />
+                    <element signature="e#59089#59344#0" expanded="false" />
+                    <element signature="e#59691#59769#0" expanded="false" />
+                    <element signature="e#59792#59842#0" expanded="false" />
+                    <element signature="e#59959#61076#0" expanded="false" />
+                    <element signature="e#61108#62268#0" expanded="false" />
+                    <element signature="e#61339#61540#0" expanded="false" />
+                    <element signature="e#62103#62246#0" expanded="false" />
+                    <element signature="e#62370#63649#0" expanded="false" />
+                    <element signature="e#63673#64160#0" expanded="false" />
+                    <element signature="e#64177#64438#0" expanded="false" />
+                    <element signature="e#65541#66182#0" expanded="false" />
+                    <element signature="e#66199#66518#0" expanded="false" />
+                    <element signature="e#66617#67476#0" expanded="false" />
+                    <element signature="e#67500#69030#0" expanded="false" />
+                    <element signature="e#70704#70905#0" expanded="false" />
+                    <element signature="e#71034#71577#0" expanded="false" />
+                    <element signature="e#71772#71968#0" expanded="false" />
+                    <element signature="e#72239#73069#0" expanded="false" />
+                    <element signature="e#73109#75608#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="closed_class.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/xiaobao/main/closed_class.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2323">
+                  <caret line="101" column="29" lean-forward="true" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="student_account.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/xiaobao/js/student_account.js">
+          <file leaf-file-name="signUp.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/xiaobao/js/signUp.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+                <state relative-caret-position="-95">
+                  <caret line="335" column="89" lean-forward="false" selection-start-line="335" selection-start-column="89" selection-end-line="335" selection-end-column="89" />
+                  <folding>
+                    <element signature="e#141#546#0" expanded="false" />
+                    <element signature="e#588#1765#0" expanded="false" />
+                    <element signature="e#1798#2012#0" expanded="false" />
+                    <element signature="e#2036#9369#0" expanded="false" />
+                    <element signature="e#4642#5041#0" expanded="false" />
+                    <element signature="e#5962#8814#0" expanded="false" />
+                    <element signature="e#6406#6451#0" expanded="false" />
+                    <element signature="e#6541#7567#0" expanded="false" />
+                    <element signature="e#8083#8522#0" expanded="false" />
+                    <element signature="e#8883#9339#0" expanded="false" />
+                    <element signature="e#9442#10290#0" expanded="false" />
+                    <element signature="e#10340#11993#0" expanded="false" />
+                    <element signature="e#12045#12201#0" expanded="false" />
+                    <element signature="e#20173#20432#0" expanded="false" />
+                    <element signature="e#20621#22131#0" expanded="false" />
+                    <element signature="e#22399#24035#0" expanded="false" />
+                    <element signature="e#24114#25101#0" expanded="false" />
+                    <element signature="e#25157#27237#0" expanded="false" />
+                    <element signature="e#27280#29360#0" expanded="false" />
+                    <element signature="e#29403#31483#0" expanded="false" />
+                    <element signature="e#31526#33606#0" expanded="false" />
+                    <element signature="e#33698#37139#0" expanded="false" />
+                    <marker date="1504753650868" expanded="true" signature="1701:1715" ph="..." />
+                    <marker date="1504753650868" expanded="true" signature="24689:24695" ph=" " />
+                    <marker date="1504753650868" expanded="true" signature="24697:24703" ph=" " />
+                    <marker date="1504753650868" expanded="true" signature="24825:24831" ph=" " />
+                    <marker date="1504753650868" expanded="true" signature="24831:24837" ph=" " />
+                    <marker date="1504753650868" expanded="true" signature="24955:24961" ph=" " />
+                    <marker date="1504753650868" expanded="true" signature="24961:24967" ph=" " />
+                    <marker date="1504753650868" expanded="true" signature="34099:34112" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="integral.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/xiaobao/js/integral.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="46">
+                  <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="myDay.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/xiaobao/js/myDay.js">
+          <file leaf-file-name="petty_expenses.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/xiaobao/js/petty_expenses.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="add_newCourse.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/xiaobao/js/add_newCourse.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="6" />
-                  <folding />
+                <state relative-caret-position="943">
+                  <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#60#326#0" expanded="false" />
+                    <element signature="e#776#860#0" expanded="false" />
+                    <element signature="e#919#995#0" expanded="false" />
+                    <element signature="e#1069#1126#0" expanded="false" />
+                    <element signature="e#1185#1239#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -319,36 +340,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>收款路径</find>
-      <find>订单标签</find>
-      <find>student_acc</find>
+      <find>确定</find>
+      <find>机构申请</find>
+      <find>arrow</find>
+      <find>sidebar-menu</find>
+      <find>sidebar</find>
+      <find>header</find>
+      <find>艳阳初</find>
+      <find>#505050</find>
+      <find>经办时间</find>
+      <find>width</find>
       <find>选择学员</find>
-      <find>课程选择</find>
-      <find>bootstrapT</find>
-      <find>#959697</find>
-      <find>table-box</find>
-      <find>button-box</find>
-      <find>textbook</find>
-      <find>张三</find>
-      <find>close</find>
-      <find>ul-box</find>
-      <find>chooseStu-shadow</find>
-      <find>我的今日</find>
-      <find>选择教材</find>
-      <find>consult_no</find>
-      <find>add_newCourse</find>
-      <find>office</find>
-      <find>myCtrl</find>
-      <find>校区今日</find>
-      <find>add_new</find>
-      <find>red</find>
-      <find>redStar</find>
-      <find>campus_form</find>
-      <find>consultation_record-box</find>
-      <find>选择一对一</find>
-      <find>选择课程</find>
+      <find>pett</find>
+      <find>ensure_5</find>
+      <find>对内备注</find>
+      <find>应收</find>
+      <find>对内</find>
+      <find>订单标签</find>
+      <find>tag</find>
+      <find>教材</find>
+      <find>新增教材杂费</find>
+      <find>教师</find>
+      <find>teacher_blank</find>
+      <find>turn</find>
+      <find>小学数学五年级</find>
+      <find>teacher_list</find>
+      <find>折扣</find>
+      <find>插班减少</find>
+      <find>课程名称</find>
       <find>signUp</find>
-      <find>kongxian</find>
+      <find>close_2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -357,11 +378,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xiaobao/main/class.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/one_to_one.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/mature_students.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/course_list.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/class_record.html" />
         <option value="$PROJECT_DIR$/xiaobao/main/teacher_class_hour.html" />
         <option value="$PROJECT_DIR$/xiaobao/main/staff.html" />
         <option value="$PROJECT_DIR$/xiaobao/main/listen_manage.html" />
@@ -383,15 +399,7 @@
         <option value="$PROJECT_DIR$/xiaobao/js/consult_settings.js" />
         <option value="$PROJECT_DIR$/xiaobao/main/consult_settings.html" />
         <option value="$PROJECT_DIR$/xiaobao/js/student_account.js" />
-        <option value="$PROJECT_DIR$/xiaobao/main/refund.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/reopen.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/closed_class.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/turn_class.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/student_account.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/integral.html" />
         <option value="$PROJECT_DIR$/xiaobao/main/consultation_record.html" />
-        <option value="$PROJECT_DIR$/xiaobao/main/petty_expenses.html" />
-        <option value="$PROJECT_DIR$/xiaobao/js/petty_expenses.js" />
         <option value="$PROJECT_DIR$/xiaobao/js/consult_notes.js" />
         <option value="$PROJECT_DIR$/xiaobao/main/add_newAccount.html" />
         <option value="$PROJECT_DIR$/xiaobao/main/add_newClass.html" />
@@ -405,6 +413,19 @@
         <option value="$PROJECT_DIR$/xiaobao/js/route.js" />
         <option value="$PROJECT_DIR$/xiaobao/main/add_newCourse.html" />
         <option value="$PROJECT_DIR$/xiaobao/main/addConsult.html" />
+        <option value="$PROJECT_DIR$/xiaobao/main/turn_class.html" />
+        <option value="$PROJECT_DIR$/xiaobao/administration/js/index.js" />
+        <option value="$PROJECT_DIR$/xiaobao/administration/main/index.html" />
+        <option value="$PROJECT_DIR$/xiaobao/administration/index.html" />
+        <option value="$PROJECT_DIR$/xiaobao/administration/css/index.less" />
+        <option value="$PROJECT_DIR$/xiaobao/main/student_account.html" />
+        <option value="$PROJECT_DIR$/xiaobao/main/reopen.html" />
+        <option value="$PROJECT_DIR$/xiaobao/main/integral.html" />
+        <option value="$PROJECT_DIR$/xiaobao/js/integral.js" />
+        <option value="$PROJECT_DIR$/xiaobao/main/petty_expenses.html" />
+        <option value="$PROJECT_DIR$/xiaobao/js/petty_expenses.js" />
+        <option value="$PROJECT_DIR$/xiaobao/main/closed_class.html" />
+        <option value="$PROJECT_DIR$/xiaobao/main/refund.html" />
         <option value="$PROJECT_DIR$/xiaobao/css/index.less" />
         <option value="$PROJECT_DIR$/xiaobao/main/signUp.html" />
         <option value="$PROJECT_DIR$/xiaobao/js/signUp.js" />
@@ -439,6 +460,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -455,14 +477,7 @@
               <item name="yanyangchu" type="b2602c69:ProjectViewProjectNode" />
               <item name="yanyangchu" type="462c0819:PsiDirectoryNode" />
               <item name="xiaobao" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yanyangchu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yanyangchu" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaobao" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="index.less" type="620a8d5e:NestingTreeNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yanyangchu" type="b2602c69:ProjectViewProjectNode" />
@@ -474,7 +489,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,9 +502,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\h4526\Documents\yanyangchu\xiaobao\lib" />
       <recent name="C:\Users\h4526\Documents\yanyangchu\xiaobao\lib\c-lodop" />
       <recent name="C:\Users\h4526\Documents\yanyangchu\xiaobao\js" />
-      <recent name="C:\Users\h4526\Documents\yanyangchu\xiaobao\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -525,12 +539,20 @@
       <workItem from="1504142754826" duration="25166000" />
       <workItem from="1504228534734" duration="24689000" />
       <workItem from="1504315182138" duration="16977000" />
-      <workItem from="1504408463593" duration="4567000" />
+      <workItem from="1504408463593" duration="4626000" />
+      <workItem from="1504431778884" duration="1724000" />
+      <workItem from="1504487346806" duration="3842000" />
+      <workItem from="1504510296196" duration="6475000" />
+      <workItem from="1504573359784" duration="3424000" />
+      <workItem from="1504580230794" duration="763000" />
+      <workItem from="1504583200785" duration="10914000" />
+      <workItem from="1504660349862" duration="12498000" />
+      <workItem from="1504747294344" duration="4630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141444000" />
+    <option name="totallyTimeSpent" value="185773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -542,8 +564,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -571,68 +593,11 @@
           <line>7</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xiaobao/js/course_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/js/channel_category.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/channel_category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/channel_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/js/listen_manage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8316">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/js/consultation_analysis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3174">
-          <caret line="191" column="27" lean-forward="false" selection-start-line="191" selection-start-column="27" selection-end-line="191" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/js/market_analysis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-834">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/main/consultation_analysis.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
@@ -696,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/js/mul_choice.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -714,50 +672,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
           <caret line="72" column="31" lean-forward="false" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/js/student_account.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/reopen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="236" column="10" lean-forward="false" selection-start-line="236" selection-start-column="10" selection-end-line="236" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/refund.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-478">
-          <caret line="231" column="4" lean-forward="true" selection-start-line="231" selection-start-column="4" selection-end-line="259" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/closed_class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="157" column="60" lean-forward="false" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/turn_class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="144" column="60" lean-forward="true" selection-start-line="144" selection-start-column="60" selection-end-line="144" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/student_account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4324">
-          <caret line="211" column="60" lean-forward="false" selection-start-line="211" selection-start-column="60" selection-end-line="211" selection-end-column="60" />
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -765,9 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,24 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/js/petty_expenses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/main/consultation_record.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
           <caret line="635" column="32" lean-forward="false" selection-start-line="635" selection-start-column="27" selection-end-line="635" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/integral.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="239" column="10" lean-forward="false" selection-start-line="239" selection-start-column="10" selection-end-line="239" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -838,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,56 +774,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/myDay.html">
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/addConsult.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1403">
-          <caret line="152" column="21" lean-forward="false" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
-          <folding>
-            <element signature="e#497#503#0" expanded="true" />
-            <element signature="e#503#509#0" expanded="true" />
-            <element signature="e#994#1000#0" expanded="true" />
-            <element signature="e#1000#1006#0" expanded="true" />
-            <element signature="n#table#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#table#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#4025#4031#0" expanded="true" />
-            <element signature="e#4031#4037#0" expanded="true" />
-            <element signature="e#4037#4043#0" expanded="true" />
-            <element signature="e#4083#4089#0" expanded="true" />
-            <element signature="e#4089#4095#0" expanded="true" />
-            <element signature="e#4095#4101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/petty_expenses.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4117">
-          <caret line="230" column="17" lean-forward="false" selection-start-line="230" selection-start-column="17" selection-end-line="230" selection-end-column="17" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="768">
+          <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/main/add_newCourse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3749">
+        <state relative-caret-position="321">
           <caret line="163" column="16" lean-forward="false" selection-start-line="163" selection-start-column="16" selection-end-line="163" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/myDay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="152" column="21" lean-forward="false" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/administration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/administration/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/administration/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/administration/main/myself.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/administration/css/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="94" column="20" lean-forward="false" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/administration/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/js/route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
-          <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
+        <state relative-caret-position="2576">
+          <caret line="156" column="17" lean-forward="false" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
           <folding>
             <element signature="e#642#698#0" expanded="false" />
             <element signature="e#728#788#0" expanded="false" />
@@ -950,120 +878,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobao/main/addConsult.html">
+    <entry file="file://$PROJECT_DIR$/xiaobao/lib/wangEditor.min.js" />
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/student_account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        <state relative-caret-position="276">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/reopen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/closed_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2323">
+          <caret line="101" column="29" lean-forward="true" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/js/petty_expenses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#60#326#0" expanded="false" />
+            <element signature="e#776#860#0" expanded="false" />
+            <element signature="e#919#995#0" expanded="false" />
+            <element signature="e#1069#1126#0" expanded="false" />
+            <element signature="e#1185#1239#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/refund.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-430">
+          <caret line="115" column="104" lean-forward="false" selection-start-line="115" selection-start-column="104" selection-end-line="115" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/turn_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="93" column="32" lean-forward="true" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/integral.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1472">
+          <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#5;n#table#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#3657#3663#0" expanded="true" />
+            <element signature="e#3663#3669#0" expanded="true" />
+            <element signature="e#3669#3675#0" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1504667093777" expanded="false" signature="5409:5455" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/main/petty_expenses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6509">
+          <caret line="379" column="46" lean-forward="true" selection-start-line="379" selection-start-column="46" selection-end-line="379" selection-end-column="46" />
+          <folding>
+            <element signature="e#3495#3501#0" expanded="true" />
+            <element signature="e#3501#3507#0" expanded="true" />
+            <element signature="e#3507#3513#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#table#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="207">
+          <caret line="153" column="12" lean-forward="true" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="2082" column="27" lean-forward="false" selection-start-line="2082" selection-start-column="27" selection-end-line="2082" selection-end-column="27" />
+        <state relative-caret-position="517">
+          <caret line="2177" column="13" lean-forward="false" selection-start-line="2177" selection-start-column="13" selection-end-line="2177" selection-end-column="13" />
           <folding>
             <element signature="e#671#1152#0" expanded="false" />
             <element signature="e#1163#1263#0" expanded="false" />
-            <element signature="e#3826#5402#0" expanded="false" />
-            <element signature="e#5425#6250#0" expanded="false" />
-            <element signature="e#7122#11926#0" expanded="false" />
-            <element signature="e#11954#21401#0" expanded="false" />
-            <element signature="e#21436#26715#0" expanded="false" />
-            <element signature="e#26751#29169#0" expanded="false" />
-            <element signature="e#29215#35036#0" expanded="false" />
-            <element signature="e#29260#29899#0" expanded="false" />
-            <element signature="e#29921#34077#0" expanded="false" />
-            <element signature="e#34272#34859#0" expanded="false" />
-            <element signature="e#34392#34538#0" expanded="false" />
-            <element signature="e#35079#38190#0" expanded="false" />
-            <element signature="e#38241#44166#0" expanded="false" />
-            <element signature="e#38519#39278#0" expanded="false" />
-            <element signature="e#39495#39843#0" expanded="false" />
-            <element signature="e#40437#40629#0" expanded="false" />
-            <element signature="e#40657#40849#0" expanded="false" />
-            <element signature="e#40875#41067#0" expanded="false" />
-            <element signature="e#41093#41282#0" expanded="false" />
-            <element signature="e#41307#41499#0" expanded="false" />
-            <element signature="e#41527#41719#0" expanded="false" />
-            <element signature="e#41745#41934#0" expanded="false" />
-            <element signature="e#42213#42809#0" expanded="false" />
-            <element signature="e#44206#45444#0" expanded="false" />
-            <element signature="e#45486#47320#0" expanded="false" />
-            <element signature="e#46523#46923#0" expanded="false" />
-            <element signature="e#47372#48162#0" expanded="false" />
-            <element signature="e#48203#48633#0" expanded="false" />
-            <element signature="e#48678#49440#0" expanded="false" />
-            <element signature="e#49474#49834#0" expanded="false" />
-            <element signature="e#49880#50112#0" expanded="false" />
-            <element signature="e#50147#50377#0" expanded="false" />
-            <element signature="e#50431#50500#0" expanded="false" />
-            <element signature="e#50451#50490#0" expanded="false" />
-            <element signature="e#50547#53020#0" expanded="false" />
-            <element signature="e#50567#51058#0" expanded="false" />
-            <element signature="e#51201#51872#0" expanded="false" />
-            <element signature="e#51287#51598#0" expanded="false" />
-            <element signature="e#51959#52183#0" expanded="false" />
-            <element signature="e#52212#52437#0" expanded="false" />
-            <element signature="e#53068#53898#0" expanded="false" />
-            <element signature="e#53943#54811#0" expanded="false" />
-            <element signature="e#54849#56072#0" expanded="false" />
-            <element signature="e#57309#57983#0" expanded="false" />
-            <element signature="e#58248#58671#0" expanded="false" />
-            <element signature="e#58688#58943#0" expanded="false" />
-            <element signature="e#59290#59368#0" expanded="false" />
-            <element signature="e#59391#59441#0" expanded="false" />
-            <element signature="e#59558#60675#0" expanded="false" />
-            <element signature="e#60707#61867#0" expanded="false" />
-            <element signature="e#60938#61139#0" expanded="false" />
-            <element signature="e#61702#61845#0" expanded="false" />
-            <element signature="e#62025#63083#0" expanded="false" />
-            <element signature="e#64978#65632#0" expanded="false" />
-            <element signature="e#66032#66948#0" expanded="false" />
-            <element signature="e#67441#67642#0" expanded="false" />
-            <element signature="e#67771#68314#0" expanded="false" />
-            <element signature="e#68509#68705#0" expanded="false" />
-            <element signature="e#68976#69806#0" expanded="false" />
-            <element signature="e#69846#72345#0" expanded="false" />
+            <element signature="e#3885#5462#0" expanded="false" />
+            <element signature="e#5485#6310#0" expanded="false" />
+            <element signature="e#7264#12068#0" expanded="false" />
+            <element signature="e#12096#21543#0" expanded="false" />
+            <element signature="e#26893#29311#0" expanded="false" />
+            <element signature="e#29357#35178#0" expanded="false" />
+            <element signature="e#29402#30041#0" expanded="false" />
+            <element signature="e#30063#34219#0" expanded="false" />
+            <element signature="e#34414#35001#0" expanded="false" />
+            <element signature="e#34534#34680#0" expanded="false" />
+            <element signature="e#35221#38332#0" expanded="false" />
+            <element signature="e#38383#44308#0" expanded="false" />
+            <element signature="e#38661#39420#0" expanded="false" />
+            <element signature="e#39637#39985#0" expanded="false" />
+            <element signature="e#40579#40771#0" expanded="false" />
+            <element signature="e#40799#40991#0" expanded="false" />
+            <element signature="e#41017#41209#0" expanded="false" />
+            <element signature="e#41235#41424#0" expanded="false" />
+            <element signature="e#41449#41641#0" expanded="false" />
+            <element signature="e#41669#41861#0" expanded="false" />
+            <element signature="e#41887#42076#0" expanded="false" />
+            <element signature="e#42355#42951#0" expanded="false" />
+            <element signature="e#44348#45586#0" expanded="false" />
+            <element signature="e#45628#47462#0" expanded="false" />
+            <element signature="e#46665#47065#0" expanded="false" />
+            <element signature="e#47514#48304#0" expanded="false" />
+            <element signature="e#48345#48775#0" expanded="false" />
+            <element signature="e#48820#49582#0" expanded="false" />
+            <element signature="e#49616#49976#0" expanded="false" />
+            <element signature="e#50022#50254#0" expanded="false" />
+            <element signature="e#50289#50519#0" expanded="false" />
+            <element signature="e#50573#50642#0" expanded="false" />
+            <element signature="e#50593#50632#0" expanded="false" />
+            <element signature="e#50689#53162#0" expanded="false" />
+            <element signature="e#50709#51200#0" expanded="false" />
+            <element signature="e#51343#52014#0" expanded="false" />
+            <element signature="e#51429#51740#0" expanded="false" />
+            <element signature="e#52101#52325#0" expanded="false" />
+            <element signature="e#52354#52579#0" expanded="false" />
+            <element signature="e#53210#54040#0" expanded="false" />
+            <element signature="e#54085#54953#0" expanded="false" />
+            <element signature="e#54991#56214#0" expanded="false" />
+            <element signature="e#56310#56477#0" expanded="false" />
+            <element signature="e#56490#56565#0" expanded="false" />
+            <element signature="e#56772#59072#0" expanded="false" />
+            <element signature="e#58609#59058#0" expanded="false" />
+            <element signature="e#59089#59344#0" expanded="false" />
+            <element signature="e#59691#59769#0" expanded="false" />
+            <element signature="e#59792#59842#0" expanded="false" />
+            <element signature="e#59959#61076#0" expanded="false" />
+            <element signature="e#61108#62268#0" expanded="false" />
+            <element signature="e#61339#61540#0" expanded="false" />
+            <element signature="e#62103#62246#0" expanded="false" />
+            <element signature="e#62370#63649#0" expanded="false" />
+            <element signature="e#63673#64160#0" expanded="false" />
+            <element signature="e#64177#64438#0" expanded="false" />
+            <element signature="e#65541#66182#0" expanded="false" />
+            <element signature="e#66199#66518#0" expanded="false" />
+            <element signature="e#66617#67476#0" expanded="false" />
+            <element signature="e#67500#69030#0" expanded="false" />
+            <element signature="e#70704#70905#0" expanded="false" />
+            <element signature="e#71034#71577#0" expanded="false" />
+            <element signature="e#71772#71968#0" expanded="false" />
+            <element signature="e#72239#73069#0" expanded="false" />
+            <element signature="e#73109#75608#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobao/js/integral.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/main/signUp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="304" column="33" lean-forward="false" selection-start-line="304" selection-start-column="33" selection-end-line="304" selection-end-column="33" />
+        <state relative-caret-position="451">
+          <caret line="101" column="16" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="204" selection-end-column="24" />
           <folding>
-            <element signature="n#table#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#5019#5025#0" expanded="true" />
-            <element signature="e#5025#5031#0" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#7;n#table#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#8;n#table#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#3;n#table#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#td#1;n#tr#3;n#table#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#13424#13430#0" expanded="true" />
-            <element signature="e#13430#13436#0" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#14;n#table#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#15;n#table#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#tr#3;n#table#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#table#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#table#0;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#5620#5626#0" expanded="true" />
+            <element signature="e#5626#5632#0" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#3;n#table#0;n#div#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#div#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#7;n#table#0;n#div#3;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#td#1;n#tr#5;n#table#0;n#div#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#td#1;n#tr#5;n#table#0;n#div#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#9;n#table#0;n#div#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#5;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#table#0;n#div#6;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiaobao/js/signUp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="537" column="29" lean-forward="true" selection-start-line="537" selection-start-column="29" selection-end-line="537" selection-end-column="29" />
+        <state relative-caret-position="-95">
+          <caret line="335" column="89" lean-forward="false" selection-start-line="335" selection-start-column="89" selection-end-line="335" selection-end-column="89" />
           <folding>
             <element signature="e#141#546#0" expanded="false" />
             <element signature="e#588#1765#0" expanded="false" />
@@ -1075,18 +1097,26 @@
             <element signature="e#6541#7567#0" expanded="false" />
             <element signature="e#8083#8522#0" expanded="false" />
             <element signature="e#8883#9339#0" expanded="false" />
+            <element signature="e#9442#10290#0" expanded="false" />
+            <element signature="e#10340#11993#0" expanded="false" />
             <element signature="e#12045#12201#0" expanded="false" />
-            <element signature="e#12511#12770#0" expanded="false" />
-            <element signature="e#12904#14766#0" expanded="false" />
-            <element signature="e#14997#16986#0" expanded="false" />
-            <element signature="e#17065#18052#0" expanded="false" />
-            <marker date="1504412804675" expanded="true" signature="1701:1715" ph="..." />
-            <marker date="1504412804675" expanded="true" signature="17640:17646" ph=" " />
-            <marker date="1504412804675" expanded="true" signature="17648:17654" ph=" " />
-            <marker date="1504412804675" expanded="true" signature="17776:17782" ph=" " />
-            <marker date="1504412804675" expanded="true" signature="17782:17788" ph=" " />
-            <marker date="1504412804675" expanded="true" signature="17906:17912" ph=" " />
-            <marker date="1504412804675" expanded="true" signature="17912:17918" ph=" " />
+            <element signature="e#20173#20432#0" expanded="false" />
+            <element signature="e#20621#22131#0" expanded="false" />
+            <element signature="e#22399#24035#0" expanded="false" />
+            <element signature="e#24114#25101#0" expanded="false" />
+            <element signature="e#25157#27237#0" expanded="false" />
+            <element signature="e#27280#29360#0" expanded="false" />
+            <element signature="e#29403#31483#0" expanded="false" />
+            <element signature="e#31526#33606#0" expanded="false" />
+            <element signature="e#33698#37139#0" expanded="false" />
+            <marker date="1504753650868" expanded="true" signature="1701:1715" ph="..." />
+            <marker date="1504753650868" expanded="true" signature="24689:24695" ph=" " />
+            <marker date="1504753650868" expanded="true" signature="24697:24703" ph=" " />
+            <marker date="1504753650868" expanded="true" signature="24825:24831" ph=" " />
+            <marker date="1504753650868" expanded="true" signature="24831:24837" ph=" " />
+            <marker date="1504753650868" expanded="true" signature="24955:24961" ph=" " />
+            <marker date="1504753650868" expanded="true" signature="24961:24967" ph=" " />
+            <marker date="1504753650868" expanded="true" signature="34099:34112" ph="..." />
           </folding>
         </state>
       </provider>

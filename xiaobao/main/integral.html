@@ -43,38 +43,94 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>办理类型</td>
+                        <td style="width: 110px;">
+                            姓名：
+                        </td>
                         <td>
-                            <label class="radio-inline">
-                                <input checked type="radio" name="type" id="type1" value="option1"> 增加积分
+                            <input id="name" class="form-control" type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            性别：
+                        </td>
+                        <td>
+                            <label class="radio-inline disabled">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" disabled> 男
                             </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="type" id="type2" value="option2"> 积分兑换
+                            <label class="radio-inline disabled">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" disabled> 女
                             </label>
                         </td>
                     </tr>
                     <tr>
-                        <td>剩余积分</td>
+                        <td>
+                            联系方式：
+                        </td>
+                        <td>
+                            <input id="contact" class="form-control" type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            办理类型：
+                        </td>
+                        <td>
+                            <label class="radio-inline">
+                                <input checked type="radio" class="radio" name="type" id="type1" value="option1"> 增加积分
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" class="radio" name="type" id="type2" value="option2"> 积分兑换
+                            </label>
+                        </td>
+                    </tr>
+                    <tr id="exchangeBox" style="display: none">
+                        <td>
+                            兑换教材：
+                        </td>
+                        <td>
+                            <select name="textBook" class="form-control">
+                                <option value="0">请选择教材</option>
+                            </select>
+                            X
+                            数量
+                            <input type="text" class="form-control">
+                            &nbsp;&nbsp;&nbsp;
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="get" value="option1"> 领用
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            剩余积分：
+                        </td>
                         <td>
                             <input type="text" class="form-control" disabled value="0.00">
                             分
                         </td>
                     </tr>
                     <tr>
-                        <td>增加积分</td>
+                        <td>
+                            增加积分：
+                        </td>
                         <td>
                             <input class="form-control" type="text">
                             分
                         </td>
                     </tr>
                     <tr>
-                        <td>对内备注</td>
-                        <td><input type="text" class="form-control internal-note" placeholder="该备注只对内部操作人员可见" disabled></td>
+                        <td>
+                            对内备注：
+                        </td>
+                        <td><input type="text" class="form-control internal-note" placeholder="该备注只对内部操作人员可见"></td>
                     </tr>
                     <tr>
-                        <td>对外备注</td>
                         <td>
-                            <input type="text" class="form-control foreign-note" placeholder="该备注将会被打印" disabled>
+                            对外备注：
+                        </td>
+                        <td>
+                            <input type="text" class="form-control foreign-note" placeholder="该备注将会被打印">
                         </td>
                     </tr>
                 </table>
@@ -82,7 +138,7 @@
 
 
             <table class="table pay add-shadow">
-                <tr>
+                <!--<tr>
                     <th colspan="2">支付信息</th>
                 </tr>
                 <tr>
@@ -127,9 +183,9 @@
                 <tr>
                     <td>学员账户：</td>
                     <td>+<b>0.00</b>元</td>
-                </tr>
+                </tr>-->
                 <tr class="vTop">
-                    <td rowspan="2" style="line-height: 34px;">订单标签：</td>
+                    <td rowspan="2" style="line-height: 34px; width: 110px;">订单标签：</td>
                     <!--<td><span id='info' style="color: #959697">还未添加任何标签</span></td>-->
                     <td id="tag">
                         <span id='info' style="color: #959697;line-height: 34px;">还未添加任何标签</span>
@@ -281,3 +337,4 @@
     });
 </script>
 <script src="js/signUp.js"></script>
+<script src="js/integral.js"></script>
